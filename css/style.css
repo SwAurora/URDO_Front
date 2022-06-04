@@ -395,3 +395,49 @@ body.dark .home .text
     position: relative;
     display: block;
 }
+
+.category
+{
+    color: #242526;
+    margin-left: 10px;
+}
+
+.depth2
+{
+    display: none;
+}
+
+.depth2 > li
+{
+    list-style: none;
+    height: 50px;
+    width: 70%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    color: white;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.menu-links li
+{
+    height: 30px;
+    list-style: none;
+    display: block;
+    align-items: center;
+}
+
+.menu-links > li
+{
+    margin-top: 10px;
+}
+
+a
+{
+    color:white;
+}
