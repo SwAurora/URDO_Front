@@ -18,6 +18,11 @@
         function f1(num)
         {
             let b = document.getElementsByClassName('nav-link');
+            let d = document.getElementsByClassName('text');
+            for(let i = 1; i <= 4; i++)
+            {
+                d[i].style.color ='#707070';
+            }
             for(let i = 0; i < a.length; i++)
             {
                 a[i].style.display = 'none';
@@ -30,21 +35,25 @@
             {
                 a[0].style.display = 'block';
                 b[0].style.marginBottom = '110px';
+                d[1].style.color ='#695CFE';
             }
             else if(num === 2)
             {
                 a[1].style.display = 'block';
                 b[1].style.marginBottom = '75px';
+                d[2].style.color ='#695CFE';
             }
             else if(num === 3)
             {
                 a[2].style.display = 'block';
                 b[2].style.marginBottom = '75px';
+                d[3].style.color ='#695CFE';
             }
             else if(num === 4)
             {
                 a[3].style.display = 'block';
                 b[3].style.marginBottom = '110px';
+                d[4].style.color ='#695CFE';
             }
         }
     </script>
