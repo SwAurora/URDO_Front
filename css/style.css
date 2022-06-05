@@ -418,10 +418,9 @@ body.dark .home .text
     font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
-    background-color: var(--primary-color);
-    color: white;
     margin-left: 60px;
     margin-top: 5px;
+    background-color: #E4E9F7;
 }
 
 .menu-links li
@@ -439,5 +438,15 @@ body.dark .home .text
 
 a
 {
-    color:white;
+    color: #707070;
+}
+
+a:hover
+{
+    color: white;
+}
+
+.nav-link > li
+{
+    color: black;
 }
