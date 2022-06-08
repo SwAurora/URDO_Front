@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--CSS 링크-->
+    <link rel="stylesheet" href="css/styleV2.css">
+</head>
+<body>
+<!--네비게이션 시작-->
+<nav class="nav-all">
+    <!--헤더 시작-->
+    <header>
+        <!--로고-->
+        <img src="img/logo.png" alt="LOGO" id="logo">
+        <div id="logo-name">
+            <span class="head-span1">URDO</span>
+            <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
+        </div>
+    </header>
+
+    <!--퀵 메뉴 시작-->
+    <div id="Quick_menu">
+        <table>
+            <tr>
+                <td><img src="img/MiniHomePage.svg" alt="MiniHomePage" class="navIcon"></td>
+                <td><span>내 미니홈피 바로가기</span></td>
+                <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
+            </tr>
+            <tr>
+                <td><img src="img/PointShop.svg" alt="PointShop" class="navIcon"></td>
+                <td><span>포인트샵</span></td>
+                <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
+            </tr>
+            <tr>
+                <td><img src="img/MyPage.svg" alt="MyPage" class="navIcon"></td>
+                <td><span>마이 페이지</span></td>
+                <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
+            </tr>
+        </table>
+    </div>
+        <!--메뉴 바 시작-->
+        <div id="Menu_bar">
+            <span>게시판</span>
+
+            <ul class="depth1">
+                <li>
+                    <input type="checkbox" id="check1">
+                    <label for="check1">
+                        <span class="plus_minus">&#65291</span>
+                        <img src="img/board.svg" alt="board" class="navIcon">
+                        <span>베스트셀러</span>
+                    </label>
+                    <ul class="depth2">
+                        <li><a href="#" title="실시간베스트">실시간 베스트</a></li>
+                        <li><a href="#" title="월간베스트">월간 베스트</a></li>
+                        <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="check2">
+                    <label for="check2">
+                        <span class="plus_minus">&#65291</span>
+                        <img src="img/board.svg" alt="board" class="navIcon">
+                        <span>유머 창작게시판</span>
+                    </label>
+                    <ul class="depth2">
+                        <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
+                        <li><a href="#" title="그림">그림</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="check3">
+                    <label for="check3">
+                        <span class="plus_minus">&#65291</span>
+                        <img src="img/board.svg" alt="board" class="navIcon">
+                        <span>지역</span>
+                    </label>
+                    <ul class="depth2">
+                        <li><a href="#" title="요리맛집">요리맛집</a></li>
+                        <li><a href="#" title="명소">명소</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="check4">
+                    <label for="check4">
+                        <span class="plus_minus">&#65291</span>
+                        <img src="img/board.svg" alt="board" class="navIcon">
+                        <span>테마</span>
+                    </label>
+                    <ul class="depth2">
+                        <li><a href="#" title="게임">게임</a></li>
+                        <li><a href="#" title="스포츠">스포츠</a></li>
+                        <li><a href="#" title="음악">음악</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--로그인/로그아웃 버튼-->
+        <button class="btn">
+            <img src="img/Login.svg" alt="login" class="navIcon" style="color:white">
+            <span>로그인</span>
+        </button>
+</nav>
+</body>
+</html>
