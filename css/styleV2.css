@@ -4,9 +4,9 @@
 :root
 {
     /* ====== font-size ====== */
-    --font-large: 20px;
-    --font-medium: 18px;
-    --font-small: 14px;
+    --font-large: 15px;
+    --font-medium: 14px;
+    --font-small: 11px;
 
     /* ====== font-weight ====== */
     --font-weight-bold: bold;
@@ -14,7 +14,7 @@
     --font-weight-light: lighter;
 
     /* ====== Color ====== */
-    --color-button: #6B6ECA;
+    --color-blue: #6B6ECA;
     --color-white: white;
     --color-gray500: #9E9E9E;
     --color-gray700: #616161;
@@ -40,9 +40,11 @@ body
     flex-direction: column;
     position: fixed;
     height: 100%;
-    width: 250px;
-    border-right: 3px solid gray;
+    width: 220px;
+    border-right: 2px solid gray;
     color: var(--color-gray700);
+    box-shadow: 2px 2px 2px var(--color-gray500);
+    transition: all 0.8s;
 }
 
 /* 네비게이션 아이콘 */
@@ -58,17 +60,29 @@ body
 /* 로고 */
 #logo
 {
-    width: 39px;
-    height: 39px;
-    margin-top: 6px;
-    margin-right: 10px;
+    width: 31px;
+    height: 31px;
+    margin: 4px 10px 0 8px;
+}
+
+#arrow
+{
+    position: relative;
+    left: 12px;
+    top: 3px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    border: 0;
+    outline: 0;
 }
 
 header
 {
     display: flex;
     margin-bottom: 30px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 header #logo-name
@@ -87,6 +101,7 @@ header .head-span2
 {
     font-size: var(--font-small);
     font-weight: var(--font-weight-light);
+    width: 150px;
 }
 
 /* ======== header ======== */
@@ -96,11 +111,19 @@ header .head-span2
 #Quick_menu
 {
     margin-bottom: 30px;
+    font-size: var(--font-medium);
+    font-weight: var(--font-weight-bold);
 }
 
 #Quick_menu img
 {
     margin: 3px 10px 0 10px;
+}
+
+#Quick_menu td
+{
+    cursor: pointer;
+    user-select: none;
 }
 
 /* ======== Quick-Menu ======== */
@@ -112,9 +135,24 @@ input[type='checkbox']
     display: none;
 }
 
+#Menu_bar
+{
+    user-select: none;
+    cursor: pointer;
+    font-size: var(--font-large);
+    font-weight: var(--font-weight-regular);
+}
+
+#Menu_bar span
+{
+    font-size: var(--font-medium);
+    font-weight: var(--font-weight-regular);
+}
+
 #Menu_bar label
 {
-    display:flex;
+    display: flex;
+    cursor: pointer;
 }
 
 #Menu_bar .depth1
@@ -127,6 +165,7 @@ input[type='checkbox']
 {
     list-style: none;
 }
+
 #Menu_bar .plus_minus
 {
     margin: 0 8px;
@@ -134,13 +173,19 @@ input[type='checkbox']
 
 #Menu_bar img
 {
-    margin-top:2px;
-    margin-right:8px;
+    margin-top: 1px;
+    margin-right: 8px;
 }
+
+.depth1 > li
+{
+    margin-bottom: 12px;
+}
+
 .depth2
 {
     margin-top: 5px;
-    margin-bottom: 5px;
+    display: none;
 }
 
 .depth2 a
@@ -148,11 +193,28 @@ input[type='checkbox']
     margin-left: 30px;
     color: var(--color-gray700);
     text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
 .depth2 li
 {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    height: 24px;
+}
+
+#Menu_bar input[type='checkbox']:checked ~ .depth2
+{
+    display: block;
+}
+
+.depth2 li:hover *
+{
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 /* ======== Menu-bar ======== */
@@ -161,22 +223,23 @@ input[type='checkbox']
 .btn
 {
     position: fixed;
-    left: 8px;
-    top: 675px;
-    background-color: var(--color-button);
+    top: 665px;
+    background-color: var(--color-blue);
     color: var(--color-white);
-    width: 240px;
+    width: 200px;
     height: 50px;
     border-radius: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5px;
     font-size: var(--font-large);
     font-weight: var(--font-weight-regular);
 }
+
 .btn img
 {
-    margin-right:30px;
+    margin-right: 30px;
 }
 
 /* ======== 로그인 버튼 ======== */
