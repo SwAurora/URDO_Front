@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>URDO</title>
+    <link href="img/logo.png" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="css/styleV2.css">
 </head>
@@ -20,91 +21,198 @@
             <span class="head-span1">URDO</span>
             <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
         </div>
+        <div>
+            <button id="arrow" onclick="moving_sidebar()">
+                <img src="img/Arrow-left.svg" alt="leftArrow">
+            </button>
+        </div>
     </header>
 
     <!--퀵 메뉴 시작-->
     <div id="Quick_menu">
         <table>
-            <tr>
+            <tr onclick="MiniHomePage()">
                 <td><img src="img/MiniHomePage.svg" alt="MiniHomePage" class="navIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
                 <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
             </tr>
-            <tr>
+            <tr onclick="PointShop()">
                 <td><img src="img/PointShop.svg" alt="PointShop" class="navIcon"></td>
                 <td><span>포인트샵</span></td>
                 <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
             </tr>
-            <tr>
+            <tr onclick="MyPage()">
                 <td><img src="img/MyPage.svg" alt="MyPage" class="navIcon"></td>
                 <td><span>마이 페이지</span></td>
                 <td><img src="img/Arrow.svg" alt="arrow" class="navIcon"></td>
             </tr>
         </table>
     </div>
-        <!--메뉴 바 시작-->
-        <div id="Menu_bar">
-            <span>게시판</span>
+    <!--메뉴 바 시작-->
+    <div id="Menu_bar">
+        <span>게시판</span>
 
-            <ul class="depth1">
-                <li>
-                    <input type="checkbox" id="check1">
-                    <label for="check1">
-                        <span class="plus_minus">&#65291</span>
-                        <img src="img/board.svg" alt="board" class="navIcon">
-                        <span>베스트셀러</span>
-                    </label>
-                    <ul class="depth2">
-                        <li><a href="#" title="실시간베스트">실시간 베스트</a></li>
-                        <li><a href="#" title="월간베스트">월간 베스트</a></li>
-                        <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <input type="checkbox" id="check2">
-                    <label for="check2">
-                        <span class="plus_minus">&#65291</span>
-                        <img src="img/board.svg" alt="board" class="navIcon">
-                        <span>유머 창작게시판</span>
-                    </label>
-                    <ul class="depth2">
-                        <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
-                        <li><a href="#" title="그림">그림</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <input type="checkbox" id="check3">
-                    <label for="check3">
-                        <span class="plus_minus">&#65291</span>
-                        <img src="img/board.svg" alt="board" class="navIcon">
-                        <span>지역</span>
-                    </label>
-                    <ul class="depth2">
-                        <li><a href="#" title="요리맛집">요리맛집</a></li>
-                        <li><a href="#" title="명소">명소</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <input type="checkbox" id="check4">
-                    <label for="check4">
-                        <span class="plus_minus">&#65291</span>
-                        <img src="img/board.svg" alt="board" class="navIcon">
-                        <span>테마</span>
-                    </label>
-                    <ul class="depth2">
-                        <li><a href="#" title="게임">게임</a></li>
-                        <li><a href="#" title="스포츠">스포츠</a></li>
-                        <li><a href="#" title="음악">음악</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <ul class="depth1">
+            <li>
+                <input type="checkbox" id="check1">
+                <label for="check1">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="img/board.svg" alt="board" class="navIcon">
+                    <span>베스트셀러</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="실시간베스트">실시간 베스트</a></li>
+                    <li><a href="#" title="월간베스트">월간 베스트</a></li>
+                    <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check2">
+                <label for="check2">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="img/board.svg" alt="board" class="navIcon">
+                    <span>유머 창작게시판</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
+                    <li><a href="#" title="그림">그림</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check3">
+                <label for="check3">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="img/board.svg" alt="board" class="navIcon">
+                    <span>지역</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="요리맛집">요리맛집</a></li>
+                    <li><a href="#" title="명소">명소</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check4">
+                <label for="check4">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="img/board.svg" alt="board" class="navIcon">
+                    <span>테마</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="게임">게임</a></li>
+                    <li><a href="#" title="스포츠">스포츠</a></li>
+                    <li><a href="#" title="음악">음악</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-        <!--로그인/로그아웃 버튼-->
-        <button class="btn">
-            <img src="img/Login.svg" alt="login" class="navIcon" style="color:white">
-            <span>로그인</span>
-        </button>
+    <!--로그인/로그아웃 버튼-->
+    <button id="loginbtn" onclick="window.open('#','window_name', 'width=430, height=500, top=100, status=no, scrollbars=yes');"
+            class="btn">
+        <img src="img/Login.svg" alt="login" class="navIcon">
+        <span>로그인</span>
+    </button>
 </nav>
+<script>
+    let nav = document.querySelector('.nav-all');
+    let arrow = document.getElementById('arrow');
+    let cnt = 0;
+    function moving_sidebar()
+    {
+        if(cnt === 0)
+        {
+            nav.style.transform = 'translateX(-105%)';
+            arrow.innerHTML = "<img src='img/Arrow-right.svg' alt='rightArrow'>";
+            cnt++;
+        }
+        else
+        {
+            nav.style.transform = 'translateX(0%)';
+            arrow.innerHTML = "<img src='img/Arrow-left.svg' alt='leftArrow'>";
+            cnt--;
+        }
+    }
+
+    function MiniHomePage()
+    {
+        location.href = "https://www.naver.com";
+    }
+
+    function PointShop()
+    {
+        location.href = '#';
+    }
+
+    function MyPage()
+    {
+        location.href = '#';
+    }
+
+    let chk1 = document.getElementById('check1');
+    let chk2 = document.getElementById('check2');
+    let chk3 = document.getElementById('check3');
+    let chk4 = document.getElementById('check4');
+    let span = document.getElementsByTagName('span');
+    chk1.addEventListener('change', function()
+    {
+        if(this.checked)
+        {
+            span[6].innerHTML = '&#8722';
+            span[6].setAttribute('style', 'margin:0 11px;')
+            span[7].style.color = '#6B6ECA';
+        }
+        else
+        {
+            span[6].innerHTML = '&#65291';
+            span[6].setAttribute('style', 'margin:0 8px')
+            span[7].style.color = '#616161';
+        }
+    });
+    chk2.addEventListener('change', function()
+    {
+        if(this.checked)
+        {
+            span[8].innerHTML = '&#8722';
+            span[8].setAttribute('style', 'margin:0 11px;')
+            span[9].style.color = '#6B6ECA';
+        }
+        else
+        {
+            span[8].innerHTML = '&#65291';
+            span[8].setAttribute('style', 'margin:0 8px')
+            span[9].style.color = '#616161';
+        }
+    });
+    chk3.addEventListener('change', function()
+    {
+        if(this.checked)
+        {
+            span[10].innerHTML = '&#8722';
+            span[10].setAttribute('style', 'margin:0 11px;')
+            span[11].style.color = '#6B6ECA';
+        }
+        else
+        {
+            span[10].innerHTML = '&#65291';
+            span[10].setAttribute('style', 'margin:0 8px')
+            span[11].style.color = '#616161';
+        }
+    });
+    chk4.addEventListener('change', function()
+    {
+        if(this.checked)
+        {
+            span[12].innerHTML = '&#8722';
+            span[12].setAttribute('style', 'margin:0 11px;')
+            span[13].style.color = '#6B6ECA';
+        }
+        else
+        {
+            span[12].innerHTML = '&#65291';
+            span[12].setAttribute('style', 'margin:0 8px')
+            span[13].style.color = '#616161';
+        }
+    });
+</script>
 </body>
 </html>
