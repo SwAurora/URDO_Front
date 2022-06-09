@@ -8,7 +8,7 @@
     <title>URDO</title>
     <link href="img/logo.png" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
-    <link rel="stylesheet" href="css/styleV2.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--네비게이션 시작-->
@@ -107,7 +107,8 @@
     </div>
 
     <!--로그인/로그아웃 버튼-->
-    <button id="loginbtn" onclick="window.open('#','window_name', 'width=430, height=500, top=100, status=no, scrollbars=yes');"
+    <button id="loginbtn"
+            onclick="window.open('#','window_name', 'width=430, height=500, top=100, status=no, scrollbars=yes');"
             class="btn">
         <img src="img/Login.svg" alt="login" class="navIcon">
         <span>로그인</span>
@@ -115,20 +116,23 @@
 </nav>
 <script>
     let nav = document.querySelector('.nav-all');
-    let arrow = document.getElementById('arrow');
+    let leftArrow = document.querySelector('#arrow img');
     let cnt = 0;
+
     function moving_sidebar()
     {
         if(cnt === 0)
         {
             nav.style.transform = 'translateX(-105%)';
-            arrow.innerHTML = "<img src='img/Arrow-right.svg' alt='rightArrow'>";
+            leftArrow.style.transform = 'scale(-1)';
+            leftArrow.style.transition = '0.8s';
             cnt++;
         }
         else
         {
             nav.style.transform = 'translateX(0%)';
-            arrow.innerHTML = "<img src='img/Arrow-left.svg' alt='leftArrow'>";
+            leftArrow.style.transform = 'scale(1)';
+            leftArrow.style.transition = '0.8s';
             cnt--;
         }
     }
