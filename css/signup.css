@@ -1,0 +1,164 @@
+/* Google-font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+:root
+{
+    /* ====== font-size ====== */
+    --font-large: 15px;
+    --font-medium: 14px;
+    --font-small: 11px;
+
+    /* ====== font-weight ====== */
+    --font-weight-bold: bold;
+    --font-weight-regular: normal;
+    --font-weight-light: lighter;
+
+    /* ====== Color ====== */
+    --color-blue: #6B6ECA;
+    --color-white: white;
+    --color-gray500: #9E9E9E;
+    --color-gray700: #616161;
+    --color-gray800: #424242;
+}
+
+/* 모두 적용 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 제목 */
+h1
+{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    margin: auto;
+    padding: 12px;
+    font-weight: var(--font-weight-bold);
+}
+
+/* 위치 설정 */
+#d1
+{
+    border: 1px solid black;
+    /* width: 1535px; */
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    margin: 2% auto;   
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 아이디 비번 등 입력창 */
+.input1
+{
+    padding: 5px;
+    background-color: var(--color-white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--color-gray500);
+}
+
+#d2
+{
+    text-align: left;
+}
+
+/* 아이디 비번 아래에 들어가는 div */
+#d3
+{
+    color: red;
+    font-size: var(--font-medium);
+}
+
+/* 중복확인 버튼 */
+.btn1
+{
+    padding: 5px;
+    margin-left: 5px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 5px;
+    border:none;
+}
+
+/* 회원가입 버튼 */
+.btn2
+{
+    padding: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+/* 이용 약관 */
+ul > li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#joinForm
+{
+    width: 460px;
+}
+
+ul.join_box
+{
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.checkBox,
+.checkBox > ul
+{
+    position: relative;
+}
+
+.checkBox > ul > li 
+{
+    float: left;
+}
+
+.checkBox > ul > li:first-child
+{
+    width: 85%;
+    padding: 15px;
+    font-weight: 600;
+    color: #888;
+}
+
+.checkBox > ul > li:nth-child(2) 
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin-top: -12px;
+}
+
+/* texxarea */
+.checkBox textarea
+{
+    width: 96%;
+    height: 90px;
+    margin: 0 2%;
+    background-color: #f7f7f7;
+    color: #888;
+    border: none;
+    resize: none;
+}
