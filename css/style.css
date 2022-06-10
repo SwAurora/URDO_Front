@@ -37,10 +37,13 @@ body
 .nav-all
 {
     display: flex;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
     flex-direction: column;
     position: fixed;
     height: 100%;
-    width: 220px;
+    width: 250px;
     border-right: 2px solid gray;
     color: var(--color-gray700);
     box-shadow: 2px 2px 2px var(--color-gray500);
@@ -68,7 +71,7 @@ body
 #arrow
 {
     position: relative;
-    left: 12px;
+    left: 35px;
     top: 3px;
     width: 35px;
     height: 35px;
@@ -228,7 +231,7 @@ input[type='checkbox']
 .btn
 {
     position: fixed;
-    top: 665px;
+    top: 90%;
     background-color: var(--color-blue);
     color: var(--color-white);
     width: 200px;
@@ -237,7 +240,7 @@ input[type='checkbox']
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: var(--font-large);
     font-weight: var(--font-weight-regular);
 }
