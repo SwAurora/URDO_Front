@@ -1,0 +1,158 @@
+/* Google-font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+:root
+{
+    /* ====== font-size ====== */
+    --font-large: 15px;
+    --font-medium: 14px;
+    --font-small: 11px;
+
+    /* ====== font-weight ====== */
+    --font-weight-bold: bold;
+    --font-weight-regular: normal;
+    --font-weight-light: lighter;
+
+    /* ====== Color ====== */
+    --color-blue: #6B6ECA;
+    --color-white: white;
+    --color-gray500: #9E9E9E;
+    --color-gray700: #616161;
+    --color-gray800: #424242;
+}
+
+*
+{
+
+}
+
+/* 로그인창과 슬라이드쇼 묶음 */
+#d1
+{
+    display: flex;
+    margin-top: 7%;
+    margin-left: 17%;
+}
+
+
+/* 로드인창 */
+#d2
+{
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+/* 슬라이드쇼 */
+#d3
+{
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+li
+{
+    list-style: none;
+}
+
+span
+{
+    font-size: 50px;
+}
+
+input
+{
+    margin: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#loginbtn
+{
+    width: 257.2px;
+    height: 35.2px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#li2
+{
+    display: inline-block;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#checkbox
+{
+    position: absolute;
+    left: 16%;
+}
+
+label
+{
+    position: absolute;
+    top: 53%;
+    left: 27%;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* 로그인창 사진 관련 */
+
+#img
+{
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+  /* 점 */
+.dot 
+{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active 
+{
+    background-color: #717171;
+}
+
+  /* 페이딩 모션 */
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+

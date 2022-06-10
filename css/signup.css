@@ -57,6 +57,10 @@ h1
 {
     padding: 5px;
     background-color: var(--color-white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--color-gray500);
 }
 
 #d2
@@ -75,9 +79,11 @@ h1
 .btn1
 {
     padding: 5px;
+    margin-left: 5px;
     background-color: var(--color-blue);
     color: var(--color-white);
     border-radius: 5px;
+    border:none;
 }
 
 /* 회원가입 버튼 */
@@ -86,6 +92,7 @@ h1
     padding: 10px;
     background-color: var(--color-blue);
     color: var(--color-white);
+    border-radius: 5px;
 }
 
 /* 이용 약관 */
