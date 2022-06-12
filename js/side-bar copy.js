@@ -54,13 +54,12 @@ chk1.addEventListener('change', function()
     if(this.checked)
     {
         span[6].innerHTML = '&#65293'; //full-width하이픈
-        // span[6].setAttribute('style', 'margin:0 11px;')
         span[7].style.color = '#6B6ECA';
+        span[7].style.fontWeight='bold';
     }
     else
     {
         span[6].innerHTML = '&#65291';
-        // span[6].setAttribute('style', 'margin:0 8px')
         span[7].style.color = '#616161';
     }
 });
@@ -73,13 +72,12 @@ chk2.addEventListener('change', function()
     if(this.checked)
     {
         span[8].innerHTML = '&#65293';
-        // span[8].setAttribute('style', 'margin:0 11px;')
         span[9].style.color = '#6B6ECA';
+        span[9].style.fontWeight='bold';
     }
     else
     {
         span[8].innerHTML = '&#65291';
-        // span[8].setAttribute('style', 'margin:0 8px')
         span[9].style.color = '#616161';
     }
 });
@@ -92,13 +90,12 @@ chk3.addEventListener('change', function()
     if(this.checked)
     {
         span[10].innerHTML = '&#65293';
-        // span[10].setAttribute('style', 'margin:0 11px;')
         span[11].style.color = '#6B6ECA';
+        span[11].style.fontWeight='bold';
     }
     else
     {
         span[10].innerHTML = '&#65291';
-        // span[10].setAttribute('style', 'margin:0 8px')
         span[11].style.color = '#616161';
     }
 });
@@ -111,13 +108,12 @@ chk4.addEventListener('change', function()
     if(this.checked)
     {
         span[12].innerHTML = '&#65293';
-        // span[12].setAttribute('style', 'margin:0 11px;')
         span[13].style.color = '#6B6ECA';
+        span[13].style.fontWeight='bold';
     }
     else
     {
         span[12].innerHTML = '&#65291';
-        // span[12].setAttribute('style', 'margin:0 8px')
         span[13].style.color = '#616161';
     }
 });
@@ -127,7 +123,7 @@ function radioReset(span)
     for(let i = 6; i <= 12; i += 2)
     {
         span[i].innerHTML = '&#65291';
-        // span[i].setAttribute('style', 'margin:0 8px');
         span[i+1].style.color = '#616161';
+        span[i+1].style.fontWeight='normal';
     }
 }

@@ -15,9 +15,13 @@
     --font-weight-light: lighter;
 
     /* ====== Color ====== */
-    --color-blue: #6B6ECA;
+    --color-purple:#845EC2;
+    --color-lavender:#B39CD0;
+    --color-lightpurple:#FBEAFF;
     --color-white: white;
+    --color-gray400:#bdbdbd;
     --color-gray500: #9E9E9E;
+    --color-gray600: #757575;
     --color-gray700: #616161;
     --color-gray800: #424242;
 
@@ -48,9 +52,9 @@ body
     position: fixed;
     height: 100%;
     width: 250px;
-    border-right: 2px solid gray;
-    color: var(--color-gray700);
-    box-shadow: 2px 2px 2px var(--color-gray500);
+    border-right: 2px solid --color-gray600;
+    color: var(--color-gray600);
+    box-shadow: 2px 0px 2px var(--color-gray400);
     transition: all 0.8s;
 }
 
@@ -79,7 +83,7 @@ body
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: var(--color-blue);
+    background-color: var(--color-purple);
     border: 0;
     padding:0px;
     display:flex;
@@ -90,13 +94,8 @@ body
     #arrow img
     {
     width:25px; height:25px;
+    border:1px 
     }
-    #arrow path {
-        width:25px; height:25px;
-        fill:red;
-    }
-
-
 header
 {
     display: flex;
@@ -111,6 +110,7 @@ header #logo-name
     line-height:20px;
     margin-left:11px;
     padding:2px;
+    color:var(--color-gray800);
 }
 
 header .head-span1
@@ -148,7 +148,7 @@ header .head-span2
 }
 #Quick_col2
 {
-    width:133px;
+    width:135px;
 }
 
 #Quick_menu td
@@ -244,11 +244,11 @@ input[type='checkbox']
     display: block;
 }
 
-.depth2 li:hover 
+.depth2 li:hover
 {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: var(--color-lightpurple);
 }
+
 
 /* ======== Menu-bar ======== */
 
@@ -257,15 +257,17 @@ input[type='checkbox']
 {
     position: fixed;
     top: 90%;
-    background-color: var(--color-blue);
+    background-color: var(--color-purple);
     color: var(--color-white);
     width: 200px;
     height: 50px;
+    border:none;
+    margin-left:var(--margin-normal);
+    box-shadow:2px 2px 2px lightgray;
     border-radius: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
     font-size: var(--font-large);
     font-weight: var(--font-weight-regular);
 }
