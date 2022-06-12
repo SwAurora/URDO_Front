@@ -225,7 +225,6 @@ input[type='checkbox']
     color: var(--color-gray700);
     text-decoration: none;
     display: inline-block;
-    width: 120px;
     height: 100%;
     padding-left: 5px;
 }
@@ -234,6 +233,7 @@ input[type='checkbox']
 {
     display:flex;
     height:40px; line-height:40px;
+    width:200px;
     border-radius: 5px;
     padding-left:0px;
 
@@ -275,6 +275,7 @@ input[type='checkbox']
 .btn img
 {
     margin-right: 30px;
+    width:16px;
 }
 
 /* ======== 로그인 버튼 ======== */
