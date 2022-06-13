@@ -18,7 +18,7 @@
     --color-body: white;
     --color-logoname:#424242;
     --color-sidebar: white;
-    --color-purple: #845EC2;
+    --color-purple: #6200ee;
     --color-lavender: #B39CD0;
     --color-lightpurple: #FBEAFF;
     --color-white: white;
@@ -27,6 +27,7 @@
     --color-gray600: #757575;
     --color-gray700: #616161;
     --color-gray800: #424242;
+    --color-gray900: #161616;
 
     /* =====Left-margin==== */
     --margin-normal: 25px;
