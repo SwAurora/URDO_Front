@@ -6,7 +6,7 @@ function moving_sidebar()
 {
     if(cnt === 0)
     {
-        nav.style.transform = 'translateX(-105%)';
+        nav.style.transform = 'translateX(-101%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
         cnt++;
@@ -55,7 +55,7 @@ chk1.addEventListener('change', function()
     {
         span[6].innerHTML = '&#65293'; //full-width하이픈
         span[7].style.color = '#6B6ECA';
-        span[7].style.fontWeight='bold';
+        span[7].style.fontWeight = 'bold';
     }
     else
     {
@@ -73,7 +73,7 @@ chk2.addEventListener('change', function()
     {
         span[8].innerHTML = '&#65293';
         span[9].style.color = '#6B6ECA';
-        span[9].style.fontWeight='bold';
+        span[9].style.fontWeight = 'bold';
     }
     else
     {
@@ -91,7 +91,7 @@ chk3.addEventListener('change', function()
     {
         span[10].innerHTML = '&#65293';
         span[11].style.color = '#6B6ECA';
-        span[11].style.fontWeight='bold';
+        span[11].style.fontWeight = 'bold';
     }
     else
     {
@@ -109,7 +109,7 @@ chk4.addEventListener('change', function()
     {
         span[12].innerHTML = '&#65293';
         span[13].style.color = '#6B6ECA';
-        span[13].style.fontWeight='bold';
+        span[13].style.fontWeight = 'bold';
     }
     else
     {
@@ -123,7 +123,26 @@ function radioReset(span)
     for(let i = 6; i <= 12; i += 2)
     {
         span[i].innerHTML = '&#65291';
-        span[i+1].style.color = '#616161';
-        span[i+1].style.fontWeight='normal';
+        span[i + 1].style.color = '#616161';
+        span[i + 1].style.fontWeight = 'normal';
     }
 }
+
+// 다크 모드
+const body = document.querySelector('body');
+const modeSwitch = body.querySelector(".toggle-switch");
+const modeText = body.querySelector(".darkMode-text");
+
+modeSwitch.addEventListener("click", () =>
+{
+    body.classList.toggle("dark");
+
+    // if(body.classList.contains("dark"))
+    // {
+    //     modeText.innerText = "라이트 모드";
+    // }
+    // else
+    // {
+    //     modeText.innerText = "다크 모드";
+    // }
+});
