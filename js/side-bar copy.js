@@ -1,6 +1,7 @@
 let nav = document.querySelector('.nav-all');
 let leftArrow = document.querySelector('#arrow img');
 let cnt = 0;
+let home = document.getElementsByClassName('home');
 
 function moving_sidebar()
 {
@@ -16,6 +17,7 @@ function moving_sidebar()
         nav.style.transform = 'translateX(0%)';
         leftArrow.style.transform = 'scale(1)';
         leftArrow.style.transition = '0.8s';
+        home[0].style.marginLeft = '200px';
         cnt--;
     }
 }
