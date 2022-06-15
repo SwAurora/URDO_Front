@@ -11,6 +11,7 @@ function moving_sidebar()
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
         wrap.style.marginLeft='0px';
+        wrap.style.transition = '0.8s'
         cnt++;
     }
     else
