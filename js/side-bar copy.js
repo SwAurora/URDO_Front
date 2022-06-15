@@ -118,13 +118,13 @@ chk4.addEventListener('change', function()
     else
     {
         span[14].innerHTML = '&#65291';
-        span[15].style.color = '#616161';
+        span[16].style.color = '#616161';
     }
 });
 
 function radioReset(span)
 {
-    for(let i = 6; i <= 12; i += 2)
+    for(let i = 6; i <= 14; i += 2)
     {
         span[i].innerHTML = '&#65291';
         span[i + 1].style.color = '#616161';
