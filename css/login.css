@@ -6,7 +6,6 @@ section
     min-height: 100vh;
     flex-direction: column;
     gap: 30px;
-    background: #fff;
 }
 
 #Login_1
@@ -88,10 +87,8 @@ section
 /* 로그인 유지 체크박스 */
 .checkbox
 {
-    margin: 15%;
     position: relative;
-    top: -44px;
-    left: -38px;
+
 }
 
 .checkbox label
@@ -116,23 +113,27 @@ section
     font-size: 1.5em;
     letter-spacing: 0.1em;
     margin: 15%;
+    top: 20px;
+    left: 20px;
     padding: 10px 30px;
     transition: 0.5s;
 }
 
+/* 마우스 올릴시 */
 .loginA:hover
 {
+    margin: 15%;
     letter-spacing: 0.25em;
     background: var(--clr);
     color: var(--clr);
     box-shadow: 0 0 35px var(--clr);
 }
 
+/* 뒷 배경 */
 .loginA::before
 {
     content: '';
     position: absolute;
-    
     inset: 2px;
     background: #fff;
 }
