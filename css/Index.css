@@ -18,6 +18,8 @@
     --color-body: white;
     --color-logoname: #424242;
     --color-sidebar: white;
+    --color-point: #5865F2;
+    --color-pointhover: #4752C4;
     --color-purple: #6200EE;
     --color-lavender: #B39CD0;
     --color-lightpurple: #F3F1F5;
@@ -101,12 +103,17 @@ body.dark
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: var(--color-purple);
+    background-color: var(--color-point);
     border: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#arrow:hover
+{
+    background-color: var(--color-pointhover);
 }
 
 #arrow img
@@ -274,7 +281,12 @@ header .head-span2
 
 .depth2 li:hover
 {
-    background-color: var(--color-lightpurple);
+    background-color: var(--color-point);
+}
+
+.depth2 li:hover a
+{
+    color:white;
 }
 
 /* ======== Menu-bar ======== */
@@ -368,7 +380,7 @@ body.dark .Moon
 {
     position: fixed;
     top: 90%;
-    background-color: var(--color-purple);
+    background-color: var(--color-point);
     color: var(--color-white);
     width: 200px;
     height: 50px;
@@ -381,6 +393,11 @@ body.dark .Moon
     font-size: var(--font-XL);
     font-weight: var(--font-weight-regular);
     box-shadow: none;
+}
+
+.btn:hover
+{
+    background-color: var(--color-pointhover);
 }
 
 .btn img
