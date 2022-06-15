@@ -1,32 +1,15 @@
-.sidebar.close ~ .home
-{
-    position:absollute;
-    top:0px; left:88px;
-    height: 100vh;
-    width: calc(100% - 78px);
-    margin:10px;
-}
 .home {
   font-size : 12px;
-  position:absolute;
+  /* position:fixed;
   top : 0px;
-  left:250px;
+  left:250px; */
   margin:10px;
   height: 100vh;
   width: calc(100% - 78px);
+  margin-left:270px;
 }
 
-body.dark .home .text
-{
-    color: var(--text-color);
-}
 
-.container
-{
-  margin-left:5px;
-  display: block;
-  flex-direction: row;
-}
 #container_Title {
   margin-top:10px;
   font-size:18px;
@@ -76,6 +59,5 @@ hr { border-color: lightgray;}
   border:1px solid gray;
   margin:0 auto;
   text-align:center; line-height:32px;
-
 }
 

@@ -1,6 +1,7 @@
 let nav = document.querySelector('.nav-all');
 let leftArrow = document.querySelector('#arrow img');
 let cnt = 0;
+let wrap = document.getElementById('wrap');
 
 function moving_sidebar()
 {
@@ -9,6 +10,8 @@ function moving_sidebar()
         nav.style.transform = 'translateX(-101%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
+        wrap.style.marginLeft='0px';
+        wrap.style.transition = '0.8s'
         cnt++;
     }
     else
@@ -16,6 +19,7 @@ function moving_sidebar()
         nav.style.transform = 'translateX(0%)';
         leftArrow.style.transform = 'scale(1)';
         leftArrow.style.transition = '0.8s';
+        wrap.style.marginLeft='270px';
         cnt--;
     }
 }

@@ -18,15 +18,16 @@
     --color-body: white;
     --color-logoname:#424242;
     --color-sidebar: white;
-    --color-purple: #845EC2;
+    --color-purple: #6200ee;
     --color-lavender: #B39CD0;
-    --color-lightpurple: #FBEAFF;
+    --color-lightpurple: #F3F1F5;
     --color-white: white;
     --color-gray400: #bdbdbd;
     --color-gray500: #9E9E9E;
     --color-gray600: #757575;
     --color-gray700: #616161;
     --color-gray800: #424242;
+    --color-gray900: #161616;
 
     /* =====Left-margin==== */
     --margin-normal: 25px;
@@ -60,7 +61,7 @@ body.dark
 /* 네비게이션 전체 */
 .nav-all
 {
-    display: flex;
+    display: block;
     left: 0;
     top: 0;
     margin-left: 0;
@@ -283,6 +284,7 @@ input[type='checkbox']
 .darkMode
 {
     position: fixed;
+    left:0px;
     top: 83%;
     display: flex;
     align-items: center;
