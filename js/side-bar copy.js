@@ -58,7 +58,7 @@ chk1.addEventListener('change', function()
     if(this.checked)
     {
         span[8].innerHTML = '&#65293'; //full-width하이픈
-        span[9].style.color = '#6B6ECA';
+        span[9].style.color = '#6200ee';
         span[9].style.fontWeight = 'bold';
     }
     else
@@ -76,7 +76,7 @@ chk2.addEventListener('change', function()
     if(this.checked)
     {
         span[10].innerHTML = '&#65293';
-        span[11].style.color = '#6B6ECA';
+        span[11].style.color = '#6200ee';
         span[11].style.fontWeight = 'bold';
     }
     else
@@ -94,7 +94,7 @@ chk3.addEventListener('change', function()
     if(this.checked)
     {
         span[12].innerHTML = '&#65293';
-        span[13].style.color = '#6B6ECA';
+        span[13].style.color = '#6200ee';
         span[13].style.fontWeight = 'bold';
     }
     else
@@ -112,7 +112,7 @@ chk4.addEventListener('change', function()
     if(this.checked)
     {
         span[14].innerHTML = '&#65293';
-        span[15].style.color = '#6B6ECA';
+        span[15].style.color = '#6200ee';
         span[15].style.fontWeight = 'bold';
     }
     else

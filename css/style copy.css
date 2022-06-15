@@ -89,8 +89,7 @@ body.dark
 /* 로고 */
 #logo
 {
-    width: 40px;
-    height: 40px;
+    width: 50px;
 }
 
 #arrow
@@ -129,7 +128,6 @@ header #logo-name
     flex-direction: column;
     line-height: 20px;
     margin-left: 11px;
-    padding: 2px;
     color: var(--color-logoname);
 }
 
