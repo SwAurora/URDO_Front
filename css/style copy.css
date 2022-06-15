@@ -185,7 +185,7 @@ header .head-span2
 
 /* ======== Menu-bar ======== */
 
-input[type='checkbox']
+#Menu_bar input[type='checkbox']
 {
     display: none;
 }
