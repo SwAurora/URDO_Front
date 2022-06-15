@@ -26,7 +26,7 @@ function moving_sidebar()
 
 function GoHome()
 {
-    location.href = "Main.html";
+    location.href = "Index.html";
 }
 
 function MiniHomePage()
