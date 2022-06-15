@@ -16,7 +16,22 @@
     height: 600px;
     left: 25%;
     top: 8%;
-    border: 1px solid black;
+    border: 1px solid var(--color-point);
+    border-radius: 32px;
+    background-color: #18191a;
+}
+
+#LoginBox::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    letter-spacing: 0.25em;
+    background: var(--color-point);
+    color: var(--color-point);
+    box-shadow: 0 0 35px var(--color-point);
+    border-radius: 32px;
+    z-index: -1;
 }
 
 /* 아이디 비번 치는 공간 */
@@ -34,7 +49,7 @@
     background: #fff;
     border-radius: 5px;
     outline: none;
-    color: #fff;
+    color: black;
     font-size: 1em;
     transition: 0.5s;
 }
@@ -84,7 +99,7 @@
 .inputBox input:valid,
 .inputBox input:focus
 {
-    border: 1px solid #00dfc4;
+    border: 2px solid var(--color-point);
 }
 
 /* 로그인 유지 체크박스 */
@@ -98,7 +113,7 @@
 
 .checkbox label
 {
-    color: black;;
+    color: #444;
 }
 
 #chks1
@@ -119,6 +134,7 @@
     letter-spacing: 0.1em;
     padding: 10px 30px;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .loginA:hover
@@ -135,6 +151,7 @@
     position: absolute;
     inset: 2px;
     background: #fff;
+    border-radius: 5px;
 }
 
 .loginA span
@@ -202,6 +219,11 @@
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    color: #444;
+}
+
+#ss2
+{
     color: #444;
 }
 
