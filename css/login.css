@@ -11,7 +11,7 @@ section
 
 #Login_1
 {
-    margin: 15%;
+    width:500px;
 }
 
 
@@ -19,12 +19,11 @@ section
 .inputBox
 {
     position: relative;
-    width: 250px;
+    width: 300px;
 }
 
 .inputBox input
 {
-    width: 100%;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid black;
@@ -108,6 +107,7 @@ section
 /* 로그인 버튼 공간 */
 .loginA
 {
+    width:200px;
     position: relative;
     background: #444;
     color: black;
@@ -115,9 +115,10 @@ section
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    margin: 15%;
     padding: 10px 30px;
     transition: 0.5s;
+    justify-content: center;
+
 }
 
 .loginA:hover
