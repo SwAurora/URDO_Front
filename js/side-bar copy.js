@@ -10,7 +10,7 @@ function moving_sidebar()
         nav.style.transform = 'translateX(-101%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
-        wrap.style.marginLeft='0px';
+        wrap.style.marginLeft='20px';
         wrap.style.transition = '0.8s'
         cnt++;
     }

@@ -390,3 +390,15 @@ body.dark .Moon
 }
 
 /* ======== 로그인 버튼 ======== */
+
+/* ======== 컨텐츠 영역 ======== */
+.home {
+    font-size : var(--font-large); /* 기본 폰트 사이즈 */
+    margin:10px;
+    height: 100vh;
+    width: calc(100% - 78px);
+    margin-left:270px; /* 컨텐츠영역의 기본 마진 */
+}
+/* ======== 컨텐츠 영역 ======== */
+
+
