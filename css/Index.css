@@ -12,7 +12,6 @@
     /* ====== font-weight ====== */
     --font-weight-bold: bold;
     --font-weight-regular: normal;
-    --font-weight-light: lighter;
 
     /* ====== Color ====== */
     --color-body: white;
@@ -30,8 +29,9 @@
     --color-gray700: #616161;
     --color-gray800: #424242;
     --color-gray900: #161616;
+
     /* =====Left-margin==== */
-    --margin-normal: 25px;
+    --margin-normal: 22px;
 }
 
 *
@@ -70,9 +70,9 @@ body.dark
     position: fixed;
     height: 100%;
     width: 250px;
-    border-right: 2px solid var(--color-gray600);
+    border-right: 1px solid var(--color-gray400);
     color: var(--color-gray600);
-    box-shadow: 2px 0 2px var(--color-gray400);
+    /* box-shadow: 2px 0 2px var(--color-gray400); */
     transition: all 0.8s;
 }
 
@@ -81,7 +81,7 @@ body.dark
 {
     width: 20px;
     height: 20px;
-    filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%);
+    /* filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%); */
 }
 
 /* ======== 네비게이션 ======== */
@@ -126,8 +126,8 @@ body.dark
 header
 {
     display: flex;
+    justify-content: center;
     margin-top: 34px;
-    margin-left: var(--margin-normal);
 }
 
 header #logo-name
@@ -183,7 +183,7 @@ header .head-span2
 
 #Quick_menu td
 {
-    height: 35px;;
+    height: 35px;
     cursor: pointer;
     user-select: none;
 }
@@ -286,7 +286,7 @@ header .head-span2
 
 .depth2 li:hover a
 {
-    color:white;
+    color: white;
 }
 
 /* ======== Menu-bar ======== */
@@ -295,12 +295,12 @@ header .head-span2
 
 .darkMode
 {
-    position: fixed;
-    left: 0;
-    top: 83%;
+    position: relative;
+    left: -22px;
+    top: 23%;
     display: flex;
     align-items: center;
-    background-color: lightgray;
+    background-color: #f1f1f1;
     width: 250px;
     height: 40px;
 }
@@ -309,13 +309,13 @@ header .head-span2
 {
     color: gray;
     position: absolute;
-    left: 60px;
+    left: 67px;
 }
 
 .toggle-switch
 {
     position: absolute;
-    left: 180px;
+    left: 195px;
     display: flex;
     border-radius: 6px;
     cursor: pointer;
@@ -354,8 +354,8 @@ body.dark .switch::before
 .sun-moon img
 {
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 10px;
+    left: 25px;
 }
 
 .sun-moon .sun
@@ -413,7 +413,7 @@ body.dark .Moon
 {
     font-size: var(--font-XL); /* 기본 폰트 사이즈 */
     margin: 10px 10px 10px 270px; /* 270px = 컨텐츠영역의 기본 마진 */
-    width: calc(100% - 78px);
+    width: calc(100% - 270px);
 }
 
 /* ======== 컨텐츠 영역 ======== */

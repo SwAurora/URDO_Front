@@ -7,7 +7,7 @@ function moving_sidebar()
 {
     if(cnt === 0)
     {
-        nav.style.transform = 'translateX(-102%)';
+        nav.style.transform = 'translateX(-100%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
         wrap.style.marginLeft='20px';
