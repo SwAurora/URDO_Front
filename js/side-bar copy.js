@@ -57,25 +57,7 @@ chk1.addEventListener('change', function()
     radioReset(span);
     if(this.checked)
     {
-        span[6].innerHTML = '&#65293'; //full-width하이픈
-        span[7].style.color = '#6B6ECA';
-        span[7].style.fontWeight = 'bold';
-    }
-    else
-    {
-        span[6].innerHTML = '&#65291';
-        span[7].style.color = '#616161';
-    }
-});
-chk2.addEventListener('change', function()
-{
-    chk1.checked = false;
-    chk3.checked = false;
-    chk4.checked = false;
-    radioReset(span);
-    if(this.checked)
-    {
-        span[8].innerHTML = '&#65293';
+        span[8].innerHTML = '&#65293'; //full-width하이픈
         span[9].style.color = '#6B6ECA';
         span[9].style.fontWeight = 'bold';
     }
@@ -85,10 +67,10 @@ chk2.addEventListener('change', function()
         span[9].style.color = '#616161';
     }
 });
-chk3.addEventListener('change', function()
+chk2.addEventListener('change', function()
 {
     chk1.checked = false;
-    chk2.checked = false;
+    chk3.checked = false;
     chk4.checked = false;
     radioReset(span);
     if(this.checked)
@@ -103,11 +85,11 @@ chk3.addEventListener('change', function()
         span[11].style.color = '#616161';
     }
 });
-chk4.addEventListener('change', function()
+chk3.addEventListener('change', function()
 {
     chk1.checked = false;
     chk2.checked = false;
-    chk3.checked = false;
+    chk4.checked = false;
     radioReset(span);
     if(this.checked)
     {
@@ -119,6 +101,24 @@ chk4.addEventListener('change', function()
     {
         span[12].innerHTML = '&#65291';
         span[13].style.color = '#616161';
+    }
+});
+chk4.addEventListener('change', function()
+{
+    chk1.checked = false;
+    chk2.checked = false;
+    chk3.checked = false;
+    radioReset(span);
+    if(this.checked)
+    {
+        span[14].innerHTML = '&#65293';
+        span[15].style.color = '#6B6ECA';
+        span[15].style.fontWeight = 'bold';
+    }
+    else
+    {
+        span[14].innerHTML = '&#65291';
+        span[15].style.color = '#616161';
     }
 });
 
