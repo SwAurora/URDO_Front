@@ -7,7 +7,7 @@ function moving_sidebar()
 {
     if(cnt === 0)
     {
-        nav.style.transform = 'translateX(-101%)';
+        nav.style.transform = 'translateX(-102%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
         wrap.style.marginLeft='20px';
@@ -22,6 +22,11 @@ function moving_sidebar()
         wrap.style.marginLeft='270px';
         cnt--;
     }
+}
+
+function GoHome()
+{
+    location.href = "Main.html";
 }
 
 function MiniHomePage()
@@ -41,7 +46,7 @@ function MyPage()
 
 function Login()
 {
-    location.href = '#';
+    location.href = 'login.html';
 }
 
 let chk1 = document.getElementById('check1');

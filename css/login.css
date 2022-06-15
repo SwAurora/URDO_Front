@@ -1,18 +1,23 @@
-section
+:root
+{
+    --color-point: #6200EE;
+    --color-save: #00dfc4;
+}
+
+#LoginBox
 {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     flex-direction: column;
     gap: 30px;
+    width: 500px;
+    height: 600px;
+    left: 25%;
+    top: 8%;
+    border: 1px solid black;
 }
-
-#Login_1
-{
-    margin: 15%;
-}
-
 
 /* 아이디 비번 치는 공간 */
 .inputBox
@@ -24,7 +29,6 @@ section
 .inputBox input
 {
     width: 100%;
-    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid black;
     background: #fff;
@@ -35,7 +39,6 @@ section
     transition: 0.5s;
 }
 
-/* inputbox 안의 ID PW 표시, 애니메이션 */
 .inputBox span
 {
     position: absolute;
@@ -52,20 +55,20 @@ section
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span
 {
-    color: #00dfc4;
+    color: var(--color-point);
     transform: translateX(10px) translateY(-7px);
     font-size: 0.65em;
     padding: 0 10px;
     background: #fff;
-    border-left: 1px solid #00dfc4;
-    border-right: 1px solid #00dfc4;
+    border-left: 1px solid var(--color-point);
+    border-right: 1px solid var(--color-point);
     letter-spacing: 0.2em;
 }
 
 .inputBox:nth-child(1) input:valid ~ span,
 .inputBox:nth-child(1) input:focus ~ span
 {
-    background: #00dfc4;
+    background: var(--color-point);
     color: #fff;
     border-radius: 2px;
 }
@@ -73,7 +76,7 @@ section
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span
 {
-    background: #00dfc4;
+    background: var(--color-point);
     color: #fff;
     border-radius: 2px;
 }
@@ -88,6 +91,8 @@ section
 .checkbox
 {
     position: relative;
+    top: -20px;
+    left: -73px;
 
 }
 
@@ -112,24 +117,18 @@ section
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    margin: 15%;
-    top: 20px;
-    left: 20px;
     padding: 10px 30px;
     transition: 0.5s;
 }
 
-/* 마우스 올릴시 */
 .loginA:hover
 {
-    margin: 15%;
     letter-spacing: 0.25em;
-    background: var(--clr);
-    color: var(--clr);
-    box-shadow: 0 0 35px var(--clr);
+    background: var(--color-point);
+    color: var(--color-point);
+    box-shadow: 0 0 35px var(--color-point);
 }
 
-/* 뒷 배경 */
 .loginA::before
 {
     content: '';
@@ -138,14 +137,12 @@ section
     background: #fff;
 }
 
-/* LOGIN 글자 */
 .loginA span
 {
     position: relative;
     z-index: 1;
 }
 
-/* 로그인 주위 상자 */
 .loginA i
 {
     position: absolute;
@@ -153,7 +150,6 @@ section
     display: block;
 }
 
-/* 위쪽 상자 */
 .loginA i::before
 {
     content: '';
@@ -162,7 +158,7 @@ section
     left: 80%;
     width: 10px;
     height: 5px;
-    border: 2px solid var(--clr);
+    border: 2px solid var(--color-point);
     background: #fff;
     transform: translateX(-50%);
     transition: 0.5s;
@@ -174,7 +170,6 @@ section
     left: 20%;
 }
 
-/* 아래쪽 상자 */
 .loginA i::after
 {
     content: '';
@@ -183,7 +178,7 @@ section
     left: 20%;
     width: 10px;
     height: 5px;
-    border: 2px solid var(--clr);
+    border: 2px solid var(--color-point);
     background: #fff;
     transition: 0.5s;
 }
@@ -200,7 +195,6 @@ section
 {
     display: block;
     color: black;
-    margin: 15%;
 }
 
 #ss1

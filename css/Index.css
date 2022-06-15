@@ -18,7 +18,7 @@
     --color-body: white;
     --color-logoname:#424242;
     --color-sidebar: white;
-    --color-purple: #6200ee;
+    --color-purple: #6200EE;
     --color-lavender: #B39CD0;
     --color-lightpurple: #F3F1F5;
     --color-white: white;
@@ -80,7 +80,7 @@ body.dark
 {
     width: 20px;
     height: 20px;
-    filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%);
+    /* filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%); */
 }
 
 /* ======== 네비게이션 ======== */
@@ -91,6 +91,7 @@ body.dark
 {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 #arrow
