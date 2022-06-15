@@ -46,7 +46,7 @@ function MyPage()
 
 function Login()
 {
-    location.href = 'login.html';
+    location.href = 'Login.html';
 }
 
 let chk1 = document.getElementById('check1');
