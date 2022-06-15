@@ -36,7 +36,7 @@ function MiniHomePage()
 
 function PointShop()
 {
-    location.href = '#';
+    location.href = 'PointShop.html';
 }
 
 function MyPage()
@@ -140,18 +140,8 @@ function radioReset(span)
 // 다크 모드
 const body = document.querySelector('body');
 const modeSwitch = body.querySelector(".toggle-switch");
-const modeText = body.querySelector(".darkMode-text");
 
 modeSwitch.addEventListener("click", () =>
 {
     body.classList.toggle("dark");
-
-    // if(body.classList.contains("dark"))
-    // {
-    //     modeText.innerText = "라이트 모드";
-    // }
-    // else
-    // {
-    //     modeText.innerText = "다크 모드";
-    // }
 });

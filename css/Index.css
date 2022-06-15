@@ -4,10 +4,10 @@
 :root
 {
     /* ====== font-size ====== */
-    --font-large: 16px;
-    --font-mediumlarge: 15px;
-    --font-medium: 14px;
-    --font-small: 11px;
+    --font-XL: 18px;
+    --font-L: 15px;
+    --font-M: 14px;
+    --font-S: 12px;
 
     /* ====== font-weight ====== */
     --font-weight-bold: bold;
@@ -16,7 +16,7 @@
 
     /* ====== Color ====== */
     --color-body: white;
-    --color-logoname:#424242;
+    --color-logoname: #424242;
     --color-sidebar: white;
     --color-purple: #6200EE;
     --color-lavender: #B39CD0;
@@ -28,7 +28,6 @@
     --color-gray700: #616161;
     --color-gray800: #424242;
     --color-gray900: #161616;
-
     /* =====Left-margin==== */
     --margin-normal: 25px;
 }
@@ -47,7 +46,7 @@ body
 
 body.dark
 {
-    --color-body: #18191a;
+    --color-body: #18191A;
     --color-logoname: white;
     --color-sidebar: black;
     --primary-color: #3a3b3c;
@@ -80,7 +79,7 @@ body.dark
 {
     width: 20px;
     height: 20px;
-    /* filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%); */
+    filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%);
 }
 
 /* ======== 네비게이션 ======== */
@@ -89,8 +88,8 @@ body.dark
 /* 로고 */
 #logo
 {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
 }
 
@@ -136,15 +135,15 @@ header #logo-name
 
 header .head-span1
 {
-    font-size: var(--font-large);
+    font-size: var(--font-XL);
     font-weight: var(--font-weight-bold);
 }
 
 header .head-span2
 {
-    font-size: var(--font-small);
+    font-size: var(--font-S);
     font-weight: var(--font-weight-light);
-    width: 150px;
+    width: 163px;
 }
 
 /* ======== header ======== */
@@ -156,7 +155,7 @@ header .head-span2
     margin-left: var(--margin-normal);
     margin-bottom: 30px;
     margin-top: 25px;
-    font-size: var(--font-medium);
+    font-size: var(--font-M);
     font-weight: var(--font-weight-bold);
 }
 
@@ -195,14 +194,14 @@ header .head-span2
 {
     user-select: none;
     cursor: pointer;
-    font-size: var(--font-mediumlarge);
+    font-size: var(--font-L);
     font-weight: var(--font-weight-regular);
     margin-left: var(--margin-normal);
 }
 
 #Menu_bar > span
 {
-    font-size: var(--font-medium);
+    font-size: var(--font-M);
 }
 
 #Menu_bar label
@@ -226,7 +225,7 @@ header .head-span2
 
 #Menu_bar .plus_minus
 {
-    font-size: var(--font-small);
+    font-size: var(--font-S);
 
 }
 
@@ -238,7 +237,7 @@ header .head-span2
 
 .depth1
 {
-    font-size: var(--font-mediumlarge);
+    font-size: var(--font-L);
 }
 
 .depth2
@@ -285,7 +284,7 @@ header .head-span2
 .darkMode
 {
     position: fixed;
-    left:0px;
+    left: 0;
     top: 83%;
     display: flex;
     align-items: center;
@@ -379,7 +378,7 @@ body.dark .Moon
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--font-large);
+    font-size: var(--font-XL);
     font-weight: var(--font-weight-regular);
     box-shadow: none;
 }
@@ -393,13 +392,13 @@ body.dark .Moon
 /* ======== 로그인 버튼 ======== */
 
 /* ======== 컨텐츠 영역 ======== */
-.home {
-    font-size : var(--font-large); /* 기본 폰트 사이즈 */
-    margin:10px;
-    height: 100vh;
+.home
+{
+    font-size: var(--font-XL); /* 기본 폰트 사이즈 */
+    margin: 10px 10px 10px 270px; /* 270px = 컨텐츠영역의 기본 마진 */
     width: calc(100% - 78px);
-    margin-left:270px; /* 컨텐츠영역의 기본 마진 */
 }
+
 /* ======== 컨텐츠 영역 ======== */
 
 
