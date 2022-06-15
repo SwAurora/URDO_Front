@@ -7,7 +7,7 @@ function moving_sidebar()
 {
     if(cnt === 0)
     {
-        nav.style.transform = 'translateX(-101%)';
+        nav.style.transform = 'translateX(-100%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
         wrap.style.marginLeft='20px';
@@ -24,6 +24,11 @@ function moving_sidebar()
     }
 }
 
+function GoHome()
+{
+    location.href = "Index.html";
+}
+
 function MiniHomePage()
 {
     location.href = "https://www.naver.com";
@@ -31,7 +36,7 @@ function MiniHomePage()
 
 function PointShop()
 {
-    location.href = '#';
+    location.href = 'PointShop.html';
 }
 
 function MyPage()
@@ -41,7 +46,7 @@ function MyPage()
 
 function Login()
 {
-    location.href = '#';
+    location.href = 'Login.html';
 }
 
 let chk1 = document.getElementById('check1');
@@ -135,18 +140,8 @@ function radioReset(span)
 // 다크 모드
 const body = document.querySelector('body');
 const modeSwitch = body.querySelector(".toggle-switch");
-const modeText = body.querySelector(".darkMode-text");
 
 modeSwitch.addEventListener("click", () =>
 {
     body.classList.toggle("dark");
-
-    // if(body.classList.contains("dark"))
-    // {
-    //     modeText.innerText = "라이트 모드";
-    // }
-    // else
-    // {
-    //     modeText.innerText = "다크 모드";
-    // }
 });
