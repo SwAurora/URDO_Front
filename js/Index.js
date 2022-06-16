@@ -12,7 +12,7 @@ function moving_sidebar()
         leftArrow.style.transition = '0.8s';
         main.style.marginLeft = '20px';
         main.style.transition = '0.8s';
-        document.querySelector('#LoginBox').style.left = '500px';
+        main.style.width = 'calc(100% - 20px)';
         cnt++;
     }
     else
@@ -22,7 +22,7 @@ function moving_sidebar()
         leftArrow.style.transition = '0.8s';
         main.style.marginLeft = '270px';
         main.style.transition = '0.8s';
-        document.querySelector('#LoginBox').style.left = '350px';
+        main.style.width = 'calc(100% - 270px)';
         cnt--;
     }
 }
