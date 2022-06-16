@@ -1,17 +1,57 @@
+:root
+{
+    /* ====== font-size ====== */
+    --font-XL: 18px;
+    --font-L: 15px;
+    --font-M: 14px;
+    --font-S: 12px;
+
+    /* ====== font-weight ====== */
+    --font-weight-bold: bold;
+    --font-weight-regular: normal;
+
+    /* ====== Color ====== */
+    --color-body: white;
+    --color-logoname: #424242;
+    --color-sidebar: white;
+    --color-point: #5865F2;
+    --color-pointhover: #4752C4;
+    --color-purple: #6200EE;
+    --color-lavender: #B39CD0;
+    --color-lightpurple: #F3F1F5;
+    --color-background:#f8f9fa;
+    --color-white: white;
+    --color-gray300:lightgray;
+    --color-gray400: #bdbdbd;
+    --color-gray500: #9E9E9E;
+    --color-gray600: #757575;
+    --color-gray700: #616161;
+    --color-gray800: #424242;
+    --color-gray900: #161616;
+
+    /* =====Left-margin==== */
+    --margin-normal: 22px;
+}
+
+
 #container_Title
 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: calc(34px + 10px);
+    font-size: var(--font-L);
+    font-weight:100;
     color: gray;
+
+    
 }
 
 #search
 {
-    font-size: 22px;
+    font-size: var(--font-XL);
     margin-top: 28.5px;
     display: flex;
     align-items: center;
     color: gray;
+    margin-bottom : 20px;
 }
 
 #search div
@@ -24,14 +64,19 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    filter: invert(80%) sepia(3%) saturate(11%) hue-rotate(351deg) brightness(96%) contrast(88%);
+    
 }
 
 .searchBar
 {
     width: 300px;
     height: 30px;
-    font-size: 18px;
+    font-size: var(--font-L);
     font-weight: 300;
+    background:none;
+    border:1px solid gray;
+    border-radius:3px;
 }
 
 .tab
@@ -44,7 +89,7 @@
     width: 170px;
     height: 50px;
     font-size: 18px;
-    background-color: #878ae5;
+    background-color: var(--color-point);
     border: none;
     border-radius: 5px;
     color: white;
@@ -79,3 +124,6 @@ hr
     line-height: 32px;
 }
 
+.devider {
+    background-color:red;
+}

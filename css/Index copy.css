@@ -61,6 +61,7 @@ body.dark
     --text-color: #ccc;
 }
 
+
 /* ======== 네비게이션 ======== */
 
 /* 네비게이션 전체 */
@@ -74,7 +75,7 @@ body.dark
     position: fixed;
     height: 100%;
     width: 250px;
-    color: var(--color-gray600);
+    color: var(--color-gray800);
     box-shadow: 2px 0 10px var(--color-gray300);
     transition: all 0.8s;
     background-color:#fff;
@@ -150,7 +151,8 @@ header .head-span1
 header .head-span2
 {
     font-size: var(--font-S);
-    font-weight: var(--font-weight-light);
+    /* font-weight: var(--font-weight-light); */
+    font-weight:100;
     width: 163px;
 }
 
@@ -415,7 +417,6 @@ body.dark .Moon
     font-size: var(--font-XL); /* 기본 폰트 사이즈 */
     margin: 10px 10px 10px 270px; /* 270px = 컨텐츠영역의 기본 마진 */
     width: calc(100% - 270px);
-    /* width:calc(100% - 20px); */
 }
 
 /* ======== 컨텐츠 영역 ======== */
