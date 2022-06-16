@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URDO</title>
     <link href="../img/logo.png" rel="shortcut icon" type="image/png">
-
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/Index.css">
     <link rel="stylesheet" href="../css/Login.css">
-</head>
 <body>
 <!--네비게이션 시작-->
 <nav class="nav-all">
@@ -27,7 +23,7 @@
         </div>
         <div>
             <button id="arrow" onclick="moving_sidebar()">
-                <img src="../img/Arrow-left.svg" alt="leftArrow">
+                <img src="../img/header-arrow.svg" alt="leftArrow">
             </button>
         </div>
     </header>
@@ -41,24 +37,25 @@
                 <col id="Quick_col3">
             </colgroup>
             <tr onclick="MiniHomePage()">
-                <td><img src="../img/MiniHomePage.svg" alt="MiniHomePage" class="navIcon"></td>
+                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
             <tr onclick="PointShop()">
-                <td><img src="../img/PointShop.svg" alt="PointShop" class="navIcon"></td>
+                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navIcon"></td>
                 <td><span>포인트샵</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
             <tr onclick="MyPage()">
-                <td><img src="../img/MyPage.svg" alt="MyPage" class="navIcon"></td>
+                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navIcon"></td>
                 <td><span>마이 페이지</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
         </table>
         <div class="darkMode">
-            <div class="sun-moon">
-                <img src="../img/moon.svg" alt="#" class="Moon">
+            <div class="sunMoon">
+                <img src="../img/header-moon.svg" alt="#" class="Moon">
+                <img src="../img/header-sun.svg" alt="#" class="Sun">
             </div>
             <span class="darkMode-text">다크 모드</span>
             <div class="toggle-switch">
@@ -75,11 +72,11 @@
                 <input type="checkbox" id="check1">
                 <label for="check1">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/board.svg" alt="board" class="navIcon">
+                    <img src="../img/menu-best.svg" alt="board" class="navIcon menuIcon">
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
-                    <li class="depth2li"><a href="#" title="실시간베스트">실시간 베스트</a></li>
+                    <li><a href="#" title="실시간베스트">실시간 베스트</a></li>
                     <li><a href="#" title="월간베스트">월간 베스트</a></li>
                     <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
                 </ul>
@@ -88,31 +85,42 @@
                 <input type="checkbox" id="check2">
                 <label for="check2">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/board.svg" alt="board" class="navIcon">
-                    <span>유머 창작게시판</span>
+                    <img src="../img/menu-humor.svg" alt="board" class="navIcon menuIcon">
+                    <span>유머</span>
                 </label>
                 <ul class="depth2">
                     <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
-                    <li><a href="#" title="그림">그림</a></li>
                 </ul>
             </li>
             <li>
                 <input type="checkbox" id="check3">
                 <label for="check3">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/board.svg" alt="board" class="navIcon">
-                    <span>지역</span>
+                    <img src="../img/menu-creation.svg" alt="board" class="navIcon menuIcon">
+                    <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="요리맛집">요리맛집</a></li>
-                    <li><a href="#" title="명소">명소</a></li>
+                    <li><a href="#" title="그림">그림</a></li>
+                    <li><a href="#" title="요리">요리</a></li>
                 </ul>
             </li>
             <li>
                 <input type="checkbox" id="check4">
                 <label for="check4">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/board.svg" alt="board" class="navIcon">
+                    <img src="../img/menu-region.svg" alt="board" class="navIcon menuIcon">
+                    <span>지역</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="맛집">맛집</a></li>
+                    <li><a href="#" title="명소">명소</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check5">
+                <label for="check5">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/menu-theme.svg" alt="board" class="navIcon menuIcon">
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
@@ -125,13 +133,12 @@
     </div>
     <!--로그인/로그아웃 버튼-->
     <button onclick="Login()" class="btn">
-        <img src="../img/Login.svg" alt="login" class="navIcon">
+        <img src="../img/login-unlock.svg" alt="login" class="navIcon">
         <span>로그인</span>
     </button>
 </nav>
 
-<section class="home" id="wrap">
-    
+<section class="Main" style="height:100%">
     <div id="LoginBox">
         <!-- Login용 input -->
         <div class="inputBox">
@@ -159,11 +166,9 @@
             <a href="#" id="ss3">비밀번호 찾기</a>
         </div>
     </div>
-
 </section>
 
 <!--사이드바 JS-->
-
 <script src="../js/Index.js"></script>
 </body>
 </html>

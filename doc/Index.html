@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URDO</title>
     <link href="../img/logo.png" rel="shortcut icon" type="image/png">
@@ -22,7 +22,7 @@
         </div>
         <div>
             <button id="arrow" onclick="moving_sidebar()">
-                <img src="../img/Arrow-left.svg" alt="leftArrow">
+                <img src="../img/header-arrow.svg" alt="leftArrow">
             </button>
         </div>
     </header>
@@ -36,23 +36,26 @@
                 <col id="Quick_col3">
             </colgroup>
             <tr onclick="MiniHomePage()">
-                <td><img src="../img/homeIcon.svg" alt="MiniHomePage" class="navIcon"></td>
+                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
             <tr onclick="PointShop()">
-                <td><img src="../img/shopIcon.svg" alt="PointShop" class="navIcon"></td>
+                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navIcon"></td>
                 <td><span>포인트샵</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
             <tr onclick="MyPage()">
-                <td><img src="../img/settingIcon.svg" alt="MyPage" class="navIcon"></td>
+                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navIcon"></td>
                 <td><span>마이 페이지</span></td>
-                <td><img src="../img/Arrow.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
             </tr>
         </table>
         <div class="darkMode">
-                <img src="../img/moonIcon.svg" alt="#" class="Moon">
+            <div class="sunMoon">
+                <img src="../img/header-moon.svg" alt="#" class="Moon">
+                <img src="../img/header-sun.svg" alt="#" class="Sun">
+            </div>
             <span class="darkMode-text">다크 모드</span>
             <div class="toggle-switch">
                 <span class="switch"></span>
@@ -68,7 +71,7 @@
                 <input type="checkbox" id="check1">
                 <label for="check1">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/B-BestIcon.svg" alt="board" class="navIcon menuIcon">
+                    <img src="../img/menu-best.svg" alt="board" class="navIcon menuIcon">
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
@@ -81,7 +84,7 @@
                 <input type="checkbox" id="check2">
                 <label for="check2">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/B-HumorIcon.svg" alt="board" class="navIcon menuIcon">
+                    <img src="../img/menu-humor.svg" alt="board" class="navIcon menuIcon">
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
@@ -92,7 +95,7 @@
                 <input type="checkbox" id="check3">
                 <label for="check3">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/B-CreationIcon.svg" alt="board" class="navIcon menuIcon">
+                    <img src="../img/menu-creation.svg" alt="board" class="navIcon menuIcon">
                     <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
@@ -104,7 +107,7 @@
                 <input type="checkbox" id="check4">
                 <label for="check4">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/B-RegionIcon.svg" alt="board" class="navIcon menuIcon">
+                    <img src="../img/menu-region.svg" alt="board" class="navIcon menuIcon">
                     <span>지역</span>
                 </label>
                 <ul class="depth2">
@@ -116,7 +119,7 @@
                 <input type="checkbox" id="check5">
                 <label for="check5">
                     <span class="plus_minus">&#65291</span>
-                    <img src="../img/B-ThemeIcon.svg" alt="board" class="navIcon menuIcon">
+                    <img src="../img/menu-theme.svg" alt="board" class="navIcon menuIcon">
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
@@ -129,12 +132,12 @@
     </div>
     <!--로그인/로그아웃 버튼-->
     <button onclick="Login()" class="btn">
-        <img src="../img/Login.svg" alt="login" class="navIcon">
+        <img src="../img/login-unlock.svg" alt="login" class="navIcon">
         <span>로그인</span>
     </button>
 </nav>
 
-<section class="home" id="wrap">
+<section class="Main">
     <!-- 내용 -->
 </section>
 

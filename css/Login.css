@@ -1,7 +1,6 @@
-:root
+a
 {
-    --color-point: #6200EE;
-    --color-save: #00dfc4;
+    color: var(--color-text);
 }
 
 #LoginBox
@@ -14,11 +13,11 @@
     gap: 30px;
     width: 500px;
     height: 600px;
-    left: 25%;
-    top: 8%;
+    left: 350px;
+    top: 3%;
     border: 1px solid var(--color-point);
     border-radius: 32px;
-    background-color: #18191a;
+    transition: left 0.8s ease;
 }
 
 #LoginBox::before
@@ -27,7 +26,6 @@
     position: absolute;
     inset: 2px;
     letter-spacing: 0.25em;
-    background: var(--color-point);
     color: var(--color-point);
     box-shadow: 0 0 35px var(--color-point);
     border-radius: 32px;
@@ -39,6 +37,7 @@
 {
     position: relative;
     width: 250px;
+    color:black;
 }
 
 .inputBox input
@@ -49,7 +48,6 @@
     background: #fff;
     border-radius: 5px;
     outline: none;
-    color: black;
     font-size: 1em;
     transition: 0.5s;
 }
@@ -62,7 +60,6 @@
     padding: 10px;
     pointer-events: none;
     font-size: 1em;
-    color: black;
     text-transform: uppercase;
     transition: 0.5s;
 }
@@ -84,7 +81,6 @@
 .inputBox:nth-child(1) input:focus ~ span
 {
     background: var(--color-point);
-    color: #fff;
     border-radius: 2px;
 }
 
@@ -92,7 +88,6 @@
 .inputBox:nth-child(2) input:focus ~ span
 {
     background: var(--color-point);
-    color: #fff;
     border-radius: 2px;
 }
 
@@ -113,7 +108,6 @@
 
 .checkbox label
 {
-    color: #444;
 }
 
 #chks1
@@ -211,7 +205,6 @@
 #signIn
 {
     display: block;
-    color: black;
 }
 
 #ss1
@@ -219,12 +212,6 @@
     cursor: pointer;
     user-select: none;
     text-decoration: none;
-    color: #444;
-}
-
-#ss2
-{
-    color: #444;
 }
 
 #ss3
@@ -232,5 +219,4 @@
     cursor: pointer;
     user-select: none;
     text-decoration: none;
-    color: #444;
 }

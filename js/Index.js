@@ -1,7 +1,7 @@
 let nav = document.querySelector('.nav-all');
 let leftArrow = document.querySelector('#arrow img');
 let cnt = 0;
-let wrap = document.getElementById('wrap');
+let main = document.querySelector(".Main");
 
 function moving_sidebar()
 {
@@ -10,8 +10,9 @@ function moving_sidebar()
         nav.style.transform = 'translateX(-100%)';
         leftArrow.style.transform = 'scale(-1)';
         leftArrow.style.transition = '0.8s';
-        wrap.style.marginLeft = '20px';
-        wrap.style.transition = '0.8s';
+        main.style.marginLeft = '20px';
+        main.style.transition = '0.8s';
+        document.querySelector('#LoginBox').style.left = '500px';
         cnt++;
     }
     else
@@ -19,7 +20,9 @@ function moving_sidebar()
         nav.style.transform = 'translateX(0%)';
         leftArrow.style.transform = 'scale(1)';
         leftArrow.style.transition = '0.8s';
-        wrap.style.marginLeft = '270px';
+        main.style.marginLeft = '270px';
+        main.style.transition = '0.8s';
+        document.querySelector('#LoginBox').style.left = '350px';
         cnt--;
     }
 }
