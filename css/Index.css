@@ -22,7 +22,9 @@
     --color-purple: #6200EE;
     --color-lavender: #B39CD0;
     --color-lightpurple: #F3F1F5;
+    --color-background:#f8f9fa;
     --color-white: white;
+    --color-gray300:lightgray;
     --color-gray400: #bdbdbd;
     --color-gray500: #9E9E9E;
     --color-gray600: #757575;
@@ -44,6 +46,8 @@ body
     margin-top: 0;
     background-color: var(--color-body);
     transition: all 0.3s ease;
+    background-color:var(--color-background);
+    
 }
 
 body.dark
@@ -70,10 +74,10 @@ body.dark
     position: fixed;
     height: 100%;
     width: 250px;
-    border-right: 1px solid var(--color-gray400);
     color: var(--color-gray600);
-    /* box-shadow: 2px 0 2px var(--color-gray400); */
+    box-shadow: 2px 0 10px var(--color-gray300);
     transition: all 0.8s;
+    background-color:#fff;
 }
 
 /* 네비게이션 아이콘 */
