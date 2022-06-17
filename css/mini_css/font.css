@@ -20,4 +20,18 @@
 
 #basic-text {
     font-family: 'Gaegu', cursive;
+    color: black;
+}
+
+#line_photo
+{
+    font-size: 16px;
+    color: black;
+}
+
+.guest-box-title,
+.guest-text
+{
+    font-size: 16px;
+    color: black;
 }

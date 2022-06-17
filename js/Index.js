@@ -34,7 +34,11 @@ function GoHome()
 
 function MiniHomePage()
 {
+<<<<<<< Updated upstream
     location.href = "https://www.naver.com";
+=======
+    location.href = "mini_index.html";
+>>>>>>> Stashed changes
 }
 
 function PointShop()
