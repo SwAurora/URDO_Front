@@ -34,7 +34,7 @@ a
 {
     position: relative;
     width: 250px;
-    color:black;
+    color:var(--color-blackToWhite);
 }
 
 .inputBox input
@@ -42,11 +42,12 @@ a
     width: 100%;
     padding: 10px;
     border: 1px solid black;
-    background: #fff;
+    background: var(--color-whiteToBlack);
     border-radius: 5px;
     outline: none;
     font-size: 1em;
     transition: 0.5s;
+    color:var(--color-blackToWhite);
 }
 
 .inputBox span
@@ -116,7 +117,7 @@ a
 {
     position: relative;
     background: #444;
-    color: black;
+    color: var(--color-blackToWhite);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -139,7 +140,7 @@ a
     content: '';
     position: absolute;
     inset: 2px;
-    background: #fff;
+    background: var(--color-whiteToBlack);
     border-radius: 5px;
 }
 

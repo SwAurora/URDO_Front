@@ -27,6 +27,8 @@
     --color-white: white;
     --color-black: black;
     --color-placeholder: gray;
+    --color-whiteToBlack: white;
+    --color-blackToWhite:black;
     /* =====Left-margin==== */
     --margin-normal: 22px;
 }
@@ -59,6 +61,8 @@ body.dark
     --color-darkbtn: #42464D;
     --color-text: #DCDDDE;
     --color-placeholder: #DCDDDE;
+    --color-whiteToBlack: #202225;
+    --color-blackToWhite: white;
 }
 
 /* ======== 네비게이션 ======== */
