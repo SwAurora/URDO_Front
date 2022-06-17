@@ -13,7 +13,6 @@ a
     gap: 30px;
     width: 500px;
     height: 600px;
-    border: 1px solid var(--color-point);
     border-radius: 32px;
     transition: left 0.8s ease;
 }
@@ -104,10 +103,6 @@ a
     top: -20px;
     left: -73px;
 
-}
-
-.checkbox label
-{
 }
 
 #chks1

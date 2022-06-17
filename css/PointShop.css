@@ -21,7 +21,7 @@
 {
     width: 30px;
     height: 30px;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
 .searchBar
@@ -30,13 +30,19 @@
     height: 30px;
     font-size: var(--font-XL);
     font-weight: var(--font-weight-light);
-    background:none;
-    border:none;
+    background: none;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+}
+
+.searchBar::placeholder
+{
+    color:var(--color-placeholder);
 }
 
 .tab
 {
-    margin: 40px 0px 10px 0px;
+    margin: 40px 0 10px 0;
 }
 
 .tab input
@@ -57,42 +63,57 @@ hr
 
 .tabContents
 {
-    border:1px solid red;
-    height:calc(100vh - 300px);
+    border: 1px solid red;
+    height: calc(100vh - 300px);
     overflow-y: scroll;
-    display:none;
+    display: none;
 }
 
-
-.pageContainer{
-    border:1px solid red;
-    display:flex;
-    justify-content:center;
-}
-.pageContainer button {
-    margin : 5px;
+.pageContainer
+{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
-.tabBtn.on {
-    background-color:var(--color-point);
+.pageContainer button
+{
+    margin: 5px;
 }
 
-
-.tabContents.on {
-    display:flex;
-}
-.tabContents img {
-    width:300px; height:300px;
+.tabBtn
+{
+    color:var(--color-text);
 }
 
-.hov-anim-box .animated {
-display: none
+.tabBtn.on
+{
+    background-color: var(--color-point);
+    color:var(--color-text);
 }
 
-.hov-anim-box:hover .animated {
-display: inline
+.tabContents.on
+{
+    display: flex;
 }
 
-.hov-anim-box:hover .static {
-display: none
+.tabContents img
+{
+    width: 300px;
+    height: 300px;
+}
+
+.hov-anim-box .animated
+{
+    display: none
+}
+
+.hov-anim-box:hover .animated
+{
+    display: inline
+}
+
+.hov-anim-box:hover .static
+{
+    display: none
 }
