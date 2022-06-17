@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="../css/PointShop.css">
   <!-- JQ -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- JQ Swiper CDN -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <body>
   <!--네비게이션 시작-->
@@ -154,19 +158,46 @@
         <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
       </div>
 
+
+
       <div class="tab">
         <input class="tabBtn on"type="button" value="실시간 인기아이템">
         <input class="tabBtn"type="button" value="일간 인기아이템">
         <input class="tabBtn"type="button" value="주간 인기아이템">
       </div>
       <hr>
-      <div class="">
-        <div class="tabContents on">
+      <div class="swiper-pagination pagination_bullet pageContainer"></div>
+      <div class="tabContents on">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-img" src="../img/pointshop.gif">1
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="../img/pointshop.gif">2
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="../img/pointshop.gif">3
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="../img/pointshop.gif">4
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="swiper tabContents on">
           <span class="hov-anim-box">
-            <img src="../img/pointshop.png" alt="" class="static">
-            <img src="../img/pointshop.gif" alt="" class="animated">
+            <img src="../img/pointshop.png" alt="" class="swiper-slide static">
+            <img src="../img/pointshop.gif" alt="" class="swiper-slide animated">
+          </span>
+          <span class="hov-anim-box">
+            <img src="../img/pointshop.png" alt="" class="swiper-slide static">
+            <img src="../img/pointshop.gif" alt="" class="swiper-slide animated">
           </span>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
         <div class="tabContents">
           2
         </div>
@@ -174,14 +205,7 @@
           3
         </div>
 
-      </div>
-      <div class="pageContainer">
-        <button class="page">1</button>
-        <button class="page">2</button>
-        <button class="page">3</button>
-        <button class="page">4</button>
-        <button class="page">5</button>
-      </div>
+      </div> -->
     </div>
   </section>
 </body>

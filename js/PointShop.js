@@ -6,4 +6,7 @@ $(document).ready(function() {
     $('.tabContents').removeClass('on');
     $('.tabContents').eq(idx).addClass('on');
   })
+  
+
+
 }); 

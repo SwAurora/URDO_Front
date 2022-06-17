@@ -34,7 +34,7 @@ function GoHome()
 
 function MiniHomePage()
 {
-    location.href = "https://www.naver.com";
+    location.href = "/mini/index.html";
 }
 
 function PointShop()
