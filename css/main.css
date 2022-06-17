@@ -204,6 +204,8 @@ caption {
     line-height: 30px;
     font-size: var(--font-L);
     cursor: pointer;
+    user-select: none;
+    
 }
 
 /* 현재 메뉴 알려주기 */
@@ -225,7 +227,10 @@ caption {
     width: 25px; height: 25px;
     border-radius: 5px;
     margin-left: -4px;  
-    cursor: pointer;    
+    cursor: pointer;
+    user-select: none;
+    
+       
 }
 
 /* 테이블 구간 */
@@ -304,17 +309,27 @@ caption {
 }
 
 #pointshop-table table {
-    border-collapse: separate;
-    border-spacing: 10px 10px;   
+    /* border-collapse: separate; */
+    /* border-spacing: 20px 10px; */
+    margin: 0 auto;
 }
+
 
 #pointshop-table img {
     height: 50px;
     width: 50px;           
 }
 
+#pointshop-table td {
+    /* border: 1px solid springgreen; */
+    padding: 5px 15px;
+}
+
 #pointshop-table label {
-    margin-top: -35px;
+    font-size: var(--font-S);
+    display: inline-block;
+
+    /* border: 1px solid black; */
 }
 
 
@@ -330,3 +345,4 @@ caption {
 #pointshop-table .item {
     display: table;
 }
+
