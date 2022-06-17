@@ -61,14 +61,6 @@ hr
     border-color: lightgray;
 }
 
-.tabContents
-{
-    border: 1px solid red;
-    height: calc(100vh - 300px);
-    overflow-y: scroll;
-    display: none;
-}
-
 .pageContainer
 {
     border: 1px solid red;
@@ -91,10 +83,23 @@ hr
     background-color: var(--color-point);
     color:var(--color-text);
 }
+.tabBtn.on:hover {
+    background-color: var(--color-pointhover);
+}
+
+.tabContents
+{
+    border: 1px solid red;
+    height: calc(100vh - 300px);
+    width:calc(100vh - 320px);
+    overflow-x:scroll;
+    overflow-y: scroll;
+    display: none;
+}
 
 .tabContents.on
 {
-    display: flex;
+    display: grid;
 }
 
 .tabContents img
@@ -110,10 +115,11 @@ hr
 
 .hov-anim-box:hover .animated
 {
-    display: inline
+    display: inline;
 }
 
 .hov-anim-box:hover .static
 {
-    display: none
+    display: none;
 }
+
