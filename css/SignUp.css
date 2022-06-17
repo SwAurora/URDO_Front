@@ -203,23 +203,23 @@ a
 
 .clearfix
 {
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 #joinForm
 {
     width: 400px;
     height: 600px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 ul.join_box
 {
     border: 1px solid #ddd;
     background-color: var(--color-white);
-    width:400px;
-    height:500px;
-    padding-left:0;
+    width: 400px;
+    height: 500px;
+    padding-left: 0;
     text-align: left;
 }
 
@@ -261,6 +261,6 @@ ul.join_box
     border: none;
     resize: none;
     font-size: var(--font-S);
-    padding-left:10px;
+    padding-left: 10px;
 }
 
