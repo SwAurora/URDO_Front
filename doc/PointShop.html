@@ -13,10 +13,6 @@
   <link rel="stylesheet" href="../css/PointShop.css">
   <!-- JQ -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <!-- JQ Swiper CDN -->
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <body>
   <!--네비게이션 시작-->
@@ -146,68 +142,124 @@
     </button>
   </nav>
 
-  <section class="Main">
-    <div class="container">
-      <div id="container_Title">
-        포인트상점 > 유알콘
-      </div>
-      <div id="search">
-        <div>포인트상점</div>
-        <div>|</div>
-        <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
-        <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
-      </div>
+<section class="Main">
+  <div class="container"> <!-- 컨테이너 시작-->
+    <div id="container_Title">
+      포인트상점 > 유알콘
+    </div>
+    <div id="search">
+      <div>포인트상점</div>
+      <div>|</div>
+      <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
+      <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
+    </div>
 
 
-
-      <div class="tab">
-        <input class="tabBtn on"type="button" value="실시간 인기아이템">
+    <!-- 탭버튼 시작 -->
+    <div class="tabBtn_Wrapper">
+      <input class="tabBtn on"type="button" value="실시간 인기아이템">
         <input class="tabBtn"type="button" value="일간 인기아이템">
         <input class="tabBtn"type="button" value="주간 인기아이템">
-      </div>
-      <hr>
-      <div class="swiper-pagination pagination_bullet pageContainer"></div>
-      <div class="tabContents on">
-        <div class="swiper-container gallery-top">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="swiper-img" src="../img/pointshop.gif">1
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-img" src="../img/pointshop.gif">2
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-img" src="../img/pointshop.gif">3
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-img" src="../img/pointshop.gif">4
-            </div>
-          </div>
-        </div>
-
-
-        <!-- <div class="swiper tabContents on">
-          <span class="hov-anim-box">
-            <img src="../img/pointshop.png" alt="" class="swiper-slide static">
-            <img src="../img/pointshop.gif" alt="" class="swiper-slide animated">
-          </span>
-          <span class="hov-anim-box">
-            <img src="../img/pointshop.png" alt="" class="swiper-slide static">
-            <img src="../img/pointshop.gif" alt="" class="swiper-slide animated">
-          </span>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-pagination"></div>
-        <div class="tabContents">
-          2
-        </div>
-        <div class="tabContents">
-          3
-        </div>
-
-      </div> -->
     </div>
-  </section>
+    <!-- 탭버튼 끝 -->
+
+    <!-- 탭컨텐츠 시작 -->
+    <div class="tabContents on"> 
+      <div class="pageContents on"> <!--1페이지 시작-->
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+      </div><!--1페이지 끝-->
+
+      <div class="pageContents"> <!--2페이지 시작-->
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+      </div><!--2페이지 끝-->
+
+      <div class="pageContents"> <!--3페이지 시작-->
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+        <span class="hov-anim-box">
+          <img src="../img/pointshop.png" alt="" class="static">
+          <img src="../img/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">하잉!</p>
+            <p class="imgDesc">내용입니다!</p>
+          </div>
+        </span>
+      </div><!--3페이지 끝-->
+
+    </div>
+    <div class="tabContents">
+      2
+    </div>
+    <div class="tabContents">
+      3
+    </div>
+    <!-- 탭컨텐츠 끝 -->
+
+  </div> <!-- 컨테이너 끝 -->
+  <!-- 페이지네이션 시작 -->
+  <div class="page_wrap">
+    <img class="arrow prev menuIcon" src="../img/page-arrow-back.svg"></img>
+    <div class="page_nation">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+    </div>
+    <img class="arrow prev menuIcon" src="../img/page-arrow-forward.svg"></img>
+  </div>
+
+</section>
 </body>
 </html>
 

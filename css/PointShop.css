@@ -61,27 +61,23 @@ hr
     border-color: lightgray;
 }
 
-.pageContainer
-{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-}
-
-.pageContainer button
-{
-    margin: 5px;
-}
 
 .tabBtn
 {
+    margin : 30px 0px;
     color:var(--color-text);
+    border:none;
+    border-radius: 5px;
+    width: 160px; height:50px;
+    background-color:var(--color-whiteToBlack);
+    font-size:var(--font-L);
+    font-weight:var(--font-weight-regular);
 }
 
 .tabBtn.on
 {
     background-color: var(--color-point);
-    color:var(--color-text);
+    color:var(--color-white);
 }
 .tabBtn.on:hover {
     background-color: var(--color-pointhover);
@@ -91,35 +87,99 @@ hr
 {
     border: 1px solid red;
     height: calc(100vh - 300px);
-    width:calc(100vh - 320px);
-    overflow-x:scroll;
-    overflow-y: scroll;
+    width: calc(100% - 20px);
+    overflow-x:hidden;
+    overflow-y: auto;
     display: none;
 }
 
 .tabContents.on
 {
-    display: grid;
+    display: flex;
+    
+
 }
 
-.tabContents img
-{
-    width: 300px;
-    height: 300px;
+
+
+.hov-anim-box img {
+    width:200px; height:200px;
 }
 
-.hov-anim-box .animated
-{
-    display: none
+.hov-anim-box .imgTitle {
+    font-size:var(--font-M);
+    margin:0px;
+}
+.hov-anim-box .imgDesc {
+    font-size:var(--font-S);
+    margin:0px;
 }
 
+
+/* gif 호버 애니메이션 설정 */
+.hov-anim-box .animated {
+    display:none;
+}
 .hov-anim-box:hover .animated
 {
-    display: inline;
+    display: flex;
 }
-
 .hov-anim-box:hover .static
 {
     display: none;
 }
+/* gif 호버 애니메이션 끝 */
 
+
+/* 페이지네이션 시작 */
+.page_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page_nation .none {
+    display: none;
+}
+
+.page_nation a {
+    margin: 3px;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid var(--color-darkbtn);
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: var(--color-whiteToBlack);
+    font-size: var(--font-L);
+    color: #999999;
+    text-decoration: none;
+}
+
+.page_wrap img {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+
+
+
+.page_nation a.active {
+    background-color: #42454c;
+    color: #fff;
+    border: 1px solid #42454c;
+}
+/* 페이지네이션 끝 */
+
+
+.pageContents {
+    display:none;
+}
+.pageContents.on {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    gap:20px;
+}
