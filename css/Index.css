@@ -12,6 +12,7 @@
     /* ====== font-weight ====== */
     --font-weight-bold: bold;
     --font-weight-regular: normal;
+    --font-weight-light: 100;
 
     /* ====== Color ====== */
     --color-body: #F8F9FA;
@@ -24,9 +25,16 @@
     --color-text: #202225;
     --color-sidebarBorder: lightgray;
     --color-white: white;
-
+    --color-black: black;
+    --color-placeholder: gray;
     /* =====Left-margin==== */
     --margin-normal: 22px;
+}
+
+::selection
+{
+    background-color:var(--color-point);
+    color: var(--color-white);
 }
 
 *
@@ -50,6 +58,7 @@ body.dark
     --color-sidebarBorder: #36393F;
     --color-darkbtn: #42464D;
     --color-text: #DCDDDE;
+    --color-placeholder: #DCDDDE;
 }
 
 /* ======== 네비게이션 ======== */
