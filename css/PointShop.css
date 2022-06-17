@@ -85,7 +85,6 @@ hr
 
 .tabContents
 {
-    border: 1px solid red;
     height: calc(100vh - 300px);
     width: calc(100% - 20px);
     overflow-x:hidden;

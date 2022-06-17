@@ -17,6 +17,11 @@ $(document).ready(function () {
     $('.pageContents').eq(idx2).addClass('on');
   })
 
+  $('.page_arrow').on('click', function() {
+    idx3=$('on').index();
+    alert(idx3);
+  })
+
 });
 
 
