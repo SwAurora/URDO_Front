@@ -1,12 +1,23 @@
-$(document).ready(function() {
-  $('.tabBtn').on('click',function() {
+$(document).ready(function () {
+  $('.tabBtn').on('click', function () {
     idx = $(this).index();
     $('.tabBtn').removeClass('on');
     $('.tabBtn').eq(idx).addClass('on');
     $('.tabContents').removeClass('on');
     $('.tabContents').eq(idx).addClass('on');
   })
-  
 
 
-}); 
+  $('.page_num').on('click', function() {
+    idx2 = $(this).index();
+    alert(idx2);
+    $('.page_num').removeClass('on');
+    $('.page_num').eq(idx2).addClass('on');
+  })
+
+});
+
+
+
+
+
