@@ -24,6 +24,7 @@
     --color-text: #202225;
     --color-sidebarBorder: lightgray;
     --color-white: white;
+
     /* =====Left-margin==== */
     --margin-normal: 22px;
 }
@@ -46,7 +47,7 @@ body.dark
     --color-body: #36393F;
     --color-logoname: white;
     --color-sidebar: #2F3135;
-    --color-sidebarBorder: #2F3135;
+    --color-sidebarBorder: #36393F;
     --color-darkbtn: #42464D;
     --color-text: #DCDDDE;
 }
