@@ -7,8 +7,8 @@
     width: 1000px;
     height: 670px;
     margin: 2% auto;
-    border: 1px solid var(--color-point);
-    border-radius: 32px;
+    border:2px solid var(--color-blackToWhite);
+    border-radius: 16px;
 }
 
 /* 아이디 비번 치는 공간 */
@@ -45,7 +45,7 @@
     transition: 0.5s;
 }
 
-.inputBox input:valid ~ span,
+.inputBox input:not(:placeholder-shown) ~ span,
 .inputBox input:focus ~ span
 {
     color: var(--color-point);
@@ -53,47 +53,35 @@
     font-size: 0.65em;
     padding: 0 10px;
     background: var(--color-white);
-    border-left: 1px solid var(--color-point);
-    border-right: 1px solid var(--color-point);
     letter-spacing: 0.2em;
 }
 
-.inputBox:nth-child(1) input:valid ~ span,
-.inputBox:nth-child(1) input:focus ~ span
+.inputBox input:not(:placeholder-shown) ~ span,
+.inputBox input:focus ~ span
 {
     background: var(--color-point);
     color: var(--color-white);
     border-radius: 2px;
 }
 
-.inputBox:nth-child(2) input:valid ~ span,
-.inputBox:nth-child(2) input:focus ~ span
+.inputBox input:invalid:not(:placeholder-shown) ~ span
 {
-    background: var(--color-point);
-    color: var(--color-white);
-    border-radius: 2px;
+    background-color: var(--color-warning);
 }
 
-.inputBox:nth-child(3) input:valid ~ span,
-.inputBox:nth-child(3) input:focus ~ span
-{
-    background: var(--color-point);
-    color: var(--color-white);
-    border-radius: 2px;
-}
-
-.inputBox:nth-child(4) input:valid ~ span,
-.inputBox:nth-child(4) input:focus ~ span
-{
-    background: var(--color-point);
-    color: var(--color-white);
-    border-radius: 2px;
-}
-
-.inputBox input:valid,
-.inputBox input:focus
+.inputBox input:valid
 {
     border: 2px solid var(--color-point);
+}
+
+.inputBox input:invalid
+{
+    border: 2px solid var(--color-warning);
+}
+
+.inputBox input:placeholder-shown
+{
+    border: 2px solid black;
 }
 
 /* 로그인 버튼 공간 */
@@ -216,7 +204,7 @@ a
 ul.join_box
 {
     border: 1px solid #ddd;
-    background-color: var(--color-white);
+    background-color: var(--color-terms);
     width: 400px;
     height: 500px;
     padding-left: 0;
@@ -240,7 +228,7 @@ ul.join_box
     width: 85%;
     /* padding: 15px; */
     font-weight: 600;
-    color: #888;
+    color: var(--color-termsText);
 }
 
 .checkBox > ul > li:nth-child(2)
@@ -256,7 +244,7 @@ ul.join_box
 {
     width: 96%;
     height: 90px;
-    background-color: #f7f7f7;
+    background-color: var(--color-termsTextarea);
     color: #888;
     border: none;
     resize: none;
