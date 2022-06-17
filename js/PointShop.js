@@ -8,8 +8,11 @@ $(document).ready(function () {
   })
 
 
-  $('.page_nation').on('click', function() {
-    alert("실행!");
+  $('.page_num').on('click', function() {
+    idx2 = $(this).index();
+    alert(idx2);
+    $('.page_num').removeClass('on');
+    $('.page_num').eq(idx2).addClass('on');
   })
 
 });
