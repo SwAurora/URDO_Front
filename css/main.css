@@ -1,0 +1,332 @@
+ul {
+    list-style: none;
+    padding: 0px;
+}
+a {text-decoration: none;}
+
+
+
+#container_Title
+{
+    margin-top: 10px;
+    font-size: var(--font-L);
+}
+
+#search
+{
+    font-size: var(--font-XL);
+    margin-top: 28.5px;
+    display: flex;
+    align-items: center;
+}
+
+#search div
+{
+    margin-right: 40px;
+}
+
+.searchBarIcon
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.searchBar
+{
+    width: 300px;
+    height: 30px;
+    font-size: var(--font-XL);
+    font-weight: var(--font-weight-light);
+    background: none;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+}
+
+.searchBar::placeholder
+{
+    color:var(--color-placeholder);
+}
+
+
+
+/* 공지사항 */
+
+#notice {
+    width: 96%;
+    height: 35px;  
+    border: 1px solid var(--color-lightgray);
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    user-select: none;
+}
+#notice>div {
+    display: flex;  
+}
+
+#notice ul {
+    display: flex;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px;
+}
+
+#notice-left {
+    width: 110px;
+}
+
+#notice img {
+    margin: 8px 8px 0px 10px;
+}
+
+/* 포인트 부분 */
+#notice-A { 
+    background-color: var(--color-point);
+    width: 100px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+
+/* 중앙(베스트유머, 배너) */
+
+#contents-top {
+    height: auto;
+    display: flex;
+    margin-top: 30px; 
+}
+
+/* 베스트 유머 */
+
+caption {
+    text-align: left;
+    font-size: var(--font-XL);
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--color-lightgray);
+}
+
+#best-humour { 
+    width: 70%;
+    font-size: var(--font-L);
+}
+
+#best-humour table {
+    width: 100%;
+    text-align: center;
+    
+}
+
+#best-humour img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 배너(스와이프) */
+
+#banner {
+    margin-left: 5%;
+}
+
+.banner {
+    width: 300px;
+    height: 300px;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+}
+    /* 버튼 */
+.swiper-button-prev , .swiper-button-next {
+    color: var(--color-point);
+}
+
+
+
+
+/* 하단 */
+
+#contents-bottom {
+    display: flex;         
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+/* 실시간 테이블 */
+
+#realTimeBoard {
+    width: 70%;
+}
+
+#realTimeBoard h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-lightgray);
+
+}
+
+/* 실시간 유머, 실시간 뉴스 구간의 메뉴 */
+
+#tabUI { 
+    display: flex;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#tabUI span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#Board-menu {
+    display: flex;
+    height: 40px;
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#Board-menu li {
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    font-size: var(--font-L);
+    cursor: pointer;
+}
+
+/* 현재 메뉴 알려주기 */
+#Board-menu .change-borad {
+    background-color: var(--color-point);
+    border-radius: 30px;
+    color: white;
+}
+
+/* 실시간 유머, 실시간 뉴스 구간의 버튼 */
+#buttonbox {
+    width: 10%;
+}
+
+#buttonbox button {
+    border: 0px;
+    background-color: var(--color-point);
+    color: white;
+    width: 25px; height: 25px;
+    border-radius: 5px;
+    margin-left: -4px;  
+    cursor: pointer;    
+}
+
+/* 테이블 구간 */
+#Board-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;           
+}
+
+
+#Board-table tr {
+    font-size: var(--font-M);
+}
+
+
+#Board-table td {
+    border-top: 1px solid var(--color-lightgray);
+    border-bottom: 1px solid var(--color-lightgray);
+    padding: 13px 0px;            
+}
+
+/*제목 가로 길이 늘려줌*/
+.name { 
+    width: 50%;
+}
+
+/* 테이블 변경용 */
+#Board-table>table {
+    display: none;
+    text-align: center;
+}
+
+#Board-table .change-borad {
+    display: table;
+    
+}
+
+
+/* 포인트샵 */
+
+#pointshop {
+    width: auto;
+    margin-left: 50px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#pointshop h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-lightgray);
+}
+
+
+#pointshop ul {
+    display: flex;        
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+
+}
+
+#pointshop li {
+    width: 70px;
+}
+
+#pointshop-table {
+
+    width: 350px;
+    height: auto;
+    margin-top: 10px ;
+}
+
+#pointshop-table table {
+    border-collapse: separate;
+    border-spacing: 10px 10px;   
+}
+
+#pointshop-table img {
+    height: 50px;
+    width: 50px;           
+}
+
+#pointshop-table label {
+    margin-top: -35px;
+}
+
+
+#pointshop>ul .item {
+    color: var(--color-point);
+    font-weight: 800;
+}
+
+#pointshop-table>table {
+    display: none;
+}
+
+#pointshop-table .item {
+    display: table;
+}
