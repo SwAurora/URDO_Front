@@ -28,14 +28,18 @@
     --color-black: black;
     --color-placeholder: gray;
     --color-whiteToBlack: white;
-    --color-blackToWhite:black;
+    --color-blackToWhite: black;
+    --color-warning: #FF6369;
+    --color-terms: white;
+    --color-termsText: #888;
+    --color-termsTextarea: #F7F7F7;
     /* =====Left-margin==== */
     --margin-normal: 22px;
 }
 
 ::selection
 {
-    background-color:var(--color-point);
+    background-color: var(--color-point);
     color: var(--color-white);
 }
 
@@ -63,6 +67,9 @@ body.dark
     --color-placeholder: #DCDDDE;
     --color-whiteToBlack: #202225;
     --color-blackToWhite: white;
+    --color-terms: #2F3135;
+    --color-termsText: #DCDDDE;
+    --color-termsTextarea : #42464D;
 }
 
 /* ======== 네비게이션 ======== */
