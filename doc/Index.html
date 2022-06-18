@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URDO</title>
     <link href="../img/logo.png" rel="shortcut icon" type="image/png">
@@ -16,14 +16,15 @@
     <!--헤더 시작-->
     <header>
         <!--로고-->
-        <img src="../img/logo.png" alt="LOGO" id="logo" onclick="GoHome()" class="menuIcon">
+        <img src="../img/logo.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
         <div id="logo-name">
             <span class="head-span1">URDO</span>
             <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
         </div>
         <div>
             <button id="arrow" onclick="moving_sidebar()">
-                <img src="../img/header-arrow.svg" alt="leftArrow">
+                <img src="../img/arrowLeft_icon.svg" alt="leftArrow" class="menuIcon"> 
+                <!-- 아이콘바꿨음 -->
             </button>
         </div>
     </header>
@@ -37,25 +38,25 @@
                 <col id="Quick_col3">
             </colgroup>
             <tr onclick="MiniHomePage()">
-                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navIcon"></td>
+                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon" ></td>
             </tr>
             <tr onclick="PointShop()">
-                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navIcon"></td>
+                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
                 <td><span>포인트샵</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="MyPage()">
-                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navIcon"></td>
+                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
                 <td><span>마이 페이지</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
         </table>
         <div class="darkMode">
             <div class="sunMoon">
-                <img src="../img/header-moon.svg" alt="#" class="Moon">
-                <img src="../img/header-sun.svg" alt="#" class="Sun">
+                <img src="../img/header-moon.svg" alt="#" class="Moon navIcon">
+                <img src="../img/header-sun.svg" alt="#" class="Sun navIcon">
             </div>
             <span class="darkMode-text">다크 모드</span>
             <div class="toggle-switch">
@@ -132,10 +133,12 @@
         </ul>
     </div>
     <!--로그인/로그아웃 버튼-->
-    <button onclick="Login()" class="btn">
-        <img src="../img/login-unlock.svg" alt="login" class="navIcon">
-        <span>로그인</span>
-    </button>
+    <div id="loginWrap">
+        <button onclick="Login()" class="btn">
+            <img src="../img/login-unlock.svg" alt="login" class="navIcon">
+            <span>로그인</span>
+        </button>
+    </div>
 </nav>
 
 <section class="Main">

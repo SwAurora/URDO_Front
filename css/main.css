@@ -53,8 +53,9 @@ a {text-decoration: none;}
 /* 공지사항 */
 
 #notice {
-    width: 96%;
-    height: 35px;  
+    width: 97%;
+    /* 이부분 수정해서 맞췄음. 배너 margin-right:3%라서 딱맞음 */
+    height: 30px;
     border: 1px solid var(--color-lightgray);
     border-radius: 10px;
     font-size: 15px;
@@ -68,22 +69,27 @@ a {text-decoration: none;}
 #notice ul {
     display: flex;
     height: 35px;
-    line-height: 35px;
+    line-height: 30px;
     margin: 0px;
 }
 
 #notice-left {
     width: 110px;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items:center; */
 }
 
 #notice img {
-    margin: 8px 8px 0px 10px;
+    width:20px;
+    margin:5px;
 }
 
 /* 포인트 부분 */
 #notice-A { 
     background-color: var(--color-point);
     width: 100px;
+    height:30px;
     margin: 0px 10px;
     border-radius: 20px;
     text-align: center;
@@ -117,8 +123,13 @@ caption {
 
 #best-humour table {
     width: 100%;
-    text-align: center;
-    
+}
+.best-humor-row2 td {
+    font-size:var(--font-M);
+}
+.best-humor-row3 td{
+    font-size:var(--font-S);
+    height:14px;
 }
 
 #best-humour img {
@@ -130,7 +141,7 @@ caption {
 /* 배너(스와이프) */
 
 #banner {
-    margin-left: 5%;
+    margin: 0px 3%;
 }
 
 .banner {
@@ -166,10 +177,10 @@ caption {
     width: 70%;
 }
 
-#realTimeBoard h2 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 500;
+.mainTitle {
+    text-align:left;
+    font-size: var(--font-XL);
+    font-weight:var(--font-weight-regular);
     margin-bottom: 5px;
     padding-bottom: 6px;
     width: 100%;
@@ -217,7 +228,7 @@ caption {
 
 /* 실시간 유머, 실시간 뉴스 구간의 버튼 */
 #buttonbox {
-    width: 10%;
+    width: 20%;
 }
 
 #buttonbox button {
@@ -229,8 +240,11 @@ caption {
     margin-left: -4px;  
     cursor: pointer;
     user-select: none;
-    
-       
+    margin:1px;
+    font-size:var(--font-S);
+    padding:0px;
+    text-align:center;
+    line-height:25px;
 }
 
 /* 테이블 구간 */
@@ -249,7 +263,8 @@ caption {
 #Board-table td {
     border-top: 1px solid var(--color-lightgray);
     border-bottom: 1px solid var(--color-lightgray);
-    padding: 13px 0px;            
+    /* padding: 13px 0px; */
+    height:40px;       
 }
 
 /*제목 가로 길이 늘려줌*/
@@ -274,19 +289,13 @@ caption {
 #pointshop {
     width: auto;
     margin-left: 50px;
+    margin-right:3%;
+    /* 끝단을 맞추기위해서 3% */
     font-size: 14px;
     text-align: center;
 }
 
-#pointshop h2 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    padding-bottom: 3px;
-    width: 100%;
-    border-bottom: 1px solid var(--color-lightgray);
-}
+
 
 
 #pointshop ul {
@@ -322,7 +331,7 @@ caption {
 
 #pointshop-table td {
     /* border: 1px solid springgreen; */
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
 }
 
 #pointshop-table label {
@@ -345,11 +354,3 @@ caption {
 #pointshop-table .item {
     display: table;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4409aae92cbd34952be3acdc7904b520e4523d31
-=======
-
->>>>>>> 1997c9f6814850e5f1370285759afe400de3d038

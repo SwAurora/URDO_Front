@@ -34,7 +34,8 @@
     --color-termsText: #888;
     --color-termsTextarea: #F7F7F7;
     /* =====Left-margin==== */
-    --margin-normal: 22px;
+    --margin-normal: 20px;
+    /* 마진 노말바꿨음 */
 }
 
 ::selection
@@ -91,17 +92,25 @@ body.dark
     transition: transform 0.8s ease;
 }
 
-/* 네비게이션 아이콘 */
-.navIcon
+/* 네비 헤더 아이콘 */
+.navHIcon {
+    width:24px;
+    height:24px;
+}
+
+
+/* 네비 카테고리 아이콘 */
+.navIcon, .linkIcon
 {
     width: 20px;
     height: 20px;
 }
-
-.menuIcon
-{
-
+.linkIcon {
+    filter :brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(5%) hue-rotate(192deg) brightness(50%) contrast(90%);
 }
+
+
+
 
 /* ======== 네비게이션 ======== */
 
@@ -109,9 +118,10 @@ body.dark
 /* 로고 */
 #logo
 {
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
+    margin:2px;
 }
 
 #arrow
@@ -137,24 +147,24 @@ body.dark
 
 #arrow img
 {
-    width: 25px;
-    height: 25px;
-    border: 1px
+    width:24px;
 }
 
 header
 {
+
     display: flex;
-    justify-content: center;
     margin-top: 34px;
+    margin-left:var(--margin-normal);
+    
 }
 
 header #logo-name
 {
     display: flex;
     flex-direction: column;
-    line-height: 20px;
-    margin-left: 11px;
+    line-height: 18px;
+    margin-left: 8px;
     padding: 2px;
     color: var(--color-text);
 }
@@ -197,7 +207,7 @@ header .head-span2
 
 #Quick_col2
 {
-    width: 135px;
+    width: 140px;
 }
 
 #Quick_menu td
@@ -400,6 +410,10 @@ body.dark .switch::before
 /* ======== 다크 모드 ======== */
 
 /* ======== 로그인 버튼 ======== */
+#loginWrap {
+    display:flex;
+    justify-content: center;
+}
 .btn
 {
     position: fixed;
@@ -407,9 +421,9 @@ body.dark .switch::before
     background-color: var(--color-point);
     color: var(--color-white);
     width: 200px;
-    height: 50px;
+    height: 46px;
     border: none;
-    margin-left: var(--margin-normal);
+    /* margin-left: var(--margin-normal); */
     border-radius: 9px;
     display: flex;
     justify-content: center;
