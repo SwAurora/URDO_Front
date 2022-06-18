@@ -29,7 +29,7 @@
     <!--헤더 시작-->
     <header>
         <!--로고-->
-        <img src="../img/logo.png" alt="LOGO" id="logo" onclick="GoHome()">
+        <img src="../img/logo.svg" alt="LOGO" id="logo" onclick="GoHome()">
         <div id="logo-name">
             <span class="head-span1">URDO</span>
             <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
@@ -145,10 +145,12 @@
         </ul>
     </div>
     <!--로그인/로그아웃 버튼-->
-    <button onclick="Login()" class="btn">
-        <img src="../img/login-unlock.svg" alt="login" class="navIcon">
-        <span>로그인</span>
-    </button>
+    <div id="loginWrap">
+        <button onclick="Login()" class="btn">
+            <img src="../img/login-unlock.svg" alt="login" class="navIcon">
+            <span>로그인</span>
+        </button>
+    </div>
 </nav>
 
 
@@ -188,7 +190,7 @@
             <!-- 베스트 유머 게시판 -->
             <div id="best-humour">                         
                 <table>
-                    <caption>베스트 유머</caption>
+                    <caption class="mainTitle">베스트 유머</caption>
                     <tr>
                         <td> <img src="" width="100px" height="100px"> </td>
                         <td> <img src="" width="100px" height="100px"> </td>
@@ -197,7 +199,7 @@
                         <td> <img src="" width="100px" height="100px"> </td>
                         <td> <img src="" width="100px" height="100px"> </td>
                     </tr>
-                    <tr>
+                    <tr class="best-humor-row2">
                         <td>제목</td>
                         <td>제목</td>
                         <td>제목</td>
@@ -205,7 +207,7 @@
                         <td>제목</td>
                         <td>제목</td>
                     </tr>
-                    <tr>
+                    <tr class="best-humor-row3">
                         <td>소제목</td>
                         <td>소제목</td>
                         <td>소제목</td>
@@ -236,7 +238,7 @@
         <div id="contents-bottom">
               <!-- 실시간 유머 등 게시판 -->
               <div id="realTimeBoard">
-                    <h2> 실시간 </h2>
+                    <h2 class="mainTitle"> 실시간 </h2>
 
                     <div id="tabUI">
                         <ul id="Board-menu">
@@ -340,7 +342,7 @@
 
             <!-- 포인트샵 -->
             <div id="pointshop">               
-                    <h2>포인트샵</h2>
+                    <h2 class="mainTitle">포인트샵</h2>
                     <ul>
                         <li class="item">아이템1</li>
                         <li>아이템2</li>
