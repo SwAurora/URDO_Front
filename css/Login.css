@@ -34,7 +34,7 @@ a
 {
     position: relative;
     width: 250px;
-    color:var(--color-blackToWhite);
+    color: var(--color-blackToWhite);
 }
 
 .inputBox input
@@ -47,7 +47,7 @@ a
     outline: none;
     font-size: 1em;
     transition: 0.5s;
-    color:var(--color-blackToWhite);
+    color: var(--color-blackToWhite);
 }
 
 .inputBox span
@@ -79,7 +79,7 @@ a
 .inputBox:nth-child(1) input:focus ~ span
 {
     background: var(--color-point);
-    color:#FFF;
+    color: #FFF;
     border-radius: 2px;
 }
 
@@ -87,7 +87,7 @@ a
 .inputBox:nth-child(2) input:focus ~ span
 {
     background: var(--color-point);
-    color:#FFF;
+    color: #FFF;
     border-radius: 2px;
 }
 
@@ -215,4 +215,17 @@ a
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+}
+
+#toggle
+{
+    position: absolute;
+    top: 9px;
+    left: 235px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/loginEye.svg);
+    background-size: cover;
+    cursor: pointer;
+    user-select: none;
 }
