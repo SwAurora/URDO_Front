@@ -93,7 +93,7 @@ a
 }
 
 /* 포인트 부분 */
-#notice-A
+.notice-A
 {
     background-color: var(--color-point);
     width: 100px;
@@ -371,8 +371,7 @@ caption
 {
     font-size: var(--font-S);
     display: inline-block;
-
-    /* border: 1px solid black; */
+    width: 100%;
 }
 
 #pointshop > ul .item
