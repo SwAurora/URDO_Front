@@ -34,6 +34,7 @@ function GoHome()
 
 function MiniHomePage()
 {
+
     location.href = "../doc/mini_index.html";
 }
 
