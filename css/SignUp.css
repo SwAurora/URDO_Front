@@ -7,7 +7,7 @@
     width: 1000px;
     height: 670px;
     margin: 2% auto;
-    border:2px solid var(--color-blackToWhite);
+    border: 2px solid var(--color-blackToWhite);
     border-radius: 16px;
 }
 
@@ -28,7 +28,6 @@
     outline: none;
     color: var(--color-blackToWhite);
     font-size: 1em;
-    transition: 0.5s;
     background-color: var(--color-whiteToBlack);
 }
 
@@ -95,7 +94,7 @@
     font-size: 1.5em;
     letter-spacing: 0.1em;
     padding: 10px 30px;
-    transition: 0.5s;
+    transition: letter-spacing 0.5s;
     border-radius: 5px;
     display: block;
     margin-top: 100px;

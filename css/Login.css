@@ -46,7 +46,6 @@ a
     border-radius: 5px;
     outline: none;
     font-size: 1em;
-    transition: 0.5s;
     color: var(--color-blackToWhite);
 }
 

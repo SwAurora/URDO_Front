@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Gaegu:wght@300&family=Jua&display=swap');
 
-
-#bold-text {
+.bold-text
+{
     color: #71bfd6;
     font-family: 'Jua', sans-serif;
 }
 
-
-#TODAY {
+#TODAY
+{
     color: red;
 }
 
-
-.menu-box {
+.menu-box
+{
     color: white;
     font-family: 'Jua', sans-serif;
 }
 
-
-#basic-text {
+.basic-text
+{
     font-family: 'Gaegu', cursive;
     color: black;
 }
 
-#line_photo
+.line_photo
 {
     font-size: 16px;
     color: black;

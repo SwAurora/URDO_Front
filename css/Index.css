@@ -1,461 +1,392 @@
-/* Google-font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-
-:root
+ul
 {
-    /* ====== font-size ====== */
-    --font-XL: 18px;
-    --font-L: 15px;
-    --font-M: 14px;
-    --font-S: 12px;
-
-    /* ====== font-weight ====== */
-    --font-weight-bold: bold;
-    --font-weight-regular: normal;
-    --font-weight-light: 100;
-
-    /* ====== Color ====== */
-    --color-body: #F8F9FA;
-    --color-logoname: #424242;
-    --color-sidebar: #FFF;
-    --color-point: #5865F2;
-    --color-pointhover: #4752C4;
-    --color-darkbtn: #F1F1F1;
-    --color-lightgray: lightgray;
-    --color-text: #202225;
-    --color-sidebarBorder: lightgray;
-    --color-white: white;
-    --color-black: black;
-    --color-placeholder: gray;
-    --color-whiteToBlack: white;
-    --color-blackToWhite: black;
-    --color-warning: #FF6369;
-    --color-terms: white;
-    --color-termsText: #888;
-    --color-termsTextarea: #F7F7F7;
-    /* =====Left-margin==== */
-    --margin-normal: 20px;
-    /* 마진 노말바꿨음 */
+    list-style: none;
+    padding: 0px;
 }
 
-::selection
+a
 {
-    background-color: var(--color-point);
-    color: var(--color-white);
+    text-decoration: none;
 }
 
-*
+#container_Title
 {
-    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+    font-size: var(--font-L);
 }
 
-body
-{
-    margin-top: 0;
-    background-color: var(--color-body);
-    color: var(--color-text);
-    height: calc(100vh - 20px);
-}
-
-body.dark
-{
-    --color-body: #36393F;
-    --color-logoname: white;
-    --color-sidebar: #2F3135;
-    --color-sidebarBorder: #36393F;
-    --color-darkbtn: #42464D;
-    --color-text: #DCDDDE;
-    --color-placeholder: #DCDDDE;
-    --color-whiteToBlack: #202225;
-    --color-blackToWhite: white;
-    --color-terms: #2F3135;
-    --color-termsText: #DCDDDE;
-    --color-termsTextarea : #42464D;
-}
-
-/* ======== 네비게이션 ======== */
-
-/* 네비게이션 전체 */
-.nav-all
-{
-    display: block;
-    left: 0;
-    top: 0;
-    margin-left: 0;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    width: 250px;
-    color: var(--color-text);
-    background-color: var(--color-sidebar);
-    box-shadow: 2px 0 10px var(--color-sidebarBorder);
-    transition: transform 0.8s ease;
-}
-
-/* 네비 헤더 아이콘 */
-.navHIcon {
-    width:24px;
-    height:24px;
-}
-
-
-/* 네비 카테고리 아이콘 */
-.navIcon, .linkIcon
-{
-    width: 20px;
-    height: 20px;
-}
-.linkIcon {
-    filter :brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(5%) hue-rotate(192deg) brightness(50%) contrast(90%);
-}
-
-
-
-
-/* ======== 네비게이션 ======== */
-
-/* ======== header ======== */
-/* 로고 */
-#logo
-{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin:2px;
-}
-
-#arrow
-{
-    position: absolute;
-    left: 240px;
-    top: 40px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: var(--color-point);
-    border: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#arrow:hover
-{
-    background-color: var(--color-pointhover);
-}
-
-#arrow img
-{
-    width:34px;
-}
-
-header
-{
-
-    display: flex;
-    margin-top: 34px;
-    margin-left:var(--margin-normal);
-    
-}
-
-header #logo-name
-{
-    display: flex;
-    flex-direction: column;
-    line-height: 18px;
-    margin-left: 8px;
-    padding: 2px;
-    color: var(--color-text);
-}
-
-header .head-span1
+#search
 {
     font-size: var(--font-XL);
-    font-weight: var(--font-weight-bold);
-}
-
-header .head-span2
-{
-    font-size: var(--font-S);
-    font-weight: var(--font-weight-light);
-    width: 163px;
-}
-
-/* ======== header ======== */
-
-/* ======== Quick-Menu ======== */
-
-#Quick_menu
-{
-    margin-left: var(--margin-normal);
-    margin-bottom: 30px;
-    margin-top: 25px;
-    font-size: var(--font-M);
-    font-weight: var(--font-weight-bold);
-}
-
-#Quick_menu img
-{
-    display: flex;
-}
-
-#Quick_col1
-{
-    width: 40px;
-}
-
-#Quick_col2
-{
-    width: 140px;
-}
-
-#Quick_menu td
-{
-    height: 35px;
-    cursor: pointer;
-    user-select: none;
-}
-
-/* ======== Quick-Menu ======== */
-
-/* ======== Menu-bar ======== */
-
-#Menu_bar input[type='checkbox']
-{
-    display: none;
-}
-
-#Menu_bar
-{
-    user-select: none;
-    cursor: pointer;
-    font-size: var(--font-L);
-    font-weight: var(--font-weight-regular);
-    margin-left: var(--margin-normal);
-}
-
-#Menu_bar > span
-{
-    font-size: var(--font-M);
-    color: var(--color-text);
-}
-
-#Menu_bar label
-{
+    margin-top: 28.5px;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    height: 40px;
 }
 
-#Menu_bar .depth1
+#search div
 {
-    list-style: none;
-    padding-left: 0;
+    margin-right: 40px;
 }
 
-#Menu_bar .depth2
+.searchBarIcon
 {
-    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
 }
 
-#Menu_bar .plus_minus
+.searchBar
 {
-    font-size: var(--font-S);
+    width: 300px;
+    height: 30px;
+    font-size: var(--font-XL);
+    font-weight: var(--font-weight-light);
+    background: none;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
 }
 
-#Menu_bar img
+.searchBar::placeholder
 {
-    margin-left: 8px;
-    margin-right: 13px;
+    color: var(--color-placeholder);
 }
 
-.depth1
+/* 공지사항 */
+
+#notice
 {
+    width: 97%;
+    /* 이부분 수정해서 맞췄음. 배너 margin-right:3%라서 딱맞음 */
+    height: 30px;
+    border: 1px solid var(--color-lightgray);
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    user-select: none;
+}
+
+#notice > div
+{
+    display: flex;
+}
+
+#notice ul
+{
+    display: flex;
+    height: 35px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+#notice-left
+{
+    width: 110px;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items:center; */
+}
+
+#notice img
+{
+    width: 20px;
+    margin: 5px;
+}
+
+/* 포인트 부분 */
+#notice-A
+{
+    background-color: var(--color-point);
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+/* 중앙(베스트유머, 배너) */
+
+#contents-top
+{
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+/* 베스트 유머 */
+
+caption
+{
+    text-align: left;
+    font-size: var(--font-XL);
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--color-lightgray);
+}
+
+#best-humour
+{
+    width: 70%;
     font-size: var(--font-L);
 }
 
-.depth2
+#best-humour table
 {
-    display: none;
-    padding-left: 20px;
+    width: 100%;
 }
 
-.depth2 a
+.best-humor-row2 td
 {
-    margin-left: 30px;
-    color: var(--color-text);
-    text-decoration: none;
-    display: inline-block;
+    font-size: var(--font-M);
+}
+
+.best-humor-row3 td
+{
+    font-size: var(--font-S);
+    height: 14px;
+}
+
+#best-humour img
+{
+    width: 100%;
     height: 100%;
-    padding-left: 5px;
 }
 
-.depth2 li
+/* 배너(스와이프) */
+
+#banner
+{
+    margin: 0px 3%;
+}
+
+.banner
+{
+    width: 280px;
+    height: 280px;
+}
+
+.banner-slide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* 버튼 */
+.swiper-button-prev, .swiper-button-next
+{
+    color: var(--color-point);
+}
+
+/* 하단 */
+
+#contents-bottom
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* 실시간 테이블 */
+
+#realTimeBoard
+{
+    width: 70%;
+}
+
+.mainTitle
+{
+    text-align: left;
+    font-size: var(--font-XL);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-lightgray);
+
+}
+
+/* 실시간 유머, 실시간 뉴스 구간의 메뉴 */
+
+#tabUI
+{
+    display: flex;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#tabUI span
+{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#Board-menu
 {
     display: flex;
     height: 40px;
-    line-height: 40px;
-    width: 200px;
-    border-radius: 5px;
-    padding-left: 0;
-
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
 }
 
-#Menu_bar input[type='checkbox']:checked ~ .depth2
+#Board-menu li
 {
-    display: block;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    font-size: var(--font-L);
+    cursor: pointer;
+    user-select: none;
+
 }
 
-.depth2 li:hover
+/* 현재 메뉴 알려주기 */
+#Board-menu .change-borad
 {
     background-color: var(--color-point);
-}
-
-.depth2 li:hover a
-{
+    border-radius: 30px;
     color: white;
 }
 
-/* ======== Menu-bar ======== */
-
-/* ======== 다크 모드 ======== */
-
-.darkMode
+/* 실시간 유머, 실시간 뉴스 구간의 버튼 */
+#buttonbox
 {
-    position: relative;
-    left: -22px;
-    top: 23%;
-    display: flex;
-    align-items: center;
-    background-color: var(--color-darkbtn);
-    width: 250px;
-    height: 40px;
-    /* transition: background-color 0.3s ease; */
+    width: 20%;
 }
 
-.darkMode img
+#buttonbox button
 {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-}
-
-.sunMoon .Sun
-{
-    opacity: 0;
-}
-
-body.dark .Sun
-{
-    opacity: 1;
-}
-
-.sunMoon .Moon
-{
-    opacity: 1;
-}
-
-body.dark .Moon
-{
-    opacity: 0;
-}
-
-.darkMode-text
-{
-    position: absolute;
-    left: 67px;
-}
-
-.toggle-switch
-{
-    position: absolute;
-    left: 195px;
-    display: flex;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.toggle-switch .switch
-{
-    position: relative;
-    height: 22px;
-    width: 40px;
-    border-radius: 25px;
-    background-color: gray;
-    transition: all 0.3s ease;
-}
-
-.switch::before
-{
-    content: '';
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-    background-color: var(--color-sidebar);
-}
-
-body.dark .switch::before
-{
-    left: 20px;
-}
-
-/* ======== 다크 모드 ======== */
-
-/* ======== 로그인 버튼 ======== */
-#loginWrap {
-    display:flex;
-    justify-content: center;
-}
-.btn
-{
-    position: fixed;
-    top: 90%;
+    border: 0px;
     background-color: var(--color-point);
-    color: var(--color-white);
-    width: 200px;
-    height: 46px;
-    border: none;
-    /* margin-left: var(--margin-normal); */
-    border-radius: 9px;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: -4px;
+    cursor: pointer;
+    user-select: none;
+    margin: 1px;
+    font-size: var(--font-S);
+    padding: 0px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* 테이블 구간 */
+#Board-table table
+{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#Board-table tr
+{
+    font-size: var(--font-M);
+}
+
+#Board-table td
+{
+    border-top: 1px solid var(--color-lightgray);
+    border-bottom: 1px solid var(--color-lightgray);
+    /* padding: 13px 0px; */
+    height: 40px;
+}
+
+/*제목 가로 길이 늘려줌*/
+.name
+{
+    width: 50%;
+}
+
+/* 테이블 변경용 */
+#Board-table > table
+{
+    display: none;
+    text-align: center;
+}
+
+#Board-table .change-borad
+{
+    display: table;
+
+}
+
+/* 포인트샵 */
+
+#pointshop
+{
+    width: auto;
+    margin-left: 50px;
+    margin-right: 3%;
+    /* 끝단을 맞추기위해서 3% */
+    font-size: 14px;
+    text-align: center;
+}
+
+#pointshop ul
+{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-XL);
-    font-weight: var(--font-weight-regular);
-    box-shadow: none;
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+
 }
 
-.btn:hover
+#pointshop li
 {
-    background-color: var(--color-pointhover);
+    width: 70px;
 }
 
-.btn img
+#pointshop-table
 {
-    margin-right: 30px;
-    width: 16px;
+
+    width: 350px;
+    height: auto;
+    margin-top: 10px;
 }
 
-/* ======== 로그인 버튼 ======== */
-
-/* ======== 컨텐츠 영역 ======== */
-.Main
+#pointshop-table table
 {
-    font-size: var(--font-XL); /* 기본 폰트 사이즈 */
-    margin: 10px 10px 10px 270px; /* 270px = 컨텐츠영역의 기본 마진 */
-    width: calc(100% - 270px);
-    height: 100%;
-    overflow-y: auto;
+    /* border-collapse: separate; */
+    /* border-spacing: 20px 10px; */
+    margin: 0 auto;
 }
 
-/* ======== 컨텐츠 영역 ======== */
+#pointshop-table img
+{
+    height: 50px;
+    width: 50px;
+}
 
+#pointshop-table td
+{
+    /* border: 1px solid springgreen; */
+    /* padding: 5px 15px; */
+}
 
+#pointshop-table label
+{
+    font-size: var(--font-S);
+    display: inline-block;
+
+    /* border: 1px solid black; */
+}
+
+#pointshop > ul .item
+{
+    color: var(--color-point);
+    font-weight: 800;
+}
+
+#pointshop-table > table
+{
+    display: none;
+}
+
+#pointshop-table .item
+{
+    display: table;
+}

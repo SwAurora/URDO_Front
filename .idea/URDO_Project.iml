@@ -8,5 +8,7 @@
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="jquery-latest" level="application" />
+    <orderEntry type="library" name="jquery-latest" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
