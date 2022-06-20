@@ -7,7 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>URDO</title>
-  <link href="../img/logo10.svg" rel="shortcut icon" type="image/png">
+  <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
   <!--CSS 링크-->
   <!--CSS 링크-->
   <link rel="stylesheet" href="../css/Common.css">
@@ -30,14 +30,14 @@
   <!--헤더 시작-->
   <header>
       <!--로고-->
-      <img src="../img/logo10.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
+      <img src="../img/sidebar/logo.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
       <div id="logo-name">
           <span class="head-span1">URDO</span>
           <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
       </div>
       <div>
           <button id="arrow" onclick="moving_sidebar()">
-              <img src="../img/arrowLeft_Icon4.png" alt="leftArrow">
+              <img src="../img/sidebar/arrowLeft.png" alt="leftArrow">
               <!-- 아이콘바꿨음 -->
           </button>
       </div>
@@ -52,25 +52,25 @@
               <col id="Quick_col3">
           </colgroup>
           <tr onclick="MiniHomePage()">
-              <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
+              <td><img src="../img/sidebar/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
               <td><span>내 미니홈피 바로가기</span></td>
-              <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon" ></td>
+              <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon" ></td>
           </tr>
           <tr onclick="PointShop()">
-              <td><img src="../img/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
+              <td><img src="../img/sidebar/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
               <td><span>포인트샵</span></td>
-              <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+              <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
           </tr>
           <tr onclick="MyPage()">
-              <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
+              <td><img src="../img/sidebar/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
               <td><span>마이 페이지</span></td>
-              <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+              <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
           </tr>
       </table>
       <div class="darkMode">
           <div class="sunMoon">
-              <img src="../img/header-moon.svg" alt="#" class="Moon navHIcon">
-              <img src="../img/header-sun.svg" alt="#" class="Sun navHIcon">
+              <img src="../img/sidebar/quick-moon.svg" alt="#" class="Moon navHIcon">
+              <img src="../img/sidebar/quick-sun.svg" alt="#" class="Sun navHIcon">
           </div>
           <span class="darkMode-text">다크 모드</span>
           <div class="toggle-switch">
@@ -87,7 +87,7 @@
               <input type="checkbox" id="check1">
               <label for="check1">
                   <span class="plus_minus">&#65291</span>
-                  <img src="../img/menu-best.svg" alt="board" class="navIcon menuIcon">
+                  <img src="../img/sidebar/menu-best.svg" alt="board" class="navIcon menuIcon">
                   <span>베스트 게시글</span>
               </label>
               <ul class="depth2">
@@ -100,7 +100,7 @@
               <input type="checkbox" id="check2">
               <label for="check2">
                   <span class="plus_minus">&#65291</span>
-                  <img src="../img/menu-humor.svg" alt="board" class="navIcon menuIcon">
+                  <img src="../img/sidebar/menu-humor.svg" alt="board" class="navIcon menuIcon">
                   <span>유머</span>
               </label>
               <ul class="depth2">
@@ -111,7 +111,7 @@
               <input type="checkbox" id="check3">
               <label for="check3">
                   <span class="plus_minus">&#65291</span>
-                  <img src="../img/menu-creation.svg" alt="board" class="navIcon menuIcon">
+                  <img src="../img/sidebar/menu-creation.svg" alt="board" class="navIcon menuIcon">
                   <span>창작게시판</span>
               </label>
               <ul class="depth2">
@@ -123,7 +123,7 @@
               <input type="checkbox" id="check4">
               <label for="check4">
                   <span class="plus_minus">&#65291</span>
-                  <img src="../img/menu-region.svg" alt="board" class="navIcon menuIcon">
+                  <img src="../img/sidebar/menu-region.svg" alt="board" class="navIcon menuIcon">
                   <span>지역</span>
               </label>
               <ul class="depth2">
@@ -135,7 +135,7 @@
               <input type="checkbox" id="check5">
               <label for="check5">
                   <span class="plus_minus">&#65291</span>
-                  <img src="../img/menu-theme.svg" alt="board" class="navIcon menuIcon">
+                  <img src="../img/sidebar/menu-theme.svg" alt="board" class="navIcon menuIcon">
                   <span>테마</span>
               </label>
               <ul class="depth2">
@@ -149,7 +149,7 @@
   <!--로그인/로그아웃 버튼-->
   <div id="loginWrap">
       <button onclick="Login()" class="btn">
-          <img src="../img/login-unlock.svg" alt="login" class="navIcon">
+          <img src="../img/sidebar/login-unlock.svg" alt="login" class="navIcon">
           <span>로그인</span>
       </button>
   </div>
@@ -170,7 +170,7 @@
         <div>요리</div>
         <div>|</div>
         <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
-        <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
+        <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
       </div>
 
 
@@ -226,7 +226,7 @@
       
                           <tr class="red">
                             <td>1</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지1</a></td>
                             <td>31</td>
                             <td>1</td>
@@ -236,7 +236,7 @@
 
                           <tr>
                             <td >2</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지2 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -246,7 +246,7 @@
 
                           <tr>
                             <td >3</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지3 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -256,7 +256,7 @@
 
                           <tr>
                             <td >4</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지4 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -266,7 +266,7 @@
 
                           <tr>
                             <td >5</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지5 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -276,7 +276,7 @@
 
                           <tr>
                             <td >6</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지6 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -285,7 +285,7 @@
                           </tr>
                           <tr>
                             <td >7</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지7 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -294,7 +294,7 @@
                           </tr>
                           <tr>
                             <td >8</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지8 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -304,7 +304,7 @@
 
                           <tr class="adtr">
                             <td >9</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지9 </a></td>
                             <td>31</td>
                             <td>1</td>
@@ -314,7 +314,7 @@
 
                           <tr id='my_tr'>
                             <td >10</td>
-                            <td><img src="../img/frog.png" class="pic"></td>
+                            <td><img src="../img/board/frog.png" class="pic"></td>
                             <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지10 </a></td>
                             <td>331</td>
                             <td>91</td>
@@ -335,14 +335,14 @@
         <!--  페이지 숫자 -->
         <div class="next">
          
-          <img class="page_arrow menuIcon" src="../img/page-arrow-back.svg"></img>
+          <img class="page_arrow menuIcon" src="../img/board/page-arrow-back.svg"></img>
           <a class="num" href="Board.html">1</a>
        
           <a class="num" href="#">2</a>
           <a class="num" href="#">3</a>
           <a class="num" href="#">4</a>
           <a class="num" href="#">5</a>
-          <img class="page_arrow menuIcon" src="../img/page-arrow-forward.svg"></img>
+          <img class="page_arrow menuIcon" src="../img/board/page-arrow-forward.svg"></img>
 
       
          

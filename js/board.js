@@ -16,7 +16,7 @@ function addtr(){
   const newCell7 = newRow.insertCell(6);
   
   newCell1.innerHTML='index자리';
-  newCell2.innerHTML='<img src="../img/frog.png" class="pic">';
+  newCell2.innerHTML='<img src="../img/board/frog.png" class="pic">';
   newCell3.innerHTML='<a href="boardcontents.html" class="boardlist">가위바위보를 이기는방법</a>';
   newCell4.innerHTML='333';
   newCell5.innerHTML='91';

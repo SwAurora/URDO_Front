@@ -44,7 +44,7 @@
 {
     --padding: 1.5rem;
     padding: var(--padding);
-    padding-bottom: 82px;
+    padding-bottom: 87px;
     background: linear-gradient(
             hsl(0 0% 0% / 0),
             hsl(20 0% 0% /0.3) 20%,

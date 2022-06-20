@@ -223,7 +223,7 @@ a
     left: 235px;
     width: 32px;
     height: 32px;
-    background: url(../img/loginEye.svg);
+    background: url(../img/login/loginEye.svg);
     background-size: cover;
     cursor: pointer;
     user-select: none;
