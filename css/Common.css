@@ -113,7 +113,7 @@ body.dark
 
 /* ======== 네비게이션 ======== */
 
-/* ======== header ======== */
+/* ======== 내비 헤더======== */
 /* 로고 */
 #logo
 {
@@ -149,7 +149,7 @@ body.dark
     width: 34px;
 }
 
-header
+#nav-header
 {
 
     display: flex;
@@ -158,7 +158,7 @@ header
 
 }
 
-header #logo-name
+#nav-header #logo-name
 {
     display: flex;
     flex-direction: column;
@@ -168,20 +168,20 @@ header #logo-name
     color: var(--color-text);
 }
 
-header .head-span1
+#nav-header .head-span1
 {
     font-size: var(--font-XL);
     font-weight: var(--font-weight-bold);
 }
 
-header .head-span2
+#nav-header .head-span2
 {
     font-size: var(--font-S);
     font-weight: var(--font-weight-light);
     width: 163px;
 }
 
-/* ======== header ======== */
+/* ======== #nav-header ======== */
 
 /* ======== Quick-Menu ======== */
 
