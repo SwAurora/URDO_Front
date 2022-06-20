@@ -9,26 +9,16 @@
   <title>URDO</title>
   <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
   <!--CSS 링크-->
-  <!--CSS 링크-->
   <link rel="stylesheet" href="../css/Common.css">
-  <link rel="stylesheet" href="../css/PointShop.css">
+  <!-- <link rel="stylesheet" href="../css/PointShop.css"> -->
   <link rel="stylesheet" href="../css/board.css">
   <!-- JQ -->
   <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
-
-
-
-
-
-
-  <!-- JQ -->
-  <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
-
 <body>
- <!--네비게이션 시작-->
+<!--네비게이션 시작-->
 <nav class="nav-all">
   <!--헤더 시작-->
-  <header>
+  <div id="nav-header">
       <!--로고-->
       <img src="../img/sidebar/logo.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
       <div id="logo-name">
@@ -41,7 +31,7 @@
               <!-- 아이콘바꿨음 -->
           </button>
       </div>
-  </header>
+  </div>
 
   <!--퀵 메뉴 시작-->
   <div id="Quick_menu">
@@ -182,9 +172,6 @@
 
       <!-- 게시판윗부분 시작 -->
       <div class="board_list_wrap">
-
-
-
         <select class="sel">
           <option>5개</option>
           <option selected>10개</option>
@@ -192,8 +179,6 @@
           <option>20개</option>
           <option>30개</option>
         </select>
-
-
         <select class="sel" id="seltwo">
           <option>전체</option>
           <option>유머</option>
@@ -201,173 +186,145 @@
         </select>
         <!--마진으로 띄우기-->
       <!-- 게시판 table -->
-        <table class="board_list" id="t1">
+  <table class="board_list" id="t1">
+    <colgroup>
+    <col id="boardCol1">
+    <col id="boardCol2">
+    <col id="boardCol3">
+    <col id="boardCol4">
+    <col id="boardCol5">
+    <col id="boardCol6">
+    </colgroup>
+    <tr class="titlename">
+      <td class="tname">번호</td>
+      <td class="tname">썸네일</td>
+      <td class="tname" id="titleboard">글제목</td>
+      <td class="tname">조회</td>
+      <td class="tname">추천</td>
+      <td class="tname">글쓴이</td>
+      <td class="tname">날짜</td>
+    </tr>
+    <!-- 게시판 내용물 시작 -->
+    <tr>
+      <td>1</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지1</a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr>
+      <td >2</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지2 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr>
+      <td >3</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지3 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr>
+      <td >4</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지4 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr>
+      <td >5</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지5 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr>
+      <td >6</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지6 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+    <tr>
+      <td >7</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지7 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+    <tr>
+      <td >8</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지8 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr class="adtr">
+      <td >9</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지9 </a></td>
+      <td>31</td>
+      <td>1</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
+
+    <tr id='my_tr'>
+      <td >10</td>
+      <td><img src="../img/frog.png" class="pic"></td>
+      <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지10 </a></td>
+      <td>331</td>
+      <td>91</td>
+      <td>김첨지</td>
+      <td>2022-06-16</td>
+    </tr>
 
 
-          <!-- 게시판윗부분 끝 -->
+  </table>
 
-         <!-- 글제목 부분 th로 했었는데 td로 변경함  th면 자동 중앙정렬이 적용됨-->
-            <tr class="titlename">
+  <!--  페이지 숫자 -->
+  <div class="pagination">
+    <img class="page_arrow menuIcon" src="../img/page-arrow-back.svg"></img>
+    <a class="num" href="Board.html">1</a>
+    <a class="num" href="#">2</a>
+    <a class="num" href="#">3</a>
+    <a class="num" href="#">4</a>
+    <a class="num" href="#">5</a>
+    <img class="page_arrow menuIcon" src="../img/page-arrow-forward.svg"></img>
+  </div>
 
-              <td class="tname">번호</td>
-              <td class="tname">썸네일</td>
-              <td class="tname" id="titleboard">글제목</td>
-              <td class="tname">조회</td>
-              <td class="tname">추천</td>
-              <td class="tname">글쓴이</td>
-              <td class="tname">날짜</td>
+  <div class="post">
+      <input type='button' value='게시글추가'   onclick='addtr()' class="pagebtn" id="add">
+      <!-- <button class="pagebtn"><a href="#">새로쓰기</a></button> 임시로 게시판추가만넣음-->
+  </div>
+  <!--  페이지 숫자 끝-->
 
-            </tr>
-         
-
-
-            <!-- 게시판 내용물 시작 -->
-               
-      
-                          <tr class="red">
-                            <td>1</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지1</a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr>
-                            <td >2</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지2 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr>
-                            <td >3</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지3 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr>
-                            <td >4</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지4 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr>
-                            <td >5</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지5 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr>
-                            <td >6</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지6 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-                          <tr>
-                            <td >7</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지7 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-                          <tr>
-                            <td >8</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지8 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr class="adtr">
-                            <td >9</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지9 </a></td>
-                            <td>31</td>
-                            <td>1</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-                          <tr id='my_tr'>
-                            <td >10</td>
-                            <td><img src="../img/board/frog.png" class="pic"></td>
-                            <td><a href="boardcontents.html" class="boardlist">가위바위보를 이기는 방법99가지10 </a></td>
-                            <td>331</td>
-                            <td>91</td>
-                            <td>김첨지</td>
-                            <td>2022-06-16</td>
-                          </tr>
-
-
-                
-                           
-                   
-           
-                       <!-- 게시판 내용물 1page -->
-                   
-          
-        </table>
-
-        <!--  페이지 숫자 -->
-        <div class="next">
-         
-          <img class="page_arrow menuIcon" src="../img/board/page-arrow-back.svg"></img>
-          <a class="num" href="Board.html">1</a>
-       
-          <a class="num" href="#">2</a>
-          <a class="num" href="#">3</a>
-          <a class="num" href="#">4</a>
-          <a class="num" href="#">5</a>
-          <img class="page_arrow menuIcon" src="../img/board/page-arrow-forward.svg"></img>
-
-      
-         
-         
-        </div>
-
-        <div class="btntwo">
-            <input type='button' value='게시판삭제'   onclick='deleteRow(-1)' class="pagebtn" id="del">
-            <input type='button' value='게시판추가'   onclick='addtr()' class="pagebtn" id="add">
-            <!-- <button class="pagebtn"><a href="#">새로쓰기</a></button> 임시로 게시판추가만넣음-->
-       </div>
-        <!--  페이지 숫자 끝-->
-       
-
-
-
-
-
-
-        <!-- 게시판 내용 관련 코드  끝-->
-
-
-
-
-      </div>
+    <!-- 게시판 내용 관련 코드  끝-->
+    </div>
 
 
 
