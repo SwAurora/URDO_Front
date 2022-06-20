@@ -73,6 +73,9 @@ hr
     font-size:var(--font-L);
     font-weight:var(--font-weight-regular);
 }
+.tabBtn:hover{
+    cursor:pointer;
+}
 
 .tabBtn.on
 {
