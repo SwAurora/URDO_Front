@@ -1,13 +1,14 @@
 /*배경*/
-body {
-    background-color: rgb(160,160,160);
+body
+{
+    background-color: rgb(160, 160, 160);
     background-image: url('../../img/mini_home_page/보노보노.jpg');
     background-size: 100px;
 }
 
-
 /*파란커버*/
-.bookcover{
+.bookcover
+{
     background-color: #b4d1da;
     width: 1000px;
     height: 700px;
@@ -16,9 +17,9 @@ body {
     border-radius: 5px;
 }
 
-
 /*바깥 테두리*/
-.bookdot{
+.bookdot
+{
     position: relative;
     left: 5px;
     top: 5px;
@@ -28,9 +29,9 @@ body {
     border-radius: 1%;
 }
 
-
 /*회색 배경*/
-.page {
+.page
+{
     background-color: rgb(226, 226, 226);
     position: absolute;
     left: 5px;
@@ -41,8 +42,8 @@ body {
     display: flex;
 }
 
-
-.column1 {
+.column1
+{
     display: flex;
     flex-direction: column;
     /*전체 너비에서 0.25 차지*/
@@ -50,16 +51,16 @@ body {
     margin: 10px;
 }
 
-
-.visit {
+.visit
+{
     flex: 0.05;
     padding: 5px;
     /*문구 가운데 정렬*/
     margin: 0 auto;
 }
 
-
-.profile{
+.profile
+{
     background-color: white;
     flex: 0.95;
     border-radius: 1%;
@@ -69,30 +70,30 @@ body {
     align-items: center;
 }
 
-
-.profile-image {
+.profile-image
+{
     width: 60%;
     height: 60%;
     margin: 20px 20px 10px 20px;
     flex: 0.3;
 }
 
-
-.profile-text {
+.profile-text
+{
     flex: 0.5;
     width: 80%;
     margin: 10px 20px 10px 20px;
 }
 
-
-.profile-dropdown {
+.profile-dropdown
+{
     flex: 0.2;
     width: 80%;
     margin: 10px 20px 20px 20px;
 }
 
-
-.column2 {
+.column2
+{
     display: flex;
     flex-direction: column;
     /*전체 너비에서 0.65 차지*/
@@ -100,25 +101,25 @@ body {
     margin: 10px 0 10px 10px;
 }
 
-
-.top-text-box {
+.top-text-box
+{
     display: flex;
     flex: 0.05;
     padding: 5px;
 }
 
-
-.title {
+.title
+{
     flex: 1;
 }
 
-
-.url {
+.url
+{
     flex: 1;
 }
 
-
-.menu {
+.menu
+{
     display: flex;
     flex-direction: column;
     /*전체 너비에서 0.1 차지*/
@@ -126,8 +127,8 @@ body {
     margin: 50px 0;
 }
 
-
-.menu-box {
+.menu-box
+{
     width: 75px;
     padding: 5px;
     margin: 10px 0px;
@@ -137,12 +138,12 @@ body {
     user-select: none;
 }
 
-
-.menu a {
+.menu a
+{
     text-decoration: none;
 }
 
-
-.menu-box:hover {
+.menu-box:hover
+{
     background-color: #007fd3;
 }

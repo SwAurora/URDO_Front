@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URDO</title>
-    <link href="../img/logo.png" rel="shortcut icon" type="image/png">
+    <link href="../img/logo10.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
-    <link rel="stylesheet" href="../css/Index.css">
+    <link rel="stylesheet" href="../css/Common.css">
     <link rel="stylesheet" href="../css/mini_css/album.css">
     <link rel="stylesheet" href="../css/mini_css/font.css">
     <link rel="stylesheet" href="../css/mini_css/guest.css">
@@ -22,14 +22,15 @@
     <!--헤더 시작-->
     <header>
         <!--로고-->
-        <img src="../img/logo.png" alt="LOGO" id="logo" onclick="GoHome()" class="menuIcon">
+        <img src="../img/logo10.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
         <div id="logo-name">
             <span class="head-span1">URDO</span>
             <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
         </div>
         <div>
             <button id="arrow" onclick="moving_sidebar()">
-                <img src="../img/header-arrow.svg" alt="leftArrow">
+                <img src="../img/arrowLeft_Icon4.png" alt="leftArrow">
+                <!-- 아이콘바꿨음 -->
             </button>
         </div>
     </header>
@@ -43,25 +44,25 @@
                 <col id="Quick_col3">
             </colgroup>
             <tr onclick="MiniHomePage()">
-                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navIcon"></td>
+                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="PointShop()">
-                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navIcon"></td>
+                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
                 <td><span>포인트샵</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="MyPage()">
-                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navIcon"></td>
+                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
                 <td><span>마이 페이지</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="navIcon"></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
         </table>
         <div class="darkMode">
             <div class="sunMoon">
-                <img src="../img/header-moon.svg" alt="#" class="Moon">
-                <img src="../img/header-sun.svg" alt="#" class="Sun">
+                <img src="../img/header-moon.svg" alt="#" class="Moon navHIcon">
+                <img src="../img/header-sun.svg" alt="#" class="Sun navHIcon">
             </div>
             <span class="darkMode-text">다크 모드</span>
             <div class="toggle-switch">
@@ -138,10 +139,12 @@
         </ul>
     </div>
     <!--로그인/로그아웃 버튼-->
-    <button onclick="Login()" class="btn">
-        <img src="../img/login-unlock.svg" alt="login" class="navIcon">
-        <span>로그인</span>
-    </button>
+    <div id="loginWrap">
+        <button onclick="Login()" class="btn">
+            <img src="../img/login-unlock.svg" alt="login" class="navIcon">
+            <span>로그인</span>
+        </button>
+    </div>
 </nav>
 
 <section class="Main">
@@ -149,12 +152,12 @@
         <div class="bookdot">
             <div class="page">
                 <div class="column1">
-                    <div class="visit"><span id="basic-text">TODAY <span id="TODAY">28</span> | TOTAL 24562</span></div>
+                    <div class="visit"><span class="basic-text">TODAY <span id="TODAY">28</span> | TOTAL 24562</span></div>
                     <div class="profile">
                         <img class="profile-image" src="../img/mini_home_page/profileImage.jpg">
-                        <div class="profile-text" id="basic-text">@Ano<br>학생이라는 죄로<br>학교라는 교도소에서<br>교실이라는 감옥에 갇혀<br>출석부라는 죄수명단에 올라<br>교복이라는 죄수복을 입고<br>공부란 벌을 받고<br>졸업이란 석방을 기다린다</div>
+                        <div class="profile-text basic-text">@Ano<br>학생이라는 죄로<br>학교라는 교도소에서<br>교실이라는 감옥에 갇혀<br>출석부라는 죄수명단에 올라<br>교복이라는 죄수복을 입고<br>공부란 벌을 받고<br>졸업이란 석방을 기다린다</div>
                         <div class="profile-dropdown">
-                            <div id="basic-text">아노(❁´◡`❁)</div>
+                            <div class="basic-text">아노(❁´◡`❁)</div>
                             <div class="dropdown">
                                 <select>
                                     <option value="padotagi">파도타기</option>
@@ -167,61 +170,26 @@
                 </div>
                 <div class="column2">
                     <div class="top-text-box">
-                        <div class="title"><div id="basic-text">아노의 미니홈피</div></div>
-                        <div class="url"><div id="basic-text">http://url주소/나중에입력</div></div>
+                        <div class="title"><div class="basic-text">아노의 미니홈피</div></div>
+                        <div class="url"><div class="basic-text">http://url주소/나중에입력</div></div>
                     </div>
                     <!--audio-->
                     <div class="main-content">
                         <div class="main-container">
-
-                            <div class="gray-text" id="basic-text">세상에 너를 좋아하는 여자는없어 - 다윗의 막장</div>
+                            <div class="gray-text basic-text">세상에 너를 좋아하는 여자는없어 - 다윗의 막장</div>
                             <div class="audio">
                                 <audio controls>
                                     <source src="../music/y2mate.com - 다윗의 막장 세상에 너를 좋아하는 여자는 없다.mp3" type="audio/mp3">
                                 </audio>
                             </div>
-                            <div class="detail" id="basic-text">카이스트 대학생 2명 역시 공부도 잘하면 노래도 잘만들어 ㄷㄷ</div>
-                            <!-- =========================================================================================== -->
-                            <div class="gray-text" id="basic-text">Playboys - Playboys</div>
+                            <div class="detail basic-text">카이스트 대학생 2명 역시 공부도 잘하면 노래도 잘만들어 ㄷㄷ</div>
+                            <div class="gray-text basic-text">Playboys - Playboys</div>
                             <div class="audio">
                                 <audio controls>
                                     <source src="../music/y2mate.com - 2018한강대학가요제 Playboys.mp3" type="audio/mp3">
                                 </audio>
                             </div>
-                            <div class="detail" id="basic-text">내가 작곡 작사함 ㅋㅋ</div>
-                            <!-- =========================================================================================== -->
-                            <div class="gray-text" id="basic-text">Playboys - Playboys</div>
-                            <div class="audio">
-                                <audio controls>
-                                    <source src="../music/y2mate.com - 2018한강대학가요제 Playboys.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="detail" id="basic-text">내가 작곡 작사함 ㅋㅋ</div>
-                            <!-- =========================================================================================== -->
-                            <div class="gray-text" id="basic-text">Playboys - Playboys</div>
-                            <div class="audio">
-                                <audio controls>
-                                    <source src="../music/y2mate.com - 2018한강대학가요제 Playboys.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="detail" id="basic-text">내가 작곡 작사함 ㅋㅋ</div>
-                            <!-- =========================================================================================== -->
-                            <div class="gray-text" id="basic-text">Playboys - Playboys</div>
-                            <div class="audio">
-                                <audio controls>
-                                    <source src="../music/y2mate.com - 2018한강대학가요제 Playboys.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="detail" id="basic-text">내가 작곡 작사함 ㅋㅋ</div>
-                            <!-- =========================================================================================== -->
-                            <div class="gray-text" id="basic-text">Playboys - Playboys</div>
-                            <div class="audio">
-                                <audio controls>
-                                    <source src="../music/y2mate.com - 2018한강대학가요제 Playboys.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="detail" id="basic-text">내가 작곡 작사함 ㅋㅋ</div>
-
+                            <div class="detail basic-text">내가 작곡 작사함 ㅋㅋ</div>
                         </div>
                     </div>
                 </div>
@@ -236,7 +204,8 @@
     </div>
 </section>
 
-<!--사이드바 JS-->
-<script src="../js/Index.js"></script>
+
+<!--전체 JS-->
+<script src="../js/Common.js"></script>
 </body>
 </html>

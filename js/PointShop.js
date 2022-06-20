@@ -10,9 +10,15 @@ $(document).ready(function () {
 
   $('.page_num').on('click', function() {
     idx2 = $(this).index();
-    alert(idx2);
     $('.page_num').removeClass('on');
     $('.page_num').eq(idx2).addClass('on');
+    $('.pageContents').removeClass('on');
+    $('.pageContents').eq(idx2).addClass('on');
+  })
+
+  $('.page_arrow').on('click', function() {
+    idx3=$('on').index();
+    alert(idx3);
   })
 
 });

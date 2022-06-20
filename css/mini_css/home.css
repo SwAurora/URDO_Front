@@ -1,4 +1,5 @@
-.main-content {
+.main-content
+{
     background-color: white;
     flex: 0.95;
     /*Update news와 Miniroom 세로 정렬*/
@@ -7,51 +8,53 @@
     border-radius: 1%;
 }
 
-
-.upper-content {
+.upper-content
+{
     flex: 1;
     margin: 10px 20px;
 }
 
-
-.update-box {
+.update-box
+{
     display: flex
 }
 
-
-.new-text {
+.new-text
+{
     flex: 1;
 }
 
-
-#photo {
+.photo
+{
     background-color: rgb(255, 70, 70);
     color: white;
     border-radius: 10%;
 }
 
-
-#board {
+.board
+{
     background-color: rgb(70, 70, 255);
     color: white;
     border-radius: 10%;
 }
 
-
-.bottom-content {
+.bottom-content
+{
     flex: 4;
     margin: 10px 20px;
 }
 
-
-.miniroom {
+.miniroom
+{
     background: #0098dc;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.miniroom img {
+
+.miniroom img
+{
     width: 200px;
     height: 200px;
 }
