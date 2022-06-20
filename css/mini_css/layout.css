@@ -135,6 +135,7 @@ body
     background-color: #00a2d3;
     color: white;
     border-radius: 0 15% 15% 0;
+    user-select: none;
 }
 
 .menu a
