@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URDO</title>
-    <link href="../img/logo10.svg" rel="shortcut icon" type="image/png">
+    <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/Common.css">
     <!-- common css -->
@@ -26,14 +26,14 @@
     <!--헤더 시작-->
     <div id="nav-header">
         <!--로고-->
-        <img src="../img/logo10.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
+        <img src="../img/sidebar/logo.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
         <div id="logo-name">
             <span class="head-span1">URDO</span>
             <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
         </div>
         <div>
             <button id="arrow" onclick="moving_sidebar()">
-                <img src="../img/arrowLeft_Icon4.png" alt="leftArrow">
+                <img src="../img/sidebar/arrowLeft.png" alt="leftArrow">
                 <!-- 아이콘바꿨음 -->
             </button>
         </div>
@@ -48,25 +48,25 @@
                 <col id="Quick_col3">
             </colgroup>
             <tr onclick="MiniHomePage()">
-                <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
+                <td><img src="../img/sidebar/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="PointShop()">
-                <td><img src="../img/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
+                <td><img src="../img/sidebar/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
                 <td><span>포인트샵</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="MyPage()">
-                <td><img src="../img/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
+                <td><img src="../img/sidebar/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
                 <td><span>마이 페이지</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
         </table>
         <div class="darkMode">
             <div class="sunMoon">
-                <img src="../img/header-moon.svg" alt="#" class="Moon navHIcon">
-                <img src="../img/header-sun.svg" alt="#" class="Sun navHIcon">
+                <img src="../img/sidebar/quick-moon.svg" alt="#" class="Moon navHIcon">
+                <img src="../img/sidebar/quick-sun.svg" alt="#" class="Sun navHIcon">
             </div>
             <span class="darkMode-text">다크 모드</span>
             <div class="toggle-switch">
@@ -82,8 +82,8 @@
             <li>
                 <input type="checkbox" id="check1">
                 <label for="check1">
-                    <span class="plus_minus">&#65291;</span>
-                    <img src="../img/menu-best.svg" alt="board" class="navIcon menuIcon">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-best.svg" alt="board" class="navIcon menuIcon">
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
@@ -95,8 +95,8 @@
             <li>
                 <input type="checkbox" id="check2">
                 <label for="check2">
-                    <span class="plus_minus">&#65291;</span>
-                    <img src="../img/menu-humor.svg" alt="board" class="navIcon menuIcon">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-humor.svg" alt="board" class="navIcon menuIcon">
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
@@ -106,8 +106,8 @@
             <li>
                 <input type="checkbox" id="check3">
                 <label for="check3">
-                    <span class="plus_minus">&#65291;</span>
-                    <img src="../img/menu-creation.svg" alt="board" class="navIcon menuIcon">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-creation.svg" alt="board" class="navIcon menuIcon">
                     <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
@@ -118,8 +118,8 @@
             <li>
                 <input type="checkbox" id="check4">
                 <label for="check4">
-                    <span class="plus_minus">&#65291;</span>
-                    <img src="../img/menu-region.svg" alt="board" class="navIcon menuIcon">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-region.svg" alt="board" class="navIcon menuIcon">
                     <span>지역</span>
                 </label>
                 <ul class="depth2">
@@ -130,8 +130,8 @@
             <li>
                 <input type="checkbox" id="check5">
                 <label for="check5">
-                    <span class="plus_minus">&#65291;</span>
-                    <img src="../img/menu-theme.svg" alt="board" class="navIcon menuIcon">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-theme.svg" alt="board" class="navIcon menuIcon">
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
@@ -145,7 +145,7 @@
     <!--로그인/로그아웃 버튼-->
     <div id="loginWrap">
         <button onclick="Login()" class="btn">
-            <img src="../img/login-unlock.svg" alt="login" class="navIcon">
+            <img src="../img/sidebar/login-unlock.svg" alt="login" class="navIcon">
             <span>로그인</span>
         </button>
     </div>
@@ -164,13 +164,13 @@
                     <div>홈</div>
                     <div>|</div>
                     <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
-                    <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon" alt="검색">
+                    <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
                 </div>
             </div>
 
 
                 <div id="weather">
-                    <img src="../img/main/cloud-sun.svg" alt="날씨">
+                    <img src="../img/index/cloud-sun.svg">
                 </div>
 
             </div>
@@ -178,7 +178,7 @@
         <div id="notice">
             <div class="swiper notice-swap"> <!-- 슬라이더-->
                 <ul id="notice-left">
-                    <li><img src="../img/main/speaker.svg" alt="스피커"></li>
+                    <li><img src="../img/index/speaker.svg" width="20px" height="20px"></li>
                     <li>공지사항</li>
                 </ul>
                 <ul class="swiper-wrapper">
@@ -196,12 +196,12 @@
                 <table>
                     <caption class="mainTitle">베스트 유머</caption>
                     <tr id="humor-img">
-                        <td><img src="../img/main/cat1.jpg" alt="베스트유머1"></td>
-                        <td><img src="../img/main/dog1.jpg" alt="베스트유머2"></td>
-                        <td><img src="../img/main/cat2.jpg" alt="베스트유머3"></td>
-                        <td><img src="../img/main/dog2.jpg" alt="베스트유머4"></td>
-                        <td><img src="../img/main/cat3.jpg" alt="베스트유머5"></td>
-                        <td><img src="../img/main/dog3.jpg" alt="베스트유머6"></td>
+                        <td><img src="../img/index/cat1.jpg" alt="베스트유머1"></td>
+                        <td><img src="../img/index/dog1.jpg" alt="베스트유머2"></td>
+                        <td><img src="../img/index/cat2.jpg" alt="베스트유머3"></td>
+                        <td><img src="../img/index/dog2.jpg" alt="베스트유머4"></td>
+                        <td><img src="../img/index/cat3.jpg" alt="베스트유머5"></td>
+                        <td><img src="../img/index/dog3.jpg" alt="베스트유머6"></td>
                     </tr>
                     <tr class="best-humor-row2">
                         <td>제목</td>
@@ -226,13 +226,13 @@
             <div id="banner">
                 <div class="swiper banner">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide banner-slide"><img src="../img/main/banner/banner1.png" alt="광고1">
+                        <div class="swiper-slide banner-slide"><img src="../img/index/banner/banner (1).png" alt="광고1">
                         </div>
-                        <div class="swiper-slide banner-slide"><img src="../img/main/banner/banner2.png" alt="광고2">
+                        <div class="swiper-slide banner-slide"><img src="../img/index/banner/banner (2).png" alt="광고2">
                         </div>
-                        <div class="swiper-slide banner-slide"><img src="../img/main/banner/banner3.png" alt="광고3">
+                        <div class="swiper-slide banner-slide"><img src="../img/index/banner/banner (3).png" alt="광고3">
                         </div>
-                        <div class="swiper-slide banner-slide"><img src="../img/main/banner/banner4.png" alt="광고4">
+                        <div class="swiper-slide banner-slide"><img src="../img/index/banner/banner (4).png" alt="광고4">
                         </div>
                     </div>
 
@@ -361,37 +361,54 @@
                 <div id="pointshop-table">
                     <table class="item">
                         <tr>
-                            <td><img src="../img/pointshop.gif" alt="로켓 아이콘"><label>로켓</label></td>
-                            <td><img src="../img/main/pointshop-icon1.gif" alt="비 아이콘"><label>비</label></td>
-                            <td><img src="../img/main/pointshop-icon2.gif" alt="종이 아이콘"><label>종이</label></td>
-                            <td><img src="../img/main/pointshop-icon3.gif" alt="방울 아이콘"><label>방울</label></td>
+                            <td><img src="../img/pointShop/pointshop.gif"><label>로켓</label></td>
+                            <td><img src="../img/index/pointshop-icon (1).gif" alt="비 아이콘"><label>비</label></td>
+                            <td><img src="../img/index/pointshop-icon (2).gif" alt="종이 아이콘"><label>종이</label></td>
+                            <td><img src="../img/index/pointshop-icon (3).gif" alt="방울 아이콘"><label>방울</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon4.gif" alt="별 아이콘"><label>별</label></td>
-                            <td><img src="../img/main/pointshop-icon5.gif" alt="노이즈 아이콘"><label>노이즈</label></td>
-                            <td><img src="../img/main/pointshop-icon6.gif" alt="비 아이콘"><label>비</label></td>
-                            <td><img src="../img/main/pointshop-icon7.gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
+                            <td><img src="../img/index/pointshop-icon (4).gif" alt="별 아이콘"><label>별</label></td>
+                            <td><img src="../img/index/pointshop-icon (5).gif" alt="노이즈 아이콘"><label>노이즈</label></td>
+                            <td><img src="../img/index/pointshop-icon (6).gif" alt="비 아이콘"><label>비</label></td>
+                            <td><img src="../img/index/pointshop-icon (7).gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon3.gif" alt="방울 아이콘"><label>방울</label></td>
-                            <td><img src="../img/main/pointshop-icon2.gif" alt="종이 아이콘"><label>종이</label></td>
-                            <td><img src="../img/main/pointshop-icon7.gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
-                            <td><img src="../img/main/pointshop-icon1.gif" alt="비 아이콘"><label>비</label></td>
+                            <td><img src="../img/index/pointshop-icon (3).gif" alt="방울 아이콘"><label>방울</label></td>
+                            <td><img src="../img/index/pointshop-icon (2).gif" alt="종이 아이콘"><label>종이</label></td>
+                            <td><img src="../img/index/pointshop-icon (7).gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
+                            <td><img src="../img/index/pointshop-icon (1).gif" alt="비 아이콘"><label>비</label></td>
                         </tr>
                     </table>
 
                     <table>
                         <tr>
-                            <td><img src="../img/main/stop.png" alt="준비중"></td>
+                            <td><img src="../img/index/stop.png"></td>
                         </tr>
                         <tr>
                             <td>준비중입니다.</td>
                         </tr>
+                        <!-- <tr>
+                            <td><img src="../img/main/pointshop-icon2 (1).jpg"><label>Item2</label></td>
+                            <td><img src="../img/main/pointshop-icon2 (2).jpg"><label>Item2</label></td>
+                            <td><img src="../img/main/pointshop-icon2 (3).jpg"><label>Item2</label></td>
+                            <td><img src="../img/main/pointshop-icon2 (4).jpg"><label>Item2</label></td>
                         </tr>
+                        <tr>
+                            <td><img src="img/main/dot-icon (2).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (4).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (1).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (3).png"><label>Item2</label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/main/dot-icon (4).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (3).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (2).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (1).png"><label>Item2</label></td>
+                        </tr> -->
                     </table>
                     <table>
                         <tr>
-                            <td><img src="../img/main/stop.png"  alt="준비중"></td>
+                            <td><img src="../img/index/stop.png"></td>
                         </tr>
                         <tr>
                             <td>준비중입니다.</td>
@@ -401,7 +418,7 @@
 
                     <table>
                         <tr>
-                            <td><img src="../img/main/stop.png"  alt="준비중"></td>
+                            <td><img src="../img/index/stop.png"></td>
                         </tr>
                         <tr>
 
@@ -410,7 +427,7 @@
                     </table>
                     <table>
                         <tr>
-                            <td><img src="../img/main/stop.png"  alt="준비중"></td>
+                            <td><img src="../img/index/stop.png"></td>
                         </tr>
                         <tr>
                             <td>준비중입니다.</td>
@@ -425,32 +442,51 @@
         <!-- contents-bottom 끝 -->
     </div>
     <footer>
+        <!-- <div id="footer-top">
+            <ul>
+                <li>서비스 이용약관 &nbsp; | </li>
+                <li>개인정보 처리방침 &nbsp; | </li>
+                <li>청소년보호정책 &nbsp; | </li>
+                <li>이메일주소 무단수집거부 &nbsp; | </li>
+                <li>이용약관 &nbsp; | </li>
+                <li>개발자 소개 &nbsp; | </li>
+            </ul>
+        </div> -->
+
         <div id="footer-bottom">
-            <div id="footer-logo">
-                <img src="../img/logo10.svg"  alt="로고">
+            <div id="footer-left">
+                <div id="left-top">
+                    <div id="footer-logo">
+                        <img src="../img/sidebar/logo.svg">
+                    </div>
+                    <div id="footer-terms">
+                        서비스 이용약관 | 개인정보 처리방침 | 청소년보호정책 | 이메일주소 무단수집거부 | 이용약관 | <span onclick="goDeveloper()" style="cursor:pointer;">개발자 소개</span> <br>
+                        URDO | 사업자등록번호 111-22-33333 | 대구 중구 중앙대로 366 반월센트럴타워 9층 | Fax 123-1234-1234 | 대표이사 XXX <br>
+                        Since 2022.06.XX, Copyright (c) 2022 URDO All right reserved.
+
+                    </div>
+
+                </div>
+
             </div>
-            <div id="footer-terms">
-                서비스 이용약관 | 개인정보 처리방침 | 청소년보호정책 | 이메일주소 무단수집거부 | 이용약관 | <span onclick="goDeveloper()" style="cursor:pointer;">개발자 소개</span> <br>
-                URDO | 사업자등록번호 111-22-33333 | 대구 중구 중앙대로 366 반월센트럴타워 9층 | Fax 123-1234-1234 | 대표이사 XXX <br>
-                Since 2022.06.XX, Copyright (c) 2022 URDO All right reserved.
-            </div>
+
             <div id="footer-right">
                 <div id="sns">
-                    <img src="../img/main/github-square-brands.svg" alt="깃허브">
-                    <img src="../img/main/twitter-square-brands.svg"  alt="트위터">
-                    <img src="../img/main/instagram-square-brands.svg"  alt="인스타">
+                    <img src="../img/index/github-square-brands.svg">
+                    <img src="../img/index/twitter-square-brands.svg">
+                    <img src="../img/index/instagram-square-brands.svg">
                 </div>
                 <div>
                     <select>
                         <option>부가 메뉴</option>
-                    </select>    
+                    </select>
                 </div>
             </div>
-            
-        </div><!--footer-bottom끝  -->
-    
-    
-    
+        </div>
+
+
+        </div>
+
     </footer>
 
 </section>
