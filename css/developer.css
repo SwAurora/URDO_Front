@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 500ms ease;
+    transition: transform 0.4s ease;
     width: 220px;
     height: 220px;
 }
@@ -51,15 +51,15 @@
             hsl(0 0% 0% / 1)
     );
     transform: translateY(67%);
-    transition: transform 500ms ease;
-    width:180px;
+    transition: transform 0.4s ease;
+    width: 180px;
 }
 
 .card:hover .card-content,
 .card:focus-within .card-content
 {
     transform: translateY(0%);
-    transition-delay: 500ms;
+    transition-delay: 0.4s;
 }
 
 .card:focus-within .card-content
@@ -70,7 +70,7 @@
 .card-content > *:not(.card-title)
 {
     opacity: 0;
-    transition: transform 500ms ease;
+    transition: transform 0.4s ease;
 }
 
 .card:hover .card-content > *:not(.card-content)
@@ -97,7 +97,7 @@
     background: var(--color-point);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 500ms ease;
+    transition: transform 0.4s ease;
 }
 
 .card:hover .card-title::after
@@ -123,7 +123,7 @@
     background-color: var(--color-point);
     border-radius: 0.25rem;
     font-size: var(--font-S);
-    width:90px;
+    width: 90px;
     height: 25px;
 }
 
@@ -135,6 +135,6 @@
 
 .developer-github
 {
-    width:18px;
-    height:18px;
+    width: 18px;
+    height: 18px;
 }
