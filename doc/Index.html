@@ -155,15 +155,26 @@
 <section class="Main">
     <!-- 상단 -->
     <div class="container">
-        <div id="container_Title">
-            URDO에 오신 걸 환영합니다!
-        </div>
-        <div id="search">
-            <div>홈</div>
-            <div>|</div>
-            <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
-            <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
-        </div>
+        <div id="main-header" >
+            <div id="main-header-left">
+                <div id="container_Title">
+                    URDO에 오신 걸 환영합니다!
+                </div>
+                <div id="search">
+                    <div>홈</div>
+                    <div>|</div>
+                    <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
+                    <img src="../img/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
+                </div>
+            </div>
+
+
+                <div id="weather">
+                    <img src="../img/main/cloud-sun.svg">
+                </div>
+
+            </div>
+ 
 
 
         <!-- 공지사항 -->
@@ -188,12 +199,12 @@
                 <table>
                     <caption class="mainTitle">베스트 유머</caption>
                     <tr id="humor-img">
-                        <td><img src="../img/main/cat1.jpg"></td>
-                        <td><img src="../img/main/dog1.jpg"></td>
-                        <td><img src="../img/main/cat2.jpg"></td>
-                        <td><img src="../img/main/dog2.jpg"></td>
-                        <td><img src="../img/main/cat3.jpg"></td>
-                        <td><img src="../img/main/dog3.jpg"></td>
+                        <td><img src="../img/main/cat1.jpg" alt="베스트유머1"></td>
+                        <td><img src="../img/main/dog1.jpg" alt="베스트유머2"></td>
+                        <td><img src="../img/main/cat2.jpg" alt="베스트유머3"></td>
+                        <td><img src="../img/main/dog2.jpg" alt="베스트유머4"></td>
+                        <td><img src="../img/main/cat3.jpg" alt="베스트유머5"></td>
+                        <td><img src="../img/main/dog3.jpg" alt="베스트유머6"></td>
                     </tr>
                     <tr class="best-humor-row2">
                         <td>제목</td>
@@ -354,21 +365,21 @@
                     <table class="item">
                         <tr>
                             <td><img src="../img/pointshop.gif"><label>로켓</label></td>
-                            <td><img src="../img/main/pointshop-icon (1).gif"><label>비</label></td>
-                            <td><img src="../img/main/pointshop-icon (2).gif"><label>종이</label></td>
-                            <td><img src="../img/main/pointshop-icon (3).gif"><label>방울</label></td>
+                            <td><img src="../img/main/pointshop-icon (1).gif" alt="비 아이콘"><label>비</label></td>
+                            <td><img src="../img/main/pointshop-icon (2).gif" alt="종이 아이콘"><label>종이</label></td>
+                            <td><img src="../img/main/pointshop-icon (3).gif" alt="방울 아이콘"><label>방울</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon (4).gif"><label>별</label></td>
-                            <td><img src="../img/main/pointshop-icon (5).gif"><label>노이즈</label></td>
-                            <td><img src="../img/main/pointshop-icon (6).gif"><label>비</label></td>
-                            <td><img src="../img/main/pointshop-icon (7).gif"><label>포켓몬</label></td>
+                            <td><img src="../img/main/pointshop-icon (4).gif" alt="별 아이콘"><label>별</label></td>
+                            <td><img src="../img/main/pointshop-icon (5).gif" alt="노이즈 아이콘"><label>노이즈</label></td>
+                            <td><img src="../img/main/pointshop-icon (6).gif" alt="비 아이콘"><label>비</label></td>
+                            <td><img src="../img/main/pointshop-icon (7).gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon (3).gif"><label>방울</label></td>
-                            <td><img src="../img/main/pointshop-icon (2).gif"><label>종이</label></td>
-                            <td><img src="../img/main/pointshop-icon (7).gif"><label>포켓몬</label></td>
-                            <td><img src="../img/main/pointshop-icon (1).gif"><label>비</label></td>
+                            <td><img src="../img/main/pointshop-icon (3).gif" alt="방울 아이콘"><label>방울</label></td>
+                            <td><img src="../img/main/pointshop-icon (2).gif" alt="종이 아이콘"><label>종이</label></td>
+                            <td><img src="../img/main/pointshop-icon (7).gif" alt="포켓몬 아이콘"><label>포켓몬</label></td>
+                            <td><img src="../img/main/pointshop-icon (1).gif" alt="비 아이콘"><label>비</label></td>
                         </tr>
                     </table>
 
@@ -433,7 +444,6 @@
 
         <!-- contents-bottom 끝 -->
     </div>
-
     <footer>
         <!-- <div id="footer-top">
             <ul>
@@ -445,7 +455,7 @@
                 <li>개발자 소개 &nbsp; | </li>
             </ul>
         </div> -->
-
+    
         <div id="footer-bottom">
             <div id="footer-left">
                 <div id="left-top">
@@ -469,22 +479,23 @@
                     <img src="../img/main/twitter-square-brands.svg">
                     <img src="../img/main/instagram-square-brands.svg">
                 </div>
-
+    
                 <div>
                     <select>
-                        <option><a href="https://www.naver.com/"> 네이버 </a></option>
+                        <option>부가 메뉴</option>
                     </select>    
                 </div>
             </div>
         </div>
-
-
+    
+    
         </div>
-
+    
     </footer>
 
-
 </section>
+
+
 
 <!--전체 JS-->
 <script src="../js/Common.js"></script>
