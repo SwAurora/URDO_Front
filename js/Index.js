@@ -56,3 +56,8 @@ $('#pointshop>ul li').on('click', function()
     $('#pointshop-table>table').eq(ItemIdx).addClass('item').show();
 
 });
+
+function goDeveloper()
+{
+    location.href = 'Developer.html';
+}

@@ -4,22 +4,22 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width:1000px;
-    height:500px;
+    width: 1000px;
+    height: 500px;
 }
 
 .divs2
 {
     display: flex;
     justify-content: space-around;
-    gap:30px;
+    gap: 30px;
 }
 
 .divs3
 {
     display: flex;
     justify-content: space-around;
-    gap:30px;
+    gap: 30px;
 }
 
 .card
@@ -52,6 +52,7 @@
     );
     transform: translateY(67%);
     transition: transform 500ms ease;
+    width:180px;
 }
 
 .card:hover .card-content,
@@ -113,17 +114,27 @@
 .button
 {
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
     text-decoration: none;
     color: var(--color-white);
     background-color: var(--color-point);
-    padding: 0.5em 1.25em;
     border-radius: 0.25rem;
     font-size: var(--font-S);
+    width:90px;
+    height: 25px;
 }
 
 .button:hover,
 .button:focus
 {
     background-color: var(--color-pointhover);
+}
+
+.developer-github
+{
+    width:18px;
+    height:18px;
 }
