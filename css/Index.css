@@ -147,6 +147,10 @@ caption
     height: 14px;
 }
 
+#humor-img li {
+
+}
+
 #best-humour img
 {
     width: 100%;
@@ -338,6 +342,8 @@ caption
 #pointshop li
 {
     width: 70px;
+    user-select: none;
+    cursor: pointer;
 }
 
 #pointshop-table
@@ -388,4 +394,82 @@ caption
 #pointshop-table .item
 {
     display: table;
+}
+
+
+/* footer */
+
+
+footer {          
+    margin: 0px;
+    font-size: var(--font-S);
+    margin-top: 2%;
+    width: 95%;
+    border-top: 1px solid var(--color-lightgray);
+}
+
+/* #footer-top ul {
+    display: flex;
+    text-align: center;
+    height: 20px;
+}
+
+#footer-top li {
+   padding-right: 5px;
+} */
+
+#footer-bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+#footer-left {
+    width: 80%;
+}
+
+#left-top {
+    display: flex;
+}
+
+#footer-logo {
+    margin-right: 5px;
+    line-height: 20px;
+}
+
+#footer-logo img{
+    width: 65px; 
+}
+
+#footer-terms {
+    line-height: 20px;
+    margin-top: 0px;  
+           
+}
+
+#footer-terms ul {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+#footer-right {
+    margin-top: -5px;
+}
+
+#sns {
+    margin-top: 0px;
+    margin-left: 40%;
+    display: flex;
+}
+
+#sns img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+#footer-right select {
+    background-color: var(--color-sidebar);
+    color: var(--color-logoname);
+    width: 130px;
+    margin-left: 90px;
 }

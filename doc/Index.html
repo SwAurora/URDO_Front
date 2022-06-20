@@ -176,7 +176,7 @@
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide notice-slide"><span class="notice-A">임시점검</span>06:00~18:00</li>
                     <li class="swiper-slide notice-slide"><span class="notice-A">인기 도서관</span>알렉산드리아 도서관</li>
-                    <li class="swiper-slide notice-slide"><span class="notice-A">게시판</span>도서관 이름</li>
+                    <li class="swiper-slide notice-slide"><span class="notice-A">게시판</span>선정적인 이미지 게시 금지</li>
                 </ul>
             </div>
         </div>
@@ -187,13 +187,13 @@
             <div id="best-humour">
                 <table>
                     <caption class="mainTitle">베스트 유머</caption>
-                    <tr>
-                        <td><img src="" width="100px" height="100px"></td>
-                        <td><img src="" width="100px" height="100px"></td>
-                        <td><img src="" width="100px" height="100px"></td>
-                        <td><img src="" width="100px" height="100px"></td>
-                        <td><img src="" width="100px" height="100px"></td>
-                        <td><img src="" width="100px" height="100px"></td>
+                    <tr id="humor-img">
+                        <td><img src="../img/main/cat1.jpg"></td>
+                        <td><img src="../img/main/dog1.jpg"></td>
+                        <td><img src="../img/main/cat2.jpg"></td>
+                        <td><img src="../img/main/dog2.jpg"></td>
+                        <td><img src="../img/main/cat3.jpg"></td>
+                        <td><img src="../img/main/dog3.jpg"></td>
                     </tr>
                     <tr class="best-humor-row2">
                         <td>제목</td>
@@ -354,26 +354,32 @@
                     <table class="item">
                         <tr>
                             <td><img src="../img/pointshop.gif"><label>로켓</label></td>
-                            <td><img src="../img/main/pointshop-icon (1).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (2).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (3).gif"><label>Item1</label></td>
+                            <td><img src="../img/main/pointshop-icon (1).gif"><label>비</label></td>
+                            <td><img src="../img/main/pointshop-icon (2).gif"><label>종이</label></td>
+                            <td><img src="../img/main/pointshop-icon (3).gif"><label>방울</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon (4).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (5).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (6).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (7).gif"><label>Item1</label></td>
+                            <td><img src="../img/main/pointshop-icon (4).gif"><label>별</label></td>
+                            <td><img src="../img/main/pointshop-icon (5).gif"><label>노이즈</label></td>
+                            <td><img src="../img/main/pointshop-icon (6).gif"><label>비</label></td>
+                            <td><img src="../img/main/pointshop-icon (7).gif"><label>포켓몬</label></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/main/pointshop-icon (8).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (9).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (10).gif"><label>Item1</label></td>
-                            <td><img src="../img/main/pointshop-icon (11).gif"><label>Item1</label></td>
+                            <td><img src="../img/main/pointshop-icon (3).gif"><label>방울</label></td>
+                            <td><img src="../img/main/pointshop-icon (2).gif"><label>종이</label></td>
+                            <td><img src="../img/main/pointshop-icon (7).gif"><label>포켓몬</label></td>
+                            <td><img src="../img/main/pointshop-icon (1).gif"><label>비</label></td>
                         </tr>
                     </table>
 
                     <table>
                         <tr>
+                            <td><img src="../img/main/stop.png"></td>
+                        </tr>
+                        <tr>
+                            <td>준비중입니다.</td>
+                        </tr>
+                        <!-- <tr>
                             <td><img src="../img/main/pointshop-icon2 (1).jpg"><label>Item2</label></td>
                             <td><img src="../img/main/pointshop-icon2 (2).jpg"><label>Item2</label></td>
                             <td><img src="../img/main/pointshop-icon2 (3).jpg"><label>Item2</label></td>
@@ -389,7 +395,7 @@
                             <td><img src="img/main/dot-icon (4).png"><label>Item2</label></td>
                             <td><img src="img/main/dot-icon (3).png"><label>Item2</label></td>
                             <td><img src="img/main/dot-icon (2).png"><label>Item2</label></td>
-                            <td><img src="img/main/dot-icon (1).png"><label>Item2</label></td>
+                            <td><img src="img/main/dot-icon (1).png"><label>Item2</label></td> -->
                         </tr>
                     </table>
                     <table>
@@ -412,6 +418,9 @@
                         </tr>
                     </table>
                     <table>
+                        <tr>
+                            <td><img src="../img/main/stop.png"></td>
+                        </tr>
                         <tr>
                             <td>준비중입니다.</td>
                         </tr>
@@ -424,6 +433,55 @@
 
         <!-- contents-bottom 끝 -->
     </div>
+
+    <footer>
+        <!-- <div id="footer-top">
+            <ul>
+                <li>서비스 이용약관 &nbsp; | </li>
+                <li>개인정보 처리방침 &nbsp; | </li>
+                <li>청소년보호정책 &nbsp; | </li>
+                <li>이메일주소 무단수집거부 &nbsp; | </li>
+                <li>이용약관 &nbsp; | </li>
+                <li>개발자 소개 &nbsp; | </li>
+            </ul>
+        </div> -->
+
+        <div id="footer-bottom">
+            <div id="footer-left">
+                <div id="left-top">
+                    <div id="footer-logo">
+                        <img src="../img/logo10.svg">
+                    </div>
+                    <div id="footer-terms">
+                        서비스 이용약관 | 개인정보 처리방침 | 청소년보호정책 | 이메일주소 무단수집거부 | 이용약관 | 개발자 소개 <br>
+                        URDO | 사업자등록번호 111-22-33333 | 대구 중구 중앙대로 366 반월센트럴타워 9층 | Fax 123-1234-1234 | 대표이사 XXX <br>
+                        Since 2022.06.XX, Copyright (c) 2022 URDO All right reserved.
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div id="footer-right">
+                <div id="sns">
+                    <img src="../img/main/github-square-brands.svg">
+                    <img src="../img/main/twitter-square-brands.svg">
+                    <img src="../img/main/instagram-square-brands.svg">
+                </div>
+
+                <div>
+                    <select>
+                        <option><a href="https://www.naver.com/"> 네이버 </a></option>
+                    </select>    
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </footer>
 
 
 </section>
