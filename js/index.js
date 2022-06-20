@@ -59,5 +59,5 @@ $('#pointshop>ul li').on('click', function()
 
 function goDeveloper()
 {
-    location.href = 'Developer.html';
+    location.href = 'developer.html';
 }
