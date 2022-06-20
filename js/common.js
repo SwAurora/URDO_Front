@@ -29,7 +29,7 @@ function moving_sidebar()
 
 function GoHome()
 {
-    location.href = "index.html";
+    location.href = "../index.html";
 }
 
 function MiniHomePage()
@@ -40,7 +40,7 @@ function MiniHomePage()
 
 function PointShop()
 {
-    location.href = 'pointShop.html';
+    location.href = '../doc/pointShop.html';
 }
 
 function MyPage()
@@ -50,7 +50,7 @@ function MyPage()
 
 function Login()
 {
-    location.href = 'login.html';
+    location.href = '../doc/login.html';
 }
 
 let chk1 = document.getElementById('check1');
