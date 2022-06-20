@@ -10,7 +10,6 @@ a
 }
 
 speaker {
-    fill: var(--color-logoname);
 }
 
 
@@ -422,27 +421,20 @@ caption
 
 /* footer */
 
-
-footer {          
-    margin: 0px;
-    font-size: var(--font-S);
-    margin-top: 15px;
-    width: 95%;
+footer {
+    margin: 10px 0px;
     border-top: 1px solid var(--color-lightgray);
 }
 
 #footer-bottom {
-    display: flex;
-    margin-top: 20px;
+    display:flex;
+    font-size: var(--font-S);
+    margin-top: 15px;
+    width: 97%;
+    align-items:center;
 }
 
-#footer-left {
-    width: 80%;
-}
 
-#left-top {
-    display: flex;
-}
 
 #footer-logo {
     margin-right: 5px;
@@ -455,35 +447,22 @@ footer {
 
 #footer-terms {
     line-height: 20px;
-    margin-top: 0px;  
-           
-}
-
-#footer-terms ul {
-    display: flex;
-    margin-bottom: 0px;
+    margin-left:20px;
 }
 
 #footer-right {
-    margin-top: -5px;
-}
-
-#sns {
-    margin-top: 0px;
-    margin-left: 50%;
-    display: flex;
+    display: grid;
+    align-items:center;
+    margin-left:auto;
 }
 
 #sns img {
     width: 40px;
     height: 40px;
-    margin: 5px;
-
 }
 
 #footer-right select {
     background-color: var(--color-sidebar);
     color: var(--color-logoname);
     width: 130px;
-    margin-left: 50%;
 }
