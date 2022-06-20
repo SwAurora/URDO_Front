@@ -9,13 +9,13 @@
     <link href="../img/logo10.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/Common.css">
-    <link rel="stylesheet" href="../css/dogfoot.css">
+    <link rel="stylesheet" href="../css/Developer.css">
 </head>
 <body>
 <!--네비게이션 시작-->
 <nav class="nav-all">
     <!--헤더 시작-->
-    <header>
+    <div id="nav-header">
         <!--로고-->
         <img src="../img/logo10.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
         <div id="logo-name">
@@ -25,10 +25,9 @@
         <div>
             <button id="arrow" onclick="moving_sidebar()">
                 <img src="../img/arrowLeft_Icon4.png" alt="leftArrow">
-                <!-- 아이콘바꿨음 -->
             </button>
         </div>
-    </header>
+    </div>
 
     <!--퀵 메뉴 시작-->
     <div id="Quick_menu">
@@ -41,7 +40,7 @@
             <tr onclick="MiniHomePage()">
                 <td><img src="../img/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
                 <td><span>내 미니홈피 바로가기</span></td>
-                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon" ></td>
+                <td><img src="../img/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
             </tr>
             <tr onclick="PointShop()">
                 <td><img src="../img/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
@@ -142,98 +141,71 @@
     </div>
 </nav>
 
-<section class="Main">
-    
-    <div class="divs2">
-
-        <div class="card">
-
-            <div class="card-content">
-
-                <h2 class="card-title">
-                    구글검색의 정진명
-                </h2>
-
-                <p class="card-body">
-                    미니홈피, 로그인, 회원가입
-                </p>
-                <a href="#" class="button">인스타 팔로우하기</a>
-            
+<section class="Main" style="display: flex; justify-content: center; align-items: center">
+    <div class="divs1">
+        <div class="divs2">
+            <div class="card" style="background-image: url(../img/mini_home_page/profileImage.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">
+                        사이드바의 김성욱
+                    </h2>
+                    <p class="card-body">
+                        사이드바, 다크모드, 자바스크립트
+                    </p>
+                    <a href="#" class="button">인스타 팔로우하기</a>
+                </div>
             </div>
-        
-        </div>
 
-        <div class="card">
-
-            <div class="card-content">
-
-                <h2 class="card-title">
-                    구글검색의 정진명
-                </h2>
-
-                <p class="card-body">
-                    미니홈피, 로그인, 회원가입
-                </p>
-                <a href="#" class="button">인스타 팔로우하기</a>
-            
+            <div class="card" style="background-image: url(../img/mini_home_page/profileImage.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">
+                        마진의 강현선
+                    </h2>
+                    <p class="card-body">
+                        마진장인, 포인트샵, 스타일가이드
+                    </p>
+                    <a href="#" class="button">인스타 팔로우하기</a>
+                </div>
             </div>
         </div>
-    
-    </div>
-
-    <div class="divs3">
-        <div class="card">
-
-            <div class="card-content">
-
-                <h2 class="card-title">
-                    구글검색의 정진명
-                </h2>
-
-                <p class="card-body">
-                    미니홈피, 로그인, 회원가입
-                </p>
-                <a href="#" class="button">인스타 팔로우하기</a>
-            
+        <div class="divs3">
+            <div class="card" style="background-image: url(../img/mini_home_page/profileImage.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">
+                        구글검색의 정진명
+                    </h2>
+                    <p class="card-body">
+                        미니홈피, 로그인, 회원가입
+                    </p>
+                    <a href="#" class="button">인스타 팔로우하기</a>
+                </div>
             </div>
-        
-        </div>
 
-        <div class="card">
-
-            <div class="card-content">
-
-                <h2 class="card-title">
-                    구글검색의 정진명
-                </h2>
-
-                <p class="card-body">
-                    미니홈피, 로그인, 회원가입
-                </p>
-                <a href="#" class="button">인스타 팔로우하기</a>
-            
+            <div class="card" style="background-image: url(../img/mini_home_page/profileImage.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">
+                        귀여움의 허준석
+                    </h2>
+                    <p class="card-body">
+                        게시판 장인, 귀염담당
+                    </p>
+                    <a href="#" class="button">인스타 팔로우하기</a>
+                </div>
             </div>
-        
-        </div>
 
-        <div class="card">
-
-            <div class="card-content">
-
-                <h2 class="card-title">
-                    구글검색의 정진명
-                </h2>
-
-                <p class="card-body">
-                    미니홈피, 로그인, 회원가입
-                </p>
-                <a href="#" class="button">인스타 팔로우하기</a>
-            
+            <div class="card" style="background-image: url(../img/mini_home_page/profileImage.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">
+                        메인페이지의 김재이
+                    </h2>
+                    <p class="card-body">
+                        메인페이지
+                    </p>
+                    <a href="#" class="button">인스타 팔로우하기</a>
+                </div>
             </div>
-        
         </div>
     </div>
-
 </section>
 
 <!--전체 JS-->
