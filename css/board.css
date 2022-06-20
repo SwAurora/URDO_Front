@@ -7,221 +7,132 @@
           caption {
             display: none;
           }
-  
+    
+          /* <a>태그들 기본 색상 관한 설정 */
           a {
             text-decoration: none;
             color: inherit;
           }
           #search{  font-size: var( --font-XL);} 
+          /* 게시판 table전체  설정 */
           .board_list {
+          
+            text-align: left;
             width: 100%;
-            height: 50%;
+            height: 100%;
             /* 여기서 글제목 폰트 사이즈 크기조절 */
             font-size: var( --font-M);
           }
-  
-          .board_list tr {}
-  
-          .board_list th,
-          .board_list td {
-            text-align: center;
-            padding: 9px;
-          }
-  
-          .board_list td {
-            text-align: center;
-          }
+          /* table 안의 tdborder설정 */
+          .board_list td{ border-bottom:1px solid black ;
+                          border-top: 1px solid black;    }
   
           /* board_list tbody tr td 중 2의정수만 색깔변경  썸내일 안의 부분이랑 연결되어있다.*/
           .board_list tbody tr td:nth-child(2) {
-            border-right: 1px solid black;
             background-color: var(--color-body);
-            /* 임시로 확인용으로붙임 */
-            text-align: center;
-            width: 29px;
-            height: 29px;
-  
+      
           }
-  
-          /* 제목부분에 마우스를 가까이댈시 밑줄이 나타남 */
-          .board_list tbody tr td:nth-child(2):hover {
-            text-decoration: underline;
-          }
-  
-          .board_list_wrap {
-  
-            /* border: 1px solid red;  게시판 전체 크기확인용도 */
-            padding-top: 20px;
-  
-            width: 100%;
-            height: 100%;
-  
         
-  
+      
+              /* 게시판 글제목 내용에 가까이갈시 작동   */
+              .boardlist:hover {
+                text-decoration: underline;
+              }
+              /* 게시판+sel부분포함 전체부분 */
+          .board_list_wrap {
+       
+            padding-top: 20px ;
+          
           }
-
-  
+          /* page 숫자부분  */
           .board_list_wrap .next {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            /* a태그안의 문자 */
             text-align: center;
             display: flex;
+            /* page a태그 위치 */
             justify-content: center;
   
-  
           }
   
-          .board_list_wrap .next a {
-            display: inline-block;
-            border: 1px solid black;
-  
-            border-radius: 5px;
-  
-            font-size: var(--font-S);
-  
-          }
-  
+            /* page 부분 */
           .board_list_wrap .next .num {
             border: 1px solid gray;
             height: 28px;
             width: 28px;
             border-radius: 5px;
             margin: 5px;
-            justify-content: center;
-            text-align: center;
             background-color: var(--color-whiteToBlack);
             font-size: var(--font-L);
   
           }
-  
+           /* 썸네일 이미지 */
           .board_list_wrap img {
             width: 20px;
             height: 20px;
             margin: 3px;
         }
+        /* page 버튼 부분 가까이 댈시 색갈변경 */
           .board_list_wrap .next .num:hover {
-            background-color: rgb(132, 132, 255);
-  
+            background-color: var(--color-pointhover);
           }
   
-          #all {}
-  
-          footer {
-            background-color: rgb(0, 0, 0);
-  
-          }
-  
-          .ft1 {
-            list-style: none;
-            color: white;
-            font-size: var( --font-XL);
-          }
-  
-  
-          .pic {
-            width: 29px;
-            height: 29px;
-  
-          }
-  
-
-  
-          .titlename {
-            border-top: 2px solid gray;
-            border-bottom: 2px solid gray;
-  
-          }
-  
-          /* 썸네일 부분및 번호 글제목등등부분 */
-          thead th {
-            font-size: var( --font-L);
-            background-color: var(--color-body);
-         
-          }
-  
+         /* 게시판 타이틀 부분관련 */
           .tname {
             width: 50px;
           }
-  
+           /* 게시판 내용물 사이즈 */
           #titleboard {
             width: 300px;
           }
   
           /* 썸네일등등부분 끝 */
+   
+      
   
-          h2 {
-            border-right: 2px solid gray;
-            display: inline-block;
-            padding-right: 10px;
-            margin-right: 63px;
-  
-          }
-  
-          #tem {
-            display: flex;
-            list-style: none;
-            margin-bottom: 23.8px;
-          }
-  
-          #pagetext {
-            width: 29px;
-            height: 20px;
-          }
-  
+       
+          /* 게시판 갯수 확인하는부분 관련 */
           .sel {
             width: 86px;
             height: 36px;
             border-radius: 10px;
-            margin-left: 35px;
+         
             margin-right: 15px;
             margin-bottom: 23.8px;
             background-color: var(--color-body);
             color: var(--color-text);
           }
-  
+          
+          /* 게시판 갯수 확인하는부분 관련 */
           #seltwo {
             width: 150px;
           }
   
-          .board_list>tr>td {
-            border-bottom: 1px solid gray;
-  
-          }
-  
-         
-  
-  
-  
+          .btntwo{ 
+            display: flex; justify-content: end;
+          
+          
+          
+                  }
           /* 새로쓰기 버튼 과 게시판삭제버튼 */
           .pagebtn {
+            
             background-color: var(--color-darkbtn);
             border: none;
             border-radius: 5px;
-            left: 840px;
+           
             position: relative;
             width: 160px;
             height: 45px;
             margin-bottom: 15px;
             font-weight: var(--font-weight-regular);
-
-
-    
-            
-  
           }
-  
+          /* 게시판 삭제 추가 버튼 가까이갈시 작동  */
           .pagebtn:hover {
             background-color: var(--color-pointhover);
            
           }
-  
-          .boardlist:hover {
-            border-bottom: 2px solid black;
-          }
+      
   
   
   
-          .next {
-            width: 100%;
-          }
+         
