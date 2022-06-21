@@ -16,9 +16,22 @@ $(document).ready(function () {
     $('.pageContents').eq(idx2).addClass('on');
   })
 
-  $('.page_arrow').on('click', function() {
-    idx3=$('on').index();
-    alert(idx3);
+  $('#prev').on('click', function() {
+    idx3=$('.page_num.on').index();
+    if(idx3-1 >=0) {
+      $('.page_num').removeClass('on');
+      $('.page_num').eq(idx3-1).addClass('on');
+      // 페이지컨텐츠를 구성하지 않았음
+    }
+  })
+  $('#next').on('click', function() {
+    end = $('.page_num').length - 1;
+    idx3=$('.page_num.on').index();
+    if(idx3+1 <= end) {
+      $('.page_num').removeClass('on');
+      $('.page_num').eq(idx3+1).addClass('on');
+      // 페이지컨텐츠를 구성하지 않았음
+    }
   })
 
 });
