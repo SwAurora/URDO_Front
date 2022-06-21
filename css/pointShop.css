@@ -57,10 +57,7 @@
     font-weight: var(--font-weight-regular);
 }
 
-hr
-{
-    border-color: lightgray;
-}
+
 .tabBtn_Wrapper {
     margin : 30px 0px;
 }
@@ -71,31 +68,10 @@ hr
     margin:10px 0px;
 }
 
-.tabBtn
-{
-    color:var(--color-text);
-    border:none;
-    border-radius: 5px;
-    width: 120px; height:35px;
-    background-color:var(--color-whiteToBlack);
-    font-size:var(--font-M);
-    font-weight:var(--font-weight-regular);
-    margin-right:10px;
-}
-.tabBtn:hover{
-    cursor:pointer;
-}
 
-.tabBtn.on
-{
-    background-color: var(--color-point);
-    color:var(--color-white);
-    position:relative;
-}
 
-.tabBtn.on:hover {
-    background-color: var(--color-pointhover);
-}
+
+
 .tabDepth2Wrapper{
     border:1px solid red;
     width: calc(100% - 20px);

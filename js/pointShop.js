@@ -4,7 +4,13 @@ $(document).ready(function () {
     alert(idx);
     $('.level1').removeClass('on');
     $('.level1').eq(idx).addClass('on');
+    $('.level1 li a').removeClass('on');
+    $('.level1 li a').eq(idx).addClass('on');
   })
+
+
+
+
 
 
   $('.page_num').on('click', function() {
