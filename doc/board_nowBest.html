@@ -10,7 +10,7 @@
     <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="../css/boardNoWrite.css">
     <!-- JQ -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -91,9 +91,9 @@
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board.html" title="실시간베스트" id="active">실시간 베스트</a></li>
-                    <li><a href="#" title="월간베스트">월간 베스트</a></li>
-                    <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
+                    <li><a href="board_nowBest.html" title="실시간베스트" id="active">실시간 베스트</a></li>
+                    <li><a href="board_monthBest.html" title="월간베스트">월간 베스트</a></li>
+                    <li><a href="board_miniBest.html" title="미니홈피추천작">미니홈피 추천작</a></li>
                 </ul>
             </li>
             <li>
@@ -104,7 +104,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -115,8 +115,8 @@
                     <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="그림">그림</a></li>
-                    <li><a href="#" title="요리">요리</a></li>
+                    <li><a href="board_creArt.html" title="그림">그림</a></li>
+                    <li><a href="board_creCook.html" title="요리">요리</a></li>
                 </ul>
             </li>
             <li>
@@ -127,8 +127,8 @@
                     <span>지역</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="맛집">맛집</a></li>
-                    <li><a href="#" title="명소">명소</a></li>
+                    <li><a href="board_regionRestaurant.html" title="맛집">맛집</a></li>
+                    <li><a href="board_regionLandMark.html" title="명소">명소</a></li>
                 </ul>
             </li>
             <li>
@@ -139,9 +139,9 @@
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="게임">게임</a></li>
-                    <li><a href="#" title="스포츠">스포츠</a></li>
-                    <li><a href="#" title="음악">음악</a></li>
+                    <li><a href="board_themeGame.html" title="게임">게임</a></li>
+                    <li><a href="board_themeSports.html" title="스포츠">스포츠</a></li>
+                    <li><a href="board_themeMusic.html" title="음악">음악</a></li>
                 </ul>
             </li>
         </ul>
@@ -297,16 +297,13 @@
         <!-- 페이지네이션 시작 -->
         <div class="boardfoot">
             <div class="page_wrap">
-                <img class="page_arrow menuIcon" id="prev" src="../img/board/page-arrow-back.svg"></img>
+                <img class="page_arrow menuIcon" id="prev" src="../img/board/page-arrow-back.svg">
                 <div class="page_nation">
                     <a href="#" class="page_num on">1</a>
                     <a href="#" class="page_num">2</a>
                     <a href="#" class="page_num">3</a>
                 </div>
-                <img class="page_arrow menuIcon" id="next" src="../img/board/page-arrow-forward.svg"></img>
-            </div>
-            <div class="post">
-                <input type='button' value='게시글 작성' onclick="location.href='humorWrite.html'" class="pagebtn" id="add">
+                <img class="page_arrow menuIcon" id="next" src="../img/board/page-arrow-forward.svg">
             </div>
             <!--  페이지 숫자 끝-->
             <!-- 게시판 내용 관련 코드  끝-->

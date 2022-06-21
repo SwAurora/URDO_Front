@@ -10,7 +10,7 @@
     <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="../css/boardNoWrite.css">
     <!-- JQ -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -18,10 +18,10 @@
         $(document).ready(function()
         {
             let span = document.querySelectorAll('.depth1 span');
-            $('#check2').prop('checked', true);
-            span[2].innerHTML = '&#65293';
-            span[3].style.color = getColor('--color-point');
-            span[3].style.fontWeight = 'bold';
+            $('#check1').prop('checked', true);
+            span[0].innerHTML = '&#65293';
+            span[1].style.color = getColor('--color-point');
+            span[1].style.fontWeight = 'bold';
             $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
         })
     </script>
@@ -93,7 +93,7 @@
                 <ul class="depth2">
                     <li><a href="board_nowBest.html" title="실시간베스트">실시간 베스트</a></li>
                     <li><a href="board_monthBest.html" title="월간베스트">월간 베스트</a></li>
-                    <li><a href="board_miniBest.html" title="미니홈피추천작">미니홈피 추천작</a></li>
+                    <li><a href="board_miniBest.html" title="미니홈피추천작" id="active">미니홈피 추천작</a></li>
                 </ul>
             </li>
             <li>
@@ -104,7 +104,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_humor.html" title="웃긴 자료" id="active">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -157,10 +157,10 @@
 <section class="Main">
     <div class="container">
         <div id="container_Title">
-            게시판 > 유머 > 웃긴자료
+            게시판 > 베스트 게시글 > 미니홈피 추천작
         </div>
         <div id="search">
-            <div>웃긴 자료</div>
+            <div>미니홈피 추천작</div>
             <div>|</div>
             <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
             <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
@@ -304,9 +304,6 @@
                     <a href="#" class="page_num">3</a>
                 </div>
                 <img class="page_arrow menuIcon" id="next" src="../img/board/page-arrow-forward.svg">
-            </div>
-            <div class="post">
-                <input type='button' value='게시글 작성' onclick="location.href='board_humorWrite.html'" class="pagebtn" id="add">
             </div>
             <!--  페이지 숫자 끝-->
             <!-- 게시판 내용 관련 코드  끝-->

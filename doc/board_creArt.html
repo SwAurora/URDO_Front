@@ -18,10 +18,10 @@
         $(document).ready(function()
         {
             let span = document.querySelectorAll('.depth1 span');
-            $('#check2').prop('checked', true);
-            span[2].innerHTML = '&#65293';
-            span[3].style.color = getColor('--color-point');
-            span[3].style.fontWeight = 'bold';
+            $('#check3').prop('checked', true);
+            span[4].innerHTML = '&#65293';
+            span[5].style.color = getColor('--color-point');
+            span[5].style.fontWeight = 'bold';
             $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
         })
     </script>
@@ -104,7 +104,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_humor.html" title="웃긴 자료" id="active">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -115,7 +115,7 @@
                     <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_creArt.html" title="그림">그림</a></li>
+                    <li><a href="board_creArt.html" title="그림" id="active">그림</a></li>
                     <li><a href="board_creCook.html" title="요리">요리</a></li>
                 </ul>
             </li>
@@ -157,10 +157,10 @@
 <section class="Main">
     <div class="container">
         <div id="container_Title">
-            게시판 > 유머 > 웃긴자료
+            게시판 > 창작게시판 > 그림
         </div>
         <div id="search">
-            <div>웃긴 자료</div>
+            <div>그림</div>
             <div>|</div>
             <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
             <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">

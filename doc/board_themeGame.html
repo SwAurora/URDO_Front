@@ -18,10 +18,10 @@
         $(document).ready(function()
         {
             let span = document.querySelectorAll('.depth1 span');
-            $('#check2').prop('checked', true);
-            span[2].innerHTML = '&#65293';
-            span[3].style.color = getColor('--color-point');
-            span[3].style.fontWeight = 'bold';
+            $('#check5').prop('checked', true);
+            span[8].innerHTML = '&#65293';
+            span[9].style.color = getColor('--color-point');
+            span[9].style.fontWeight = 'bold';
             $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
         })
     </script>
@@ -104,7 +104,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_humor.html" title="웃긴 자료" id="active">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -139,7 +139,7 @@
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_themeGame.html" title="게임">게임</a></li>
+                    <li><a href="board_themeGame.html" title="게임" id="active">게임</a></li>
                     <li><a href="board_themeSports.html" title="스포츠">스포츠</a></li>
                     <li><a href="board_themeMusic.html" title="음악">음악</a></li>
                 </ul>
@@ -157,10 +157,10 @@
 <section class="Main">
     <div class="container">
         <div id="container_Title">
-            게시판 > 유머 > 웃긴자료
+            게시판 > 테마 > 게임
         </div>
         <div id="search">
-            <div>웃긴 자료</div>
+            <div>게임</div>
             <div>|</div>
             <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
             <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
