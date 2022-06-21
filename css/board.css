@@ -219,6 +219,7 @@ a
     margin: 3px;
 }
 
+
 .page_arrow
 {
     cursor: pointer;
@@ -232,6 +233,16 @@ a
     justify-content: center;
     width: calc(100% - 20px);
     margin: 10px 0;
+
 }
 
+/* 페이지네이션 끝 */
+
+.boardfoot
+{
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+}
 
