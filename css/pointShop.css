@@ -114,7 +114,6 @@ hr
 }
 
 
-
 .tabContents
 {
     height: calc(100vh - 300px);
@@ -207,4 +206,7 @@ hr
     display:flex;
     flex-wrap:wrap;
     gap:20px;
+}
+.page_arrow {
+    cursor:pointer;
 }
