@@ -174,18 +174,14 @@
         </li>
         <li class="level1">
           <a href="pointShopRoom.html" class="">방꾸미기</a>
-          <ul class="menu-level2 on">
-            <li><a href="#>실시간 인기</a></li>
-            <li><a href="#">일간 인기</a></li>
-            <li><a href="#">주간 인기</a></li>
+          <ul class="menu-level2">
           </ul>
         </li>
         
         <li class="level1">
           <a href="pointShopGuide.html">가이드</a>
           <ul class="menu-level2 ">
-            <li><a href="#">이용방법</a></li>
-            <li><a href="#">제작가이드</a></li>
+
           </ul>
         </li>
       </ul>
@@ -195,27 +191,58 @@
     <!-- 탭컨텐츠 시작 -->
     <!-- 실시간인기 컨텐츠 -->
     <div class="tabContents on">
-      <span class="hov-anim-box">
-        <img src="../img/pointShop/pointshop.png" alt="" class="static">
-        <img src="../img/pointShop/pointshop.gif" alt="" class="animated">
-        <div>
-          <p class="imgTitle">유알콘실시간인기</p>
-          <p class="imgDesc">내용입니다!</p>
-        </div>
-      </span>
+      <!-- 1페이지 시작 -->
+      <div class="tab1_page on">
+        <span class="hov-anim-box">
+          <img src="../img/pointShop/urcon1.webp" alt="" class="static">
+          <img src="../img/pointShop/urcon1.webp" alt="" class="animated">
+          <div>
+            <p class="imgTitle">유알콘실시간인기</p>
+            <p class="imgDesc">1페이지입니다.</p>
+          </div>
+        </span>
+      </div>
+
+
+      <!-- 2페이지 시작 -->
+      <div class="tab1_page">
+        <span class="hov-anim-box">
+          <img src="../img/pointShop/pointshop.png" alt="" class="static">
+          <img src="../img/pointShop/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">유알콘실시간인기</p>
+            <p class="imgDesc">2페이지입니다.</p>
+          </div>
+        </span>
+      </div>
+      <!-- 2페이지 끝 -->
+
+      <!-- 3페이지 시작 -->
+      <div class="tab1_page">
+        <span class="hov-anim-box">
+          <img src="../img/pointShop/pointshop.png" alt="" class="static">
+          <img src="../img/pointShop/pointshop.gif" alt="" class="animated">
+          <div>
+            <p class="imgTitle">유알콘실시간인기</p>
+            <p class="imgDesc">3페이지입니다!</p>
+          </div>
+        </span>
+      </div>
+      <!-- 3페이지 끝 -->
+
     </div>
 
       <!-- 일간인기 컨텐츠 -->
     <div class="tabContents">
-      <span class="hov-anim-box">
-        <img src="../img/pointShop/pointshop.png" alt="" class="static">
-        <img src="../img/pointShop/pointshop.gif" alt="" class="animated">
-        <div>
-          <p class="imgTitle">유알콘일간인기</p>
-          <p class="imgDesc">내용입니다!</p>
-        </div>
-      </span>
+      <div class="tab2_page on">
+        일간인기 1페이지
+      </div>
+      <div class="tab2_page">일간인기 2페이지</div>
+      <div class="tab2_page">일간인기 3페이지</div>
     </div>
+
+
+    <!-- 주간 인기 컨텐츠 -->
     <div class="tabContents">
       <span class="hov-anim-box">
         <img src="../img/pointShop/pointshop.png" alt="" class="static">
@@ -227,14 +254,8 @@
       </span>
     </div>
 
-    <!-- 주간인기 컨텐츠 -->
-    <div class="tabContents">
-      주간 인기 컨텐츠
-
-    </div>
 
       
-    <!-- 탭컨텐츠 끝 -->
 
     </div> <!-- 컨테이너 끝 -->
 
@@ -242,13 +263,13 @@
     <!-- 페이지네이션 시작 -->
     <div class="pointfoot">
       <div class="page_wrap">
-          <img class="page_arrow menuIcon" src="../img/board/page-arrow-back.svg">
+          <img class="page_arrow menuIcon" id="prev" src="../img/board/page-arrow-back.svg">
           <div class="page_nation">
               <a href="#" class="page_num on">1</a>
               <a href="#" class="page_num">2</a>
               <a href="#" class="page_num">3</a>
           </div>
-          <img class="page_arrow menuIcon" src="../img/board/page-arrow-forward.svg">
+          <img class="page_arrow menuIcon" id="next" src="../img/board/page-arrow-forward.svg">
       </div>
       <div class="post">
           <input type='button' value='제작/등록' onclick='addtr()' class="addBtn" id="add">
