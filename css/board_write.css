@@ -71,6 +71,7 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: var(--font-M);
+    user-select: none;
 }
 
 .filebox input[type="file"]
