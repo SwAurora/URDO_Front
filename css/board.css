@@ -226,6 +226,7 @@ a
 
 
 .boardfoot {
+    display:flex; justify-content: center; 
     width:calc(100% - 20px);
     margin : 10px 0px;
 }
