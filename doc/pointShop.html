@@ -164,36 +164,123 @@
       </header>
 
 
+      <style>
+        .menu-level1 {
+          padding:0px;
+          font-size:var(--font-L);
+          list-style:none;
+          display:flex;
+          gap:4px;
+          flex-direction: row;
+          background-color:var(--color-white);
+          height:35px;
+          line-height:35px;
+          position:relative;
+          left:0px; top:0px;
+        }
+        .menu-level1 a{
+          text-decoration:none;
+          color:black;
+          
+        }
+        .menu-level1 li {
+          border:1px solid gray;
+          border-radius:4px;
+          width:100px;
+          text-align:center;
+        }
+        .menu-level1 li.on {
+          background-color:var(--color-point);
+        }
+        .menu-level2 {
+          list-style:none;
+          padding:0px;
+          border:1px solid orange;
+          display:none;
+          position:absolute;
+          left:0px; top:40px;
+        }
+        .menu-level1>li:hover .menu-level2 {
+          display:flex;
+          width:100%;
+          justify-content: space-around;
+        }
+
+
+      </style>
+
       <!-- 탭버튼 시작 -->
-      <div class="tabBtn_Wrapper">
+      <ul class="menu-level1">
+        <li class="on">
+          <a href="#">포인트상점</a>
+          <ul class="menu-level2">
+            <li><a href="#">유알콘</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Menu2</a>
+          <ul class="menu-level2">
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+            <li><a href="#">submenu4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Menu3</a>
+          <ul class="menu-level2">
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Menu4</a>
+          <ul class="menu-level2">
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <!-- <div class="tabBtn_Wrapper">
         <ul class="tabDepth1">
           <li>
             <input class="tabBtn on" type="button" value="유알콘">
-            <ul class="tabDepth2">
-              <li><a>실시간 인기</a></li>
-              <li><a>주간 인기</a></li>
-              <li><a>일간 인기</a></li>
-            </ul>
           </li>
           <li>
             <input class="tabBtn" type="button" value="마이유알">
-            <ul class="tabDepth2">
-              <li><a>구매내역</a></li>
-              <li><a>판매/등록내역</a></li>
-            </ul>
           </li>
           <li>
             <input class="tabBtn" type="button" value="제작/등록">
-            <ul class="tabDepth2">
-              <li><a>등록</a></li>
-              <li><a>이용방법</a></li>
-              <li><a>제작가이드</a></li>
-            </ul>
           </li>
         </ul>
 
-
-      </div>
+        <div class="tabDepth2Wrapper" >
+          <ul class="tabDepht2 on">
+            <li class="on"><a>실시간 인기</a></li>
+            <li class="on"><a>주간 인기</a></li>
+            <li class="on"><a>일간 인기</a></li>
+          </ul>
+          <ul class="tabDepth2" id="2depth2">
+            <li class=""><a>구매내역</a></li>
+            <li class=""><a>판매/등록내역</a></li>
+          </ul>
+          <ul class="tabDepth2" id="2depth3">
+            <li class=""><a>등록</a></li>
+            <li class=""><a>이용방법</a></li>
+            <li class=""><a>제작가이드</a></li>
+          </ul>
+        </div>
+      </div> -->
       <!-- 탭버튼 끝 -->
 
       <!-- 탭컨텐츠 시작 -->

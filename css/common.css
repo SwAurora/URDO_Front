@@ -278,26 +278,27 @@ body.dark
 .depth2
 {
     display: none;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .depth2 a
 {
-    margin-left: 30px;
+    margin-left: 41px;
+    padding-left: 16px;
     color: var(--color-text);
     text-decoration: none;
     display: inline-block;
     height: 100%;
-    padding-left: 5px;
+    width:100%;
+    border-radius:4px;
 }
 
 .depth2 li
 {
     display: flex;
-    height: 40px;
-    line-height: 40px;
-    width: 200px;
-    border-radius: 5px;
+    height: 34px;
+    line-height: 34px;
+    width: 174px;
     padding-left: 0;
 
 }
@@ -309,11 +310,11 @@ body.dark
 
 .depth2 li:hover
 {
-    background-color: var(--color-point);
 }
 
 .depth2 li:hover a
 {
+    background-color: var(--color-point);
     color: white;
 }
 

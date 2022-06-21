@@ -1,10 +1,9 @@
 $(document).ready(function () {
-  $('.tabDepth1 > li').on('click', function () {
+  $('.menu-level1 li').on('click', function () {
     idx = $(this).index();
-    $('.tabBtn').removeClass('on');
-    $('.tabBtn').eq(idx).addClass('on');
-    $('.tabDepth2').removeClass('on');
-    $('.tabDepth2').eq(idx).addClass('on');
+    alert(idx);
+    $('.menu-level1 li').removeClass('on');
+    $('.menu-level1 li').eq(idx).addClass('on');
   })
 
 
@@ -15,6 +14,8 @@ $(document).ready(function () {
     $('.pageContents').removeClass('on');
     $('.pageContents').eq(idx2).addClass('on');
   })
+
+
 
   $('#prev').on('click', function() {
     idx3=$('.page_num.on').index();
