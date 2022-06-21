@@ -33,6 +33,7 @@
     --color-terms: white;
     --color-termsText: #888;
     --color-termsTextarea: #F7F7F7;
+    --color-active: #00FFD4;
     /* =====Left-margin==== */
     --margin-normal: 20px;
     /* 마진 노말바꿨음 */
@@ -288,19 +289,21 @@ body.dark
     color: var(--color-text);
     text-decoration: none;
     display: inline-block;
+    width: 100%;
     height: 100%;
-    width:100%;
+
     border-radius:4px;
 }
 
 .depth2 li
 {
     display: flex;
-    height: 34px;
-    line-height: 34px;
+
+    height: 33px;
+    line-height: 33px;
+
     width: 174px;
     padding-left: 0;
-
 }
 
 #Menu_bar input[type='checkbox']:checked ~ .depth2
@@ -308,9 +311,6 @@ body.dark
     display: block;
 }
 
-.depth2 li:hover
-{
-}
 
 .depth2 li:hover a
 {
