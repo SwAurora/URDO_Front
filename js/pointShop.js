@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  $('.tabBtn').on('click', function () {
+  $('.tabDepth1 > li').on('click', function () {
     idx = $(this).index();
     $('.tabBtn').removeClass('on');
     $('.tabBtn').eq(idx).addClass('on');
-    $('.tabContents').removeClass('on');
-    $('.tabContents').eq(idx).addClass('on');
+    $('.tabDepth2').removeClass('on');
+    $('.tabDepth2').eq(idx).addClass('on');
   })
 
 

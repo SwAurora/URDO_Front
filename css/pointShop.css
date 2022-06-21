@@ -66,9 +66,16 @@ hr
 }
 .tabBtn_Wrapper ul {
     list-style : none;
-    padding:0px;
+    padding-left:0px;
     display:flex;
 }
+.tabDepth2 li{
+    display:none;
+}
+.tabDepth2 li.on{
+    display:flex;
+}
+
 .tabBtn
 {
     color:var(--color-text);
