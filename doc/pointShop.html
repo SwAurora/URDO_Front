@@ -170,16 +170,11 @@
           font-size:var(--font-L);
           list-style:none;
           display:flex;
+          height:35px; line-height:35px;
           gap:4px;
           flex-direction: row;
-          height:35px;
-          line-height:35px;
           position:relative;
           left:0px; top:0px;
-        }
-        .menu-level1 li a {
-          text-decoration:none;
-          color:var(--color-black);
         }
         .menu-level1 li {
           border:1px solid gray;
@@ -190,8 +185,15 @@
         }
         .menu-level1 li.on {
           background-color:var(--color-point);
+        }
+        .menu-level1 li a {
+          text-decoration:none;
+          color:var(--color-black);
+        }
+        .menu-level1 li a.on {
           color:var(--color-white);
         }
+
         .menu-level2 {
           list-style:none;
           padding:0px;
@@ -212,7 +214,7 @@
       <!-- 탭버튼 시작 -->
       <ul class="menu-level1">
         <li class="level1">
-          <a href="#">포인트상점</a>
+          <a href="#" class="level1Title">포인트상점</a>
           <ul class="menu-level2">
             <li><a href="#">유알콘</a></li>
             <li><a href="#">submenu2</a></li>
@@ -221,7 +223,7 @@
           </ul>
         </li>
         <li class="level1">
-          <a href="#">마이유알</a>
+          <a href="#" >마이유알</a>
           <ul class="menu-level2">
             <li><a href="#">submenu1</a></li>
             <li><a href="#">submenu2</a></li>
