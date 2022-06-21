@@ -1,0 +1,92 @@
+.container
+{
+    margin-left: 10%;
+}
+
+.URtitle
+{
+    width: 1007px;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.URmain
+{
+    width: 1007px;
+    height: 300px;
+    resize: none;
+}
+
+
+
+.filebox .upload-name 
+{
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 2px inset #E3E3E3;
+    width: 882px;
+    color: #999999;
+    user-select: none;
+}
+
+.filebox label 
+{
+    display: inline-block;
+    padding: 9px 19px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+}
+
+.filebox input[type="file"] 
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.post
+{
+    position: relative;
+    top: 10px;
+    left: 694px;
+}
+
+.pagebtn1
+{
+    background-color: var(--color-point);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 45px;
+
+}
+
+.pagebtn1:hover
+{
+    background-color: var(--color-pointhover);
+}
+
+.pagebtn2
+{
+    background-color: #808080;
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 45px;
+
+}
+
+.pagebtn2:hover
+{
+    background-color: #B9BBBE;
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URDO</title>
+    <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
+    <!--CSS 링크-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="../css/bord_write.css">
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            let span = document.querySelectorAll('.depth1 span');
+            $('#check1').prop('checked', true);
+            span[0].innerHTML = '&#65293';
+            span[1].style.color = getColor('--color-point');
+            span[1].style.fontWeight = 'bold';
+            $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
+        })
+    </script>
+<body>
+<!--네비게이션 시작-->
+<nav class="nav-all">
+    <!--헤더 시작-->
+    <div id="nav-header">
+        <!--로고-->
+        <img src="../img/sidebar/logo.svg" alt="LOGO" id="logo" class="" onclick="GoHome()">
+        <div id="logo-name">
+            <span class="head-span1">URDO</span>
+            <span class="head-span2">유머를 위한 알렉산드리아 도서관</span>
+        </div>
+        <div>
+            <button id="arrow" onclick="moving_sidebar()">
+                <img src="../img/sidebar/arrowLeft.png" alt="leftArrow">
+            </button>
+        </div>
+    </div>
+
+    <!--퀵 메뉴 시작-->
+    <div id="Quick_menu">
+        <table>
+            <colgroup>
+                <col id="Quick_col1">
+                <col id="Quick_col2">
+                <col id="Quick_col3">
+            </colgroup>
+            <tr onclick="MiniHomePage()">
+                <td><img src="../img/sidebar/quick-home.svg" alt="MiniHomePage" class="navHIcon"></td>
+                <td><span>내 미니홈피 바로가기</span></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+            </tr>
+            <tr onclick="PointShop()">
+                <td><img src="../img/sidebar/quick-shop.svg" alt="PointShop" class="navHIcon"></td>
+                <td><span>포인트샵</span></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+            </tr>
+            <tr onclick="MyPage()">
+                <td><img src="../img/sidebar/quick-myPage.svg" alt="MyPage" class="navHIcon"></td>
+                <td><span>마이 페이지</span></td>
+                <td><img src="../img/sidebar/quick-golink.svg" alt="arrow" class="linkIcon menuIcon"></td>
+            </tr>
+        </table>
+        <div class="darkMode">
+            <div class="sunMoon">
+                <img src="../img/sidebar/quick-moon.svg" alt="#" class="Moon navHIcon">
+                <img src="../img/sidebar/quick-sun.svg" alt="#" class="Sun navHIcon">
+            </div>
+            <span class="darkMode-text">다크 모드</span>
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
+        </div>
+    </div>
+    <!--메뉴 바 시작-->
+    <div id="Menu_bar">
+        <span>게시판</span>
+
+        <ul class="depth1">
+            <li>
+                <input type="checkbox" id="check1">
+                <label for="check1">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-best.svg" alt="board" class="navIcon menuIcon">
+                    <span>베스트 게시글</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="board.html" title="실시간베스트" id="active">실시간 베스트</a></li>
+                    <li><a href="#" title="월간베스트">월간 베스트</a></li>
+                    <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check2">
+                <label for="check2">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-humor.svg" alt="board" class="navIcon menuIcon">
+                    <span>유머</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check3">
+                <label for="check3">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-creation.svg" alt="board" class="navIcon menuIcon">
+                    <span>창작게시판</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="그림">그림</a></li>
+                    <li><a href="#" title="요리">요리</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check4">
+                <label for="check4">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-region.svg" alt="board" class="navIcon menuIcon">
+                    <span>지역</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="맛집">맛집</a></li>
+                    <li><a href="#" title="명소">명소</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="check5">
+                <label for="check5">
+                    <span class="plus_minus">&#65291</span>
+                    <img src="../img/sidebar/menu-theme.svg" alt="board" class="navIcon menuIcon">
+                    <span>테마</span>
+                </label>
+                <ul class="depth2">
+                    <li><a href="#" title="게임">게임</a></li>
+                    <li><a href="#" title="스포츠">스포츠</a></li>
+                    <li><a href="#" title="음악">음악</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--로그인/로그아웃 버튼-->
+    <div id="loginWrap">
+        <button onclick="Login()" class="btn">
+            <img src="../img/sidebar/login-unlock.svg" alt="login" class="navIcon">
+            <span>로그인</span>
+        </button>
+    </div>
+</nav>
+<section class="Main">
+    <div class="container">
+
+        <div id="container_Title">
+            게시판 > 베스트 게시글 > 실시간 베스트
+        </div>
+
+        <h2>'도서'를 '등록'해라 '이곳'에</h2>
+        
+        <div class="title_write_area">
+            <input type="text" class="URtitle" placeholder="제목을 입력해 주세요">
+        </div>
+        
+        <div class="main_write_area">
+            <textarea name="URmain" class="URmain" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
+        </div>
+
+        <div class="filebox">
+            <input class="upload-name" value="첨부파일" placeholder="첨부파일" readonly>
+            <label for="file">파일찾기</label> 
+            <input type="file" id="file">
+        </div>
+        
+        <div class="post">
+            <input type='button' value='취소' class="pagebtn2" id="add">
+            <input type='button' value='게시글 작성' class="pagebtn1" id="add">
+        </div>
+    </div>
+
+        <script>
+            $("#file").on('change',function(){
+                var fileName = $("#file").val();
+                $(".upload-name").val(fileName);
+            });
+        </script>
+
+
+</section>
+
+<!--전체 JS-->
+<script src="../js/common.js"></script>
+<!--포인트샵 JS-->
+<script src="../js/pointShop.js"></script>
+<!--게시판 JS-->
+<script src="../js/board.js"></script>
+
+</body>
+</html>
