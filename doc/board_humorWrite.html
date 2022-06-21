@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,8 +10,22 @@
     <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/developer.css">
-</head>
+    <link rel="stylesheet" href="../css/board_write.css">
+    <link rel="stylesheet" href="../css/pointShop.css">
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            let span = document.querySelectorAll('.depth1 span');
+            $('#check2').prop('checked', true);
+            span[2].innerHTML = '&#65293';
+            span[3].style.color = getColor('--color-point');
+            span[3].style.fontWeight = 'bold';
+            $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
+        })
+    </script>
 <body>
 <!--네비게이션 시작-->
 <nav class="nav-all">
@@ -90,7 +105,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board_humor.html" title="웃긴 자료">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료" id="active">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -140,75 +155,53 @@
         </button>
     </div>
 </nav>
-
-<section class="Main" style="display: flex; justify-content: center; align-items: center">
-    <div class="divs1">
-        <div class="divs2">
-            <div class="card" style="background-image: url(../img/profile/김성욱.png);">
-                <div class="card-content">
-                    <h2 class="card-title">
-                        김성욱
-                    </h2>
-                    <p class="card-body">
-                        사이드바, 레이아웃
-                    </p>
-                    <a href="#" class="button"><img src="../img/developer/github.svg" alt="#" class="developer-github"><span>GO GitHub</span></a>
-                </div>
+<section class="Main">
+    <div class="container">
+        <header>
+            <div id="container_Title">
+                게시판 > 유머 > 웃긴 자료
             </div>
-
-            <div class="card" style="background-image: url(../img/profile/강현선.jpg);">
-                <div class="card-content">
-                    <h2 class="card-title">
-                        강현선
-                    </h2>
-                    <p class="card-body">
-                        포인트샵,스토리보드,스타일가이드
-                    </p>
-                    <a href="#" class="button"><img src="../img/developer/github.svg" alt="#" class="developer-github"><span>GO GitHub</span></a>
-                </div>
+            <div id="search">
+                <div>웃긴 자료</div>
+                <div>|</div>
+                <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
+                <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
             </div>
-        </div>
-        <div class="divs3">
-            <div class="card" style="background-image: url(../img/profile/정진명.png);">
-                <div class="card-content">
-                    <h2 class="card-title">
-                        정진명
-                    </h2>
-                    <p class="card-body">
-                        로그인, 회원가입, 미니홈피
-                    </p>
-                    <a href="#" class="button"><img src="../img/developer/github.svg" alt="#" class="developer-github"><span>GO GitHub</span></a>
+        </header>
+        <div class="container2">
+            <div id="writeField">
+                <div class="title_write_area">
+                    <input type="text" class="URtitle" placeholder="제목을 입력해 주세요">
                 </div>
-            </div>
 
-            <div class="card" style="background-image: url(../img/profile/허준석.jpg);">
-                <div class="card-content">
-                    <h2 class="card-title">
-                        허준석
-                    </h2>
-                    <p class="card-body">
-                        게시판
-                    </p>
-                    <a href="#" class="button"><img src="../img/developer/github.svg" alt="#" class="developer-github"><span>GO GitHub</span></a>
+                <div class="main_write_area">
+                    <textarea name="URmain" class="URmain" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
                 </div>
-            </div>
 
-            <div class="card" style="background-image: url(../img/profile/김재이.png);">
-                <div class="card-content">
-                    <h2 class="card-title">
-                        김재이
-                    </h2>
-                    <p class="card-body">
-                        메인페이지
-                    </p>
-                    <a href="#" class="button"><img src="../img/developer/github.svg" alt="#" class="developer-github"><span>GO GitHub</span></a>
+                <div class="filebox">
+                    <input class="upload-name" value="첨부파일" placeholder="첨부파일" readonly>
+                    <label for="file">파일찾기</label>
+                    <input type="file" id="file">
+                </div>
+
+                <div class="post">
+                    <input type='button' value='취소' class="CancelBtn">
+                    <input type='button' value='도서 등록' class="WriteBtn">
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $("#file").on('change', function()
+        {
+            let fileName = $("#file").val();
+            $(".upload-name").val(fileName);
+        });
+    </script>
 </section>
 
 <!--전체 JS-->
 <script src="../js/common.js"></script>
+
 </body>
 </html>

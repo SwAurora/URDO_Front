@@ -33,7 +33,9 @@
     --color-terms: white;
     --color-termsText: #888;
     --color-termsTextarea: #F7F7F7;
-    --color-active: #00FFD4;
+    --color-active: #FFAE00;
+    --color-darkgray: #36393F;
+    --color-textField: #F8F9FA;
     /* =====Left-margin==== */
     --margin-normal: 20px;
 }
@@ -71,6 +73,7 @@ body.dark
     --color-terms: #2F3135;
     --color-termsText: #DCDDDE;
     --color-termsTextarea: #42464D;
+    --color-textField: #4F505C;
 }
 
 /* ======== 네비게이션 ======== */
@@ -449,7 +452,7 @@ body.dark .switch::before
     width: calc(100% - 270px);
     height: 100%;
     overflow-y: auto;
-    display:block;
+    display: block;
 }
 
 /* ======== 컨텐츠 영역 ======== */

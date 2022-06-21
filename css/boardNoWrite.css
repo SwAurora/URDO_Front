@@ -156,12 +156,6 @@ a
     width: 150px;
 }
 
-.post
-{
-    display: flex;
-    margin-left: auto;
-}
-
 /* 게시글추가 버튼 과 게시글삭제버튼 */
 .pagebtn
 {
@@ -187,7 +181,6 @@ a
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: calc(50% - 80px);
 }
 
 .page_num
@@ -219,7 +212,6 @@ a
     margin: 3px;
 }
 
-
 .page_arrow
 {
     cursor: pointer;
@@ -233,16 +225,6 @@ a
     justify-content: center;
     width: calc(100% - 20px);
     margin: 10px 0;
-
 }
 
-/* 페이지네이션 끝 */
-
-.boardfoot
-{
-    display: flex;
-    justify-content: center;
-    width: calc(100% - 20px);
-    margin: 10px 0;
-}
 
