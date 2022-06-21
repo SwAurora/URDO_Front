@@ -1,25 +1,14 @@
 $(document).ready(function () {
-  $('.level1').on('click', function () {
+
+
+  $('.menu-level2 li').on('click', function() {
     idx = $(this).index();
     alert(idx);
-    $('.level1').removeClass('on');
-    $('.level1').eq(idx).addClass('on');
-    $('.level1>a').removeClass('on');
-    $('.level1>a').eq(idx).addClass('on');
+    $('.l2-list').removeClass('on');
+    $('.l2-list').eq(idx).addClass('on');
     $('.tabContents').removeClass('on');
     $('.tabContents').eq(idx).addClass('on');
-    $('.menu-level2').removeClass('on');
-    $('.menu-level2').eq(idx).addClass('on');
   })
-
-  $('.page_num').on('click', function() {
-    idx2 = $(this).index();
-    $('.page_num').removeClass('on');
-    $('.page_num').eq(idx2).addClass('on');
-    $('.pageContents').removeClass('on');
-    $('.pageContents').eq(idx2).addClass('on');
-  })
-
 
 
   $('#prev').on('click', function() {

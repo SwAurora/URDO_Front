@@ -33,7 +33,7 @@
     background: none;
     border: 1px solid var(--color-text);
     border-radius: 4px;
-    color:var(--color-blackTowhite);
+    color: var(--color-blackToWhite);
 }
 
 .searchBar::placeholder
@@ -52,21 +52,18 @@ a
     font-size: var(--font-XL);
 }
 
-
-
-
-
 /* 게시판 + sel 부분포함 전체부분 */
 .board_list_wrap
 {
     padding: 20px 0px;
-    width : calc(100% - 20px);
-    
+    width: calc(100% - 20px);
+
 }
+
 .board_list
 {
     width: 100%;
-    
+
     font-size: var(--font-M);
     border-collapse: collapse;
 }
@@ -88,7 +85,6 @@ a
 {
     text-decoration: underline;
 }
-
 
 /* page 숫자부분  */
 .board_list_wrap .pagination
@@ -162,7 +158,8 @@ a
 
 .post
 {
-    display:flex; margin-left : auto;
+    display: flex;
+    margin-left: auto;
 }
 
 /* 게시글추가 버튼 과 게시글삭제버튼 */
@@ -221,14 +218,19 @@ a
     height: 20px;
     margin: 3px;
 }
-/* 페이지네이션 끝 */
 
-
-.boardfoot {
-    display:flex; justify-content: center; 
-    width:calc(100% - 20px);
-    margin : 10px 0px;
-    border:1px solid red;
+.page_arrow
+{
+    cursor: pointer;
 }
 
+/* 페이지네이션 끝 */
+
+.boardfoot
+{
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+}
 
