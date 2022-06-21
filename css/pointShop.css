@@ -66,15 +66,17 @@ hr
 }
 .tabBtn_Wrapper ul {
     list-style : none;
-    padding:0px;
+    padding-left:0px;
     display:flex;
+    margin:10px 0px;
 }
+
 .tabBtn
 {
     color:var(--color-text);
     border:none;
     border-radius: 5px;
-    width: 120px; height:40px;
+    width: 120px; height:35px;
     background-color:var(--color-whiteToBlack);
     font-size:var(--font-M);
     font-weight:var(--font-weight-regular);
@@ -88,10 +90,30 @@ hr
 {
     background-color: var(--color-point);
     color:var(--color-white);
+    position:relative;
 }
+
 .tabBtn.on:hover {
     background-color: var(--color-pointhover);
 }
+.tabDepth2Wrapper{
+    border:1px solid red;
+    width: calc(100% - 20px);
+    height:50px;
+}
+.tabDepth2 li
+{
+    display:none;
+}
+
+.tabDepht2 li.on {
+    display:flex;
+    border:1px solid blue;
+    font-size:var(--font-M);
+    margin-right:10px;
+}
+
+
 
 .tabContents
 {
@@ -105,7 +127,6 @@ hr
 .tabContents.on
 {
     display: flex;
-    
 
 }
 
