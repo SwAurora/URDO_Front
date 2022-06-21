@@ -173,7 +173,7 @@ a
     border-radius: 5px;
     width: 160px;
     height: 45px;
-
+    cursor: pointer;
 }
 
 /* 게시글 삭제 추가 버튼 가까이갈시 작동  */
