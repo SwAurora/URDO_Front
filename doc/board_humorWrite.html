@@ -10,8 +10,8 @@
     <link href="../img/sidebar/logo.svg" rel="shortcut icon" type="image/png">
     <!--CSS 링크-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/board.css">
-    <link rel="stylesheet" href="../css/bord_write.css">
+    <link rel="stylesheet" href="../css/board_write.css">
+    <link rel="stylesheet" href="../css/pointShop.css">
     <!-- JQ -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -19,10 +19,10 @@
         $(document).ready(function()
         {
             let span = document.querySelectorAll('.depth1 span');
-            $('#check1').prop('checked', true);
-            span[0].innerHTML = '&#65293';
-            span[1].style.color = getColor('--color-point');
-            span[1].style.fontWeight = 'bold';
+            $('#check2').prop('checked', true);
+            span[2].innerHTML = '&#65293';
+            span[3].style.color = getColor('--color-point');
+            span[3].style.fontWeight = 'bold';
             $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
         })
     </script>
@@ -92,9 +92,9 @@
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board.html" title="실시간베스트" id="active">실시간 베스트</a></li>
-                    <li><a href="#" title="월간베스트">월간 베스트</a></li>
-                    <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
+                    <li><a href="board_nowBest.html" title="실시간베스트">실시간 베스트</a></li>
+                    <li><a href="board_monthBest.html" title="월간베스트">월간 베스트</a></li>
+                    <li><a href="board_miniBest.html" title="미니홈피추천작">미니홈피 추천작</a></li>
                 </ul>
             </li>
             <li>
@@ -105,7 +105,7 @@
                     <span>유머</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="웃긴 자료">웃긴 자료</a></li>
+                    <li><a href="board_humor.html" title="웃긴 자료" id="active">웃긴 자료</a></li>
                 </ul>
             </li>
             <li>
@@ -116,8 +116,8 @@
                     <span>창작게시판</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="그림">그림</a></li>
-                    <li><a href="#" title="요리">요리</a></li>
+                    <li><a href="board_creArt.html" title="그림">그림</a></li>
+                    <li><a href="board_creCook.html" title="요리">요리</a></li>
                 </ul>
             </li>
             <li>
@@ -128,8 +128,8 @@
                     <span>지역</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="맛집">맛집</a></li>
-                    <li><a href="#" title="명소">명소</a></li>
+                    <li><a href="board_regionRestaurant.html" title="맛집">맛집</a></li>
+                    <li><a href="board_regionLandMark.html" title="명소">명소</a></li>
                 </ul>
             </li>
             <li>
@@ -140,9 +140,9 @@
                     <span>테마</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="#" title="게임">게임</a></li>
-                    <li><a href="#" title="스포츠">스포츠</a></li>
-                    <li><a href="#" title="음악">음악</a></li>
+                    <li><a href="board_themeGame.html" title="게임">게임</a></li>
+                    <li><a href="board_themeSports.html" title="스포츠">스포츠</a></li>
+                    <li><a href="board_themeMusic.html" title="음악">음악</a></li>
                 </ul>
             </li>
         </ul>
@@ -157,49 +157,51 @@
 </nav>
 <section class="Main">
     <div class="container">
+        <header>
+            <div id="container_Title">
+                게시판 > 유머 > 웃긴 자료
+            </div>
+            <div id="search">
+                <div>웃긴 자료</div>
+                <div>|</div>
+                <input type="text" class="searchBar" placeholder="검색어를 입력하세요">
+                <img src="../img/sidebar/main-searchbar.svg" class="searchBarIcon menuIcon" id="searchBarIcon">
+            </div>
+        </header>
+        <div class="container2">
+            <div id="writeField">
+                <div class="title_write_area">
+                    <input type="text" class="URtitle" placeholder="제목을 입력해 주세요">
+                </div>
 
-        <div id="container_Title">
-            게시판 > 베스트 게시글 > 실시간 베스트
-        </div>
+                <div class="main_write_area">
+                    <textarea name="URmain" class="URmain" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
+                </div>
 
-        <h2>'도서'를 '등록'해라 '이곳'에</h2>
-        
-        <div class="title_write_area">
-            <input type="text" class="URtitle" placeholder="제목을 입력해 주세요">
-        </div>
-        
-        <div class="main_write_area">
-            <textarea name="URmain" class="URmain" cols="30" rows="10" placeholder="내용을 입력해 주세요"></textarea>
-        </div>
+                <div class="filebox">
+                    <input class="upload-name" value="첨부파일" placeholder="첨부파일" readonly>
+                    <label for="file">파일찾기</label>
+                    <input type="file" id="file">
+                </div>
 
-        <div class="filebox">
-            <input class="upload-name" value="첨부파일" placeholder="첨부파일" readonly>
-            <label for="file">파일찾기</label> 
-            <input type="file" id="file">
-        </div>
-        
-        <div class="post">
-            <input type='button' value='취소' class="pagebtn2" id="add">
-            <input type='button' value='게시글 작성' class="pagebtn1" id="add">
+                <div class="post">
+                    <input type='button' value='취소' class="CancelBtn">
+                    <input type='button' value='도서 등록' class="WriteBtn">
+                </div>
+            </div>
         </div>
     </div>
-
-        <script>
-            $("#file").on('change',function(){
-                var fileName = $("#file").val();
-                $(".upload-name").val(fileName);
-            });
-        </script>
-
-
+    <script>
+        $("#file").on('change', function()
+        {
+            let fileName = $("#file").val();
+            $(".upload-name").val(fileName);
+        });
+    </script>
 </section>
 
 <!--전체 JS-->
 <script src="../js/common.js"></script>
-<!--포인트샵 JS-->
-<script src="../js/pointShop.js"></script>
-<!--게시판 JS-->
-<script src="../js/board.js"></script>
 
 </body>
 </html>
