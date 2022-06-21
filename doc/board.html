@@ -14,6 +14,18 @@
    
     <!-- JQ -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            let span = document.querySelectorAll('.depth1 span');
+            $('#check1').prop('checked', true);
+            span[0].innerHTML = '&#65293';
+            span[1].style.color = getColor('--color-point');
+            span[1].style.fontWeight = 'bold';
+            $('#active').css('color', getColor('--color-active')).css('font-weight', 'bold');
+        })
+    </script>
 <body>
 <!--네비게이션 시작-->
 <nav class="nav-all">
@@ -80,7 +92,7 @@
                     <span>베스트 게시글</span>
                 </label>
                 <ul class="depth2">
-                    <li><a href="board.html" title="실시간베스트">실시간 베스트</a></li>
+                    <li><a href="board.html" title="실시간베스트" id="active">실시간 베스트</a></li>
                     <li><a href="#" title="월간베스트">월간 베스트</a></li>
                     <li><a href="#" title="미니홈피추천작">미니홈피 추천작</a></li>
                 </ul>
