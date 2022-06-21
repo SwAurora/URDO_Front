@@ -172,25 +172,25 @@
           display:flex;
           gap:4px;
           flex-direction: row;
-          background-color:var(--color-white);
           height:35px;
           line-height:35px;
           position:relative;
           left:0px; top:0px;
         }
-        .menu-level1 a{
+        .menu-level1 li a {
           text-decoration:none;
-          color:black;
-          
+          color:var(--color-black);
         }
         .menu-level1 li {
           border:1px solid gray;
           border-radius:4px;
           width:100px;
           text-align:center;
+          background-color:var(--color-white);
         }
         .menu-level1 li.on {
           background-color:var(--color-point);
+          color:var(--color-white);
         }
         .menu-level2 {
           list-style:none;
@@ -211,7 +211,7 @@
 
       <!-- 탭버튼 시작 -->
       <ul class="menu-level1">
-        <li class="on">
+        <li class="level1">
           <a href="#">포인트상점</a>
           <ul class="menu-level2">
             <li><a href="#">유알콘</a></li>
@@ -220,8 +220,8 @@
             <li><a href="#">submenu4</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#">Menu2</a>
+        <li class="level1">
+          <a href="#">마이유알</a>
           <ul class="menu-level2">
             <li><a href="#">submenu1</a></li>
             <li><a href="#">submenu2</a></li>
@@ -230,17 +230,8 @@
             <li><a href="#">submenu4</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#">Menu3</a>
-          <ul class="menu-level2">
-            <li><a href="#">submenu1</a></li>
-            <li><a href="#">submenu2</a></li>
-            <li><a href="#">submenu3</a></li>
-            <li><a href="#">submenu4</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Menu4</a>
+        <li class="level1">
+          <a href="#">제작/등록</a>
           <ul class="menu-level2">
             <li><a href="#">submenu1</a></li>
             <li><a href="#">submenu2</a></li>

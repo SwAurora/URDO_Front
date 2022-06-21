@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $('.menu-level1 li').on('click', function () {
+  $('.level1').on('click', function () {
     idx = $(this).index();
     alert(idx);
-    $('.menu-level1 li').removeClass('on');
-    $('.menu-level1 li').eq(idx).addClass('on');
+    $('.level1').removeClass('on');
+    $('.level1').eq(idx).addClass('on');
   })
 
 
