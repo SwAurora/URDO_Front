@@ -128,7 +128,10 @@
     font-weight:var(--font-weight-bold);
 }
 
-
+li a {
+    
+    color:var(--color-black);
+}
 
 /* gif호버 애니메이션 설정 */
 .hov-anim-box img {
